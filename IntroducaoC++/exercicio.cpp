@@ -33,7 +33,6 @@ void cube::cube_print_volume(){
 
 int main(){
 
-
     coord *c1 = new coord(50,10);
     cube *c2  = new cube(10,20,30);
     c2->cube_print_volume();
