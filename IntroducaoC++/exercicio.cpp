@@ -39,6 +39,5 @@ int main(){
 
     delete c1;
     delete c2;
-
     return 0;
 }
