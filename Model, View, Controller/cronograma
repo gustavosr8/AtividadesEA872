@@ -1,0 +1,5 @@
+etapa 1: criar os blocos (implementar destruição)
+
+etapa 2: criar a plataforma (implementar o movimento, lembrar de colocar limites para o movimento)
+
+etapa 3: criar a bolinha (implementar colisão, barreiras, desaparece se tocar o solo)
