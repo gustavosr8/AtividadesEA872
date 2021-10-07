@@ -1,0 +1,56 @@
+\hypertarget{view_8cpp}{}\section{src/view/view.cpp File Reference}
+\label{view_8cpp}\index{src/view/view.\+cpp@{src/view/view.\+cpp}}
+{\ttfamily \#include \char`\"{}../../include/view.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$experimental/filesystem$>$}\\*
+{\ttfamily \#include $<$unistd.\+h$>$}\\*
+Include dependency graph for view.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{view_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{view_8cpp_a599adbe412c60e0cc5abb86be7ee4507}{S\+C\+R\+E\+E\+N\+\_\+\+W\+I\+D\+TH} = 720
+\item 
+int \hyperlink{view_8cpp_af1c710caf1e3a9e81829078054e83799}{S\+C\+R\+E\+E\+N\+\_\+\+H\+E\+I\+G\+HT} = 480
+\item 
+S\+D\+L\+\_\+\+Color \hyperlink{view_8cpp_afd2fcdbc10ee4f7ed94f8f0d27ee44ed}{White} = \{255, 255, 255\}
+\item 
+S\+D\+L\+\_\+\+Color \hyperlink{view_8cpp_abe117c50d0fa5c3cecfdc127234f5093}{Red} = \{255, 0, 0\}
+\item 
+S\+D\+L\+\_\+\+Color \hyperlink{view_8cpp_a3ce40599515f4a263a05fb8e176d89e3}{Green} = \{0, 255, 0\}
+\item 
+char \hyperlink{view_8cpp_aba7b55804629711727b7b1176c7583aa}{num\+\_\+char} \mbox{[}10+sizeof(char)\mbox{]}
+\item 
+char \hyperlink{view_8cpp_a5c164fe165bdff98f887ade2436b7f06}{tmp} \mbox{[}256\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\index{view.\+cpp@{view.\+cpp}!Green@{Green}}
+\index{Green@{Green}!view.\+cpp@{view.\+cpp}}
+\subsubsection[{\texorpdfstring{Green}{Green}}]{\setlength{\rightskip}{0pt plus 5cm}S\+D\+L\+\_\+\+Color Green = \{0, 255, 0\}}\hypertarget{view_8cpp_a3ce40599515f4a263a05fb8e176d89e3}{}\label{view_8cpp_a3ce40599515f4a263a05fb8e176d89e3}
+\index{view.\+cpp@{view.\+cpp}!num\+\_\+char@{num\+\_\+char}}
+\index{num\+\_\+char@{num\+\_\+char}!view.\+cpp@{view.\+cpp}}
+\subsubsection[{\texorpdfstring{num\+\_\+char}{num_char}}]{\setlength{\rightskip}{0pt plus 5cm}char num\+\_\+char\mbox{[}10+sizeof(char)\mbox{]}}\hypertarget{view_8cpp_aba7b55804629711727b7b1176c7583aa}{}\label{view_8cpp_aba7b55804629711727b7b1176c7583aa}
+\index{view.\+cpp@{view.\+cpp}!Red@{Red}}
+\index{Red@{Red}!view.\+cpp@{view.\+cpp}}
+\subsubsection[{\texorpdfstring{Red}{Red}}]{\setlength{\rightskip}{0pt plus 5cm}S\+D\+L\+\_\+\+Color Red = \{255, 0, 0\}}\hypertarget{view_8cpp_abe117c50d0fa5c3cecfdc127234f5093}{}\label{view_8cpp_abe117c50d0fa5c3cecfdc127234f5093}
+\index{view.\+cpp@{view.\+cpp}!S\+C\+R\+E\+E\+N\+\_\+\+H\+E\+I\+G\+HT@{S\+C\+R\+E\+E\+N\+\_\+\+H\+E\+I\+G\+HT}}
+\index{S\+C\+R\+E\+E\+N\+\_\+\+H\+E\+I\+G\+HT@{S\+C\+R\+E\+E\+N\+\_\+\+H\+E\+I\+G\+HT}!view.\+cpp@{view.\+cpp}}
+\subsubsection[{\texorpdfstring{S\+C\+R\+E\+E\+N\+\_\+\+H\+E\+I\+G\+HT}{SCREEN_HEIGHT}}]{\setlength{\rightskip}{0pt plus 5cm}int S\+C\+R\+E\+E\+N\+\_\+\+H\+E\+I\+G\+HT = 480}\hypertarget{view_8cpp_af1c710caf1e3a9e81829078054e83799}{}\label{view_8cpp_af1c710caf1e3a9e81829078054e83799}
+\index{view.\+cpp@{view.\+cpp}!S\+C\+R\+E\+E\+N\+\_\+\+W\+I\+D\+TH@{S\+C\+R\+E\+E\+N\+\_\+\+W\+I\+D\+TH}}
+\index{S\+C\+R\+E\+E\+N\+\_\+\+W\+I\+D\+TH@{S\+C\+R\+E\+E\+N\+\_\+\+W\+I\+D\+TH}!view.\+cpp@{view.\+cpp}}
+\subsubsection[{\texorpdfstring{S\+C\+R\+E\+E\+N\+\_\+\+W\+I\+D\+TH}{SCREEN_WIDTH}}]{\setlength{\rightskip}{0pt plus 5cm}int S\+C\+R\+E\+E\+N\+\_\+\+W\+I\+D\+TH = 720}\hypertarget{view_8cpp_a599adbe412c60e0cc5abb86be7ee4507}{}\label{view_8cpp_a599adbe412c60e0cc5abb86be7ee4507}
+\index{view.\+cpp@{view.\+cpp}!tmp@{tmp}}
+\index{tmp@{tmp}!view.\+cpp@{view.\+cpp}}
+\subsubsection[{\texorpdfstring{tmp}{tmp}}]{\setlength{\rightskip}{0pt plus 5cm}char tmp\mbox{[}256\mbox{]}}\hypertarget{view_8cpp_a5c164fe165bdff98f887ade2436b7f06}{}\label{view_8cpp_a5c164fe165bdff98f887ade2436b7f06}
+\index{view.\+cpp@{view.\+cpp}!White@{White}}
+\index{White@{White}!view.\+cpp@{view.\+cpp}}
+\subsubsection[{\texorpdfstring{White}{White}}]{\setlength{\rightskip}{0pt plus 5cm}S\+D\+L\+\_\+\+Color White = \{255, 255, 255\}}\hypertarget{view_8cpp_afd2fcdbc10ee4f7ed94f8f0d27ee44ed}{}\label{view_8cpp_afd2fcdbc10ee4f7ed94f8f0d27ee44ed}

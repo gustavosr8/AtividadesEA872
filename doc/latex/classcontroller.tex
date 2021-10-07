@@ -1,0 +1,178 @@
+\hypertarget{classcontroller}{}\section{controller Class Reference}
+\label{classcontroller}\index{controller@{controller}}
+
+
+Classe para o controller.  
+
+
+
+
+{\ttfamily \#include $<$controller.\+h$>$}
+
+
+
+Collaboration diagram for controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classcontroller__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcontroller_a5179368251d444a67542bf506ffa6b9c}{controller} (\hyperlink{classview}{view} \&v\+\_\+, \hyperlink{classbarra}{barra} $\ast$ba\+\_\+, \hyperlink{classbolinha}{bolinha} $\ast$bo\+\_\+)
+\begin{DoxyCompactList}\small\item\em Construtor do controller. \end{DoxyCompactList}\item 
+void \hyperlink{classcontroller_ac0373785a91924ce3d480c1c7dedbd99}{update} ()
+\begin{DoxyCompactList}\small\item\em Metodo de acao. \end{DoxyCompactList}\item 
+bool \hyperlink{classcontroller_aaaef2bd34f643183bcd6fad64bea1005}{colisao\+Barra} ()
+\begin{DoxyCompactList}\small\item\em Colisao barra/bolinha. \end{DoxyCompactList}\item 
+bool \hyperlink{classcontroller_ac227dd1b72111d1c6da3362d60aa25d6}{colisao\+Bloco} ()
+\begin{DoxyCompactList}\small\item\em Colisao blocos/bolinha. \end{DoxyCompactList}\item 
+void \hyperlink{classcontroller_a03872ff488ab704038e14226a8e031ea}{start} ()
+\begin{DoxyCompactList}\small\item\em Inicia o jogo. \end{DoxyCompactList}\item 
+bool \hyperlink{classcontroller_a993c5fe7272f0435b4018f4b5d1fc1cb}{finish} ()
+\begin{DoxyCompactList}\small\item\em Finaliza o jogo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classview}{view} \& \hyperlink{classcontroller_a6ff845413a797ed4beff34d3cb6b7774}{v}
+\item 
+\hyperlink{classbarra}{barra} $\ast$ \hyperlink{classcontroller_af46499f5a9ef1afc0c95d899fb128aa1}{ba}
+\item 
+\hyperlink{classbolinha}{bolinha} $\ast$ \hyperlink{classcontroller_ae3e29aaa568c3d374b65416fd49649c5}{bo}
+\item 
+int \hyperlink{classcontroller_ab7bee2a38038001992ab877caccc1a47}{dirX} = 5
+\item 
+int \hyperlink{classcontroller_a136888a5f98296f5266a01330e2881e7}{dirY} = 5
+\item 
+int \hyperlink{classcontroller_ae1229353be5404b8decda1e8775292c4}{veloc} = 10
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe para o controller. 
+
+Esta é a classe para o controller. Ela faz o link entre os controles direcionais e a barra, tambem faz a movimentacao da bolinha, assim como sua colisao com as bordas da tela, barra e blocos. Faz tambem a destruicao do bloco e o reposicionamento da bolinha 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{controller@{controller}!controller@{controller}}
+\index{controller@{controller}!controller@{controller}}
+\subsubsection[{\texorpdfstring{controller(view \&v\+\_\+, barra $\ast$ba\+\_\+, bolinha $\ast$bo\+\_\+)}{controller(view &v_, barra *ba_, bolinha *bo_)}}]{\setlength{\rightskip}{0pt plus 5cm}controller\+::controller (
+\begin{DoxyParamCaption}
+\item[{{\bf view} \&}]{v\+\_\+, }
+\item[{{\bf barra} $\ast$}]{ba\+\_\+, }
+\item[{{\bf bolinha} $\ast$}]{bo\+\_\+}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classcontroller_a5179368251d444a67542bf506ffa6b9c}{}\label{classcontroller_a5179368251d444a67542bf506ffa6b9c}
+
+
+Construtor do controller. 
+
+Recebe um view, uma barra e uma bolinha
+
+
+\begin{DoxyParams}{Parameters}
+{\em v\+\_\+} & um objeto view onde os objetos vao ser mostrados \\
+\hline
+{\em ba\+\_\+} & objeto barra \\
+\hline
+{\em bo\+\_\+} & objeto bolinha \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{controller@{controller}!colisao\+Barra@{colisao\+Barra}}
+\index{colisao\+Barra@{colisao\+Barra}!controller@{controller}}
+\subsubsection[{\texorpdfstring{colisao\+Barra()}{colisaoBarra()}}]{\setlength{\rightskip}{0pt plus 5cm}bool controller\+::colisao\+Barra (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcontroller_aaaef2bd34f643183bcd6fad64bea1005}{}\label{classcontroller_aaaef2bd34f643183bcd6fad64bea1005}
+
+
+Colisao barra/bolinha. 
+
+checa a colisao entre a barra e a bolinha
+
+\begin{DoxyReturn}{Returns}
+retorna true caso haja colisao 
+\end{DoxyReturn}
+\index{controller@{controller}!colisao\+Bloco@{colisao\+Bloco}}
+\index{colisao\+Bloco@{colisao\+Bloco}!controller@{controller}}
+\subsubsection[{\texorpdfstring{colisao\+Bloco()}{colisaoBloco()}}]{\setlength{\rightskip}{0pt plus 5cm}bool controller\+::colisao\+Bloco (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcontroller_ac227dd1b72111d1c6da3362d60aa25d6}{}\label{classcontroller_ac227dd1b72111d1c6da3362d60aa25d6}
+
+
+Colisao blocos/bolinha. 
+
+checa a colisao entre a todos os blocos e a bolinha caso haja colisao, tira o bloco da visualizacao
+
+\begin{DoxyReturn}{Returns}
+retorna true caso haja colisao 
+\end{DoxyReturn}
+\index{controller@{controller}!finish@{finish}}
+\index{finish@{finish}!controller@{controller}}
+\subsubsection[{\texorpdfstring{finish()}{finish()}}]{\setlength{\rightskip}{0pt plus 5cm}bool controller\+::finish (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcontroller_a993c5fe7272f0435b4018f4b5d1fc1cb}{}\label{classcontroller_a993c5fe7272f0435b4018f4b5d1fc1cb}
+
+
+Finaliza o jogo. 
+
+checa se uma tecla previamente estabelecida foi pressionada, encerrando a execução e fechando o programa (Tecla Esc) \index{controller@{controller}!start@{start}}
+\index{start@{start}!controller@{controller}}
+\subsubsection[{\texorpdfstring{start()}{start()}}]{\setlength{\rightskip}{0pt plus 5cm}void controller\+::start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcontroller_a03872ff488ab704038e14226a8e031ea}{}\label{classcontroller_a03872ff488ab704038e14226a8e031ea}
+
+
+Inicia o jogo. 
+
+checa se uma tecla previamente estabelecida foi pressionada, iniciando o movimento da bolinha (Tecla S) \index{controller@{controller}!update@{update}}
+\index{update@{update}!controller@{controller}}
+\subsubsection[{\texorpdfstring{update()}{update()}}]{\setlength{\rightskip}{0pt plus 5cm}void controller\+::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcontroller_ac0373785a91924ce3d480c1c7dedbd99}{}\label{classcontroller_ac0373785a91924ce3d480c1c7dedbd99}
+
+
+Metodo de acao. 
+
+serie de eventos que acontecem a cada ciclo de jogo 
+
+\subsection{Member Data Documentation}
+\index{controller@{controller}!ba@{ba}}
+\index{ba@{ba}!controller@{controller}}
+\subsubsection[{\texorpdfstring{ba}{ba}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf barra}$\ast$ controller\+::ba\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classcontroller_af46499f5a9ef1afc0c95d899fb128aa1}{}\label{classcontroller_af46499f5a9ef1afc0c95d899fb128aa1}
+barra (alocada previamente \index{controller@{controller}!bo@{bo}}
+\index{bo@{bo}!controller@{controller}}
+\subsubsection[{\texorpdfstring{bo}{bo}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bolinha}$\ast$ controller\+::bo\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classcontroller_ae3e29aaa568c3d374b65416fd49649c5}{}\label{classcontroller_ae3e29aaa568c3d374b65416fd49649c5}
+bolinha (alocada previamente) \index{controller@{controller}!dirX@{dirX}}
+\index{dirX@{dirX}!controller@{controller}}
+\subsubsection[{\texorpdfstring{dirX}{dirX}}]{\setlength{\rightskip}{0pt plus 5cm}int controller\+::dirX = 5\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classcontroller_ab7bee2a38038001992ab877caccc1a47}{}\label{classcontroller_ab7bee2a38038001992ab877caccc1a47}
+direcao de movimentacao da bolinha em X \index{controller@{controller}!dirY@{dirY}}
+\index{dirY@{dirY}!controller@{controller}}
+\subsubsection[{\texorpdfstring{dirY}{dirY}}]{\setlength{\rightskip}{0pt plus 5cm}int controller\+::dirY = 5\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classcontroller_a136888a5f98296f5266a01330e2881e7}{}\label{classcontroller_a136888a5f98296f5266a01330e2881e7}
+direcao de movimentacao da bolinha em Y \index{controller@{controller}!v@{v}}
+\index{v@{v}!controller@{controller}}
+\subsubsection[{\texorpdfstring{v}{v}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf view}\& controller\+::v\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classcontroller_a6ff845413a797ed4beff34d3cb6b7774}{}\label{classcontroller_a6ff845413a797ed4beff34d3cb6b7774}
+view (alocado previamente) \index{controller@{controller}!veloc@{veloc}}
+\index{veloc@{veloc}!controller@{controller}}
+\subsubsection[{\texorpdfstring{veloc}{veloc}}]{\setlength{\rightskip}{0pt plus 5cm}int controller\+::veloc = 10\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classcontroller_ae1229353be5404b8decda1e8775292c4}{}\label{classcontroller_ae1229353be5404b8decda1e8775292c4}
+velocidade de movimentacao da bolinha 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{controller_8h}{controller.\+h}\item 
+src/controller/\hyperlink{controller_8cpp}{controller.\+cpp}\end{DoxyCompactItemize}

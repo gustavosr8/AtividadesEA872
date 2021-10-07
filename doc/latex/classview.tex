@@ -1,0 +1,371 @@
+\hypertarget{classview}{}\section{view Class Reference}
+\label{classview}\index{view@{view}}
+
+
+Classe para o view.  
+
+
+
+
+{\ttfamily \#include $<$view.\+h$>$}
+
+
+
+Collaboration diagram for view\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classview__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classview_ae68420027fc8352dc303107eb0305ea6}{view} (std\+::vector$<$ \hyperlink{classtijolo}{tijolo} $>$ \&t\+\_\+, \hyperlink{classbarra}{barra} $\ast$ba\+\_\+, \hyperlink{classbolinha}{bolinha} $\ast$bo\+\_\+, \hyperlink{classpontos}{pontos} $\ast$po\+\_\+, \hyperlink{classvida}{vida} $\ast$v\+\_\+)
+\begin{DoxyCompactList}\small\item\em Construtor do view. \end{DoxyCompactList}\item 
+void \hyperlink{classview_afa73cff596b36c7009ee17383d039750}{render\+\_\+text} (S\+D\+L\+\_\+\+Renderer $\ast$\hyperlink{classview_a8d7b3ec0a0641d24cdc3b04949f5df45}{renderer}, int x, int y, const char $\ast$text, T\+T\+F\+\_\+\+Font $\ast$font, S\+D\+L\+\_\+\+Rect $\ast$rect, S\+D\+L\+\_\+\+Color $\ast$color)
+\begin{DoxyCompactList}\small\item\em Renderiza um texto. \end{DoxyCompactList}\item 
+int \hyperlink{classview_a21d953772b41dd9c08c9ea9895e002d7}{init} ()
+\begin{DoxyCompactList}\small\item\em Rotina de inicializacao. \end{DoxyCompactList}\item 
+void \hyperlink{classview_a91e9b24e39a9846a7093949c9a19a118}{render} ()
+\begin{DoxyCompactList}\small\item\em Renderizacao. \end{DoxyCompactList}\item 
+void \hyperlink{classview_ad8c046a243e52ee4f902abec6fbec9bb}{quit} ()
+\begin{DoxyCompactList}\small\item\em Encerramento. \end{DoxyCompactList}\item 
+void \hyperlink{classview_a1839c52cc61779be195b51e4fddcb659}{perdeu} ()
+\begin{DoxyCompactList}\small\item\em Derrota. \end{DoxyCompactList}\item 
+void \hyperlink{classview_abbf5bc2a4455e61eb8155f8256a5d870}{ganhou} ()
+\begin{DoxyCompactList}\small\item\em Vitoria. \end{DoxyCompactList}\item 
+int \hyperlink{classview_a257d50065961954053fbf5402b2e2968}{quantidade\+Tijolos} ()
+\item 
+S\+D\+L\+\_\+\+Rect $\ast$ \hyperlink{classview_a4bf37f4171f4bb15c0e5b4ab8c2a9faa}{get\+Target} ()
+\item 
+S\+D\+L\+\_\+\+Rect $\ast$ \hyperlink{classview_a8b12f1f06de39d6e9f70f54a9281e05c}{get\+Bloco} ()
+\item 
+S\+D\+L\+\_\+\+Rect $\ast$ \hyperlink{classview_a8eb9d89d9b55a5d2ee529c96e0dc246a}{get\+Bolinha} ()
+\item 
+S\+D\+L\+\_\+\+Rect $\ast$ \hyperlink{classview_a57b60e5da21e0484081d71c69ba4d03e}{get\+Barra} ()
+\item 
+std\+::vector$<$ \hyperlink{classtijolo}{tijolo} $>$ \& \hyperlink{classview_a7546f44b45cd308c1c893e222701ec51}{get\+Tijolos} ()
+\item 
+\hyperlink{classpontos}{pontos} $\ast$ \hyperlink{classview_a6cd53aa4df2642579992803a18f0bc8b}{get\+Ponto} ()
+\item 
+\hyperlink{classvida}{vida} $\ast$ \hyperlink{classview_aa33f3e6bf59ada95ee9fd0bff5af22c0}{get\+Vida} ()
+\item 
+int \hyperlink{classview_aba1c490d357bb58f4aa9218cb96b42b0}{get\+Width} ()
+\item 
+int \hyperlink{classview_af2cf0c4a4d7cd84f0155ae1ad6a51d0a}{get\+Heigth} ()
+\item 
+const Uint8 $\ast$ \hyperlink{classview_a5dd0f6c8f5d5f9123353986607c7fb77}{get\+State} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classtijolo}{tijolo} $>$ \& \hyperlink{classview_af57a3852a171948382275c534ede7987}{t}
+\item 
+\hyperlink{classbolinha}{bolinha} $\ast$ \hyperlink{classview_a9d44d190dd69b906bfeaac4559ee454e}{bo}
+\item 
+\hyperlink{classbarra}{barra} $\ast$ \hyperlink{classview_a0fd146110ca95e73f43c1dbda5a41294}{ba}
+\item 
+\hyperlink{classpontos}{pontos} $\ast$ \hyperlink{classview_a8dc345a9799a79220ecca66c4cd3e8ff}{po}
+\item 
+\hyperlink{classvida}{vida} $\ast$ \hyperlink{classview_ae0f8e281f5f7937d84f435437ce03546}{v}
+\item 
+S\+D\+L\+\_\+\+Window $\ast$ \hyperlink{classview_ade09c2dbabd1bf59ffaf625156c514f0}{window}
+\item 
+S\+D\+L\+\_\+\+Renderer $\ast$ \hyperlink{classview_a8d7b3ec0a0641d24cdc3b04949f5df45}{renderer}
+\item 
+S\+D\+L\+\_\+\+Rect \hyperlink{classview_ae22fb0558e890ff6ace089b603e2d6d8}{bloco}
+\item 
+S\+D\+L\+\_\+\+Rect \hyperlink{classview_a49a628eedba666db008f8c07b96e3a51}{target}
+\item 
+S\+D\+L\+\_\+\+Rect \hyperlink{classview_a72e360ef18105e2c565f17be3768027d}{bol}
+\item 
+S\+D\+L\+\_\+\+Rect \hyperlink{classview_a9c94bf9b55b5c24c5a9289d82a969ebb}{bar}
+\item 
+const Uint8 $\ast$ \hyperlink{classview_a6fd7fc350d9ad94dfd47e324b107e8ce}{state}
+\item 
+T\+T\+F\+\_\+\+Font $\ast$ \hyperlink{classview_ad17acebf948f7f42aa7cb8f88a38fe21}{Font}
+\item 
+S\+D\+L\+\_\+\+Rect \hyperlink{classview_af1b48d8a8f7f9e16800f9d842717ed2c}{Message\+\_\+\+Vida\+\_\+rect}
+\item 
+S\+D\+L\+\_\+\+Rect \hyperlink{classview_aba853e73ed61ec0078ff6e56bb57e702}{Message\+\_\+\+Fim\+\_\+rect}
+\item 
+S\+D\+L\+\_\+\+Rect \hyperlink{classview_ada3fc542a5e8b9d9e002665b37af781b}{Message\+\_\+\+Pontos\+\_\+rect}
+\item 
+S\+D\+L\+\_\+\+Rect \hyperlink{classview_a1a7059536cb8e091ff7d4a4f2526bcce}{Message\+\_\+\+Vida\+Value\+\_\+rect}
+\item 
+S\+D\+L\+\_\+\+Rect \hyperlink{classview_ade4cd2992600a54f7cb1f9f20876cd75}{Message\+\_\+\+Point\+Value\+\_\+rect}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe para o view. 
+
+Esta é a classe para o view. Ela recebe todos os objetos que precisam ser mostrados em tela, e utiliza a biblioteca S\+D\+L2 para isso. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{view@{view}!view@{view}}
+\index{view@{view}!view@{view}}
+\subsubsection[{\texorpdfstring{view(std\+::vector$<$ tijolo $>$ \&t\+\_\+, barra $\ast$ba\+\_\+, bolinha $\ast$bo\+\_\+, pontos $\ast$po\+\_\+, vida $\ast$v\+\_\+)}{view(std::vector< tijolo > &t_, barra *ba_, bolinha *bo_, pontos *po_, vida *v_)}}]{\setlength{\rightskip}{0pt plus 5cm}view\+::view (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf tijolo} $>$ \&}]{t\+\_\+, }
+\item[{{\bf barra} $\ast$}]{ba\+\_\+, }
+\item[{{\bf bolinha} $\ast$}]{bo\+\_\+, }
+\item[{{\bf pontos} $\ast$}]{po\+\_\+, }
+\item[{{\bf vida} $\ast$}]{v\+\_\+}
+\end{DoxyParamCaption}
+)}\hypertarget{classview_ae68420027fc8352dc303107eb0305ea6}{}\label{classview_ae68420027fc8352dc303107eb0305ea6}
+
+
+Construtor do view. 
+
+Recebe um tudo o que for ser mostrado em tela
+
+
+\begin{DoxyParams}{Parameters}
+{\em t\+\_\+} & objeto tijolo \\
+\hline
+{\em ba\+\_\+} & objeto barra \\
+\hline
+{\em bo\+\_\+} & objeto bolinha \\
+\hline
+{\em po\+\_\+} & objeto pontos \\
+\hline
+{\em v\+\_\+} & objeto vida \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{view@{view}!ganhou@{ganhou}}
+\index{ganhou@{ganhou}!view@{view}}
+\subsubsection[{\texorpdfstring{ganhou()}{ganhou()}}]{\setlength{\rightskip}{0pt plus 5cm}void view\+::ganhou (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classview_abbf5bc2a4455e61eb8155f8256a5d870}{}\label{classview_abbf5bc2a4455e61eb8155f8256a5d870}
+
+
+Vitoria. 
+
+Sequencia de acoes para quando um jogador ganha \index{view@{view}!get\+Barra@{get\+Barra}}
+\index{get\+Barra@{get\+Barra}!view@{view}}
+\subsubsection[{\texorpdfstring{get\+Barra()}{getBarra()}}]{\setlength{\rightskip}{0pt plus 5cm}S\+D\+L\+\_\+\+Rect $\ast$ view\+::get\+Barra (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classview_a57b60e5da21e0484081d71c69ba4d03e}{}\label{classview_a57b60e5da21e0484081d71c69ba4d03e}
+\index{view@{view}!get\+Bloco@{get\+Bloco}}
+\index{get\+Bloco@{get\+Bloco}!view@{view}}
+\subsubsection[{\texorpdfstring{get\+Bloco()}{getBloco()}}]{\setlength{\rightskip}{0pt plus 5cm}S\+D\+L\+\_\+\+Rect $\ast$ view\+::get\+Bloco (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classview_a8b12f1f06de39d6e9f70f54a9281e05c}{}\label{classview_a8b12f1f06de39d6e9f70f54a9281e05c}
+\index{view@{view}!get\+Bolinha@{get\+Bolinha}}
+\index{get\+Bolinha@{get\+Bolinha}!view@{view}}
+\subsubsection[{\texorpdfstring{get\+Bolinha()}{getBolinha()}}]{\setlength{\rightskip}{0pt plus 5cm}S\+D\+L\+\_\+\+Rect $\ast$ view\+::get\+Bolinha (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classview_a8eb9d89d9b55a5d2ee529c96e0dc246a}{}\label{classview_a8eb9d89d9b55a5d2ee529c96e0dc246a}
+\index{view@{view}!get\+Heigth@{get\+Heigth}}
+\index{get\+Heigth@{get\+Heigth}!view@{view}}
+\subsubsection[{\texorpdfstring{get\+Heigth()}{getHeigth()}}]{\setlength{\rightskip}{0pt plus 5cm}int view\+::get\+Heigth (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classview_af2cf0c4a4d7cd84f0155ae1ad6a51d0a}{}\label{classview_af2cf0c4a4d7cd84f0155ae1ad6a51d0a}
+\index{view@{view}!get\+Ponto@{get\+Ponto}}
+\index{get\+Ponto@{get\+Ponto}!view@{view}}
+\subsubsection[{\texorpdfstring{get\+Ponto()}{getPonto()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pontos} $\ast$ view\+::get\+Ponto (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classview_a6cd53aa4df2642579992803a18f0bc8b}{}\label{classview_a6cd53aa4df2642579992803a18f0bc8b}
+\index{view@{view}!get\+State@{get\+State}}
+\index{get\+State@{get\+State}!view@{view}}
+\subsubsection[{\texorpdfstring{get\+State()}{getState()}}]{\setlength{\rightskip}{0pt plus 5cm}const Uint8 $\ast$ view\+::get\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classview_a5dd0f6c8f5d5f9123353986607c7fb77}{}\label{classview_a5dd0f6c8f5d5f9123353986607c7fb77}
+\index{view@{view}!get\+Target@{get\+Target}}
+\index{get\+Target@{get\+Target}!view@{view}}
+\subsubsection[{\texorpdfstring{get\+Target()}{getTarget()}}]{\setlength{\rightskip}{0pt plus 5cm}S\+D\+L\+\_\+\+Rect $\ast$ view\+::get\+Target (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classview_a4bf37f4171f4bb15c0e5b4ab8c2a9faa}{}\label{classview_a4bf37f4171f4bb15c0e5b4ab8c2a9faa}
+\index{view@{view}!get\+Tijolos@{get\+Tijolos}}
+\index{get\+Tijolos@{get\+Tijolos}!view@{view}}
+\subsubsection[{\texorpdfstring{get\+Tijolos()}{getTijolos()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf tijolo} $>$ \& view\+::get\+Tijolos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classview_a7546f44b45cd308c1c893e222701ec51}{}\label{classview_a7546f44b45cd308c1c893e222701ec51}
+\index{view@{view}!get\+Vida@{get\+Vida}}
+\index{get\+Vida@{get\+Vida}!view@{view}}
+\subsubsection[{\texorpdfstring{get\+Vida()}{getVida()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vida} $\ast$ view\+::get\+Vida (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classview_aa33f3e6bf59ada95ee9fd0bff5af22c0}{}\label{classview_aa33f3e6bf59ada95ee9fd0bff5af22c0}
+\index{view@{view}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!view@{view}}
+\subsubsection[{\texorpdfstring{get\+Width()}{getWidth()}}]{\setlength{\rightskip}{0pt plus 5cm}int view\+::get\+Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classview_aba1c490d357bb58f4aa9218cb96b42b0}{}\label{classview_aba1c490d357bb58f4aa9218cb96b42b0}
+\index{view@{view}!init@{init}}
+\index{init@{init}!view@{view}}
+\subsubsection[{\texorpdfstring{init()}{init()}}]{\setlength{\rightskip}{0pt plus 5cm}int view\+::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classview_a21d953772b41dd9c08c9ea9895e002d7}{}\label{classview_a21d953772b41dd9c08c9ea9895e002d7}
+
+
+Rotina de inicializacao. 
+
+Sequencia de acoes que inicializam a janela de visualizacao \index{view@{view}!perdeu@{perdeu}}
+\index{perdeu@{perdeu}!view@{view}}
+\subsubsection[{\texorpdfstring{perdeu()}{perdeu()}}]{\setlength{\rightskip}{0pt plus 5cm}void view\+::perdeu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classview_a1839c52cc61779be195b51e4fddcb659}{}\label{classview_a1839c52cc61779be195b51e4fddcb659}
+
+
+Derrota. 
+
+Sequencia de acoes para quando um jogador perde \index{view@{view}!quantidade\+Tijolos@{quantidade\+Tijolos}}
+\index{quantidade\+Tijolos@{quantidade\+Tijolos}!view@{view}}
+\subsubsection[{\texorpdfstring{quantidade\+Tijolos()}{quantidadeTijolos()}}]{\setlength{\rightskip}{0pt plus 5cm}int view\+::quantidade\+Tijolos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classview_a257d50065961954053fbf5402b2e2968}{}\label{classview_a257d50065961954053fbf5402b2e2968}
+\index{view@{view}!quit@{quit}}
+\index{quit@{quit}!view@{view}}
+\subsubsection[{\texorpdfstring{quit()}{quit()}}]{\setlength{\rightskip}{0pt plus 5cm}void view\+::quit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classview_ad8c046a243e52ee4f902abec6fbec9bb}{}\label{classview_ad8c046a243e52ee4f902abec6fbec9bb}
+
+
+Encerramento. 
+
+Metodo que encerra os objetos de visualizacao e fecha o programa \index{view@{view}!render@{render}}
+\index{render@{render}!view@{view}}
+\subsubsection[{\texorpdfstring{render()}{render()}}]{\setlength{\rightskip}{0pt plus 5cm}void view\+::render (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classview_a91e9b24e39a9846a7093949c9a19a118}{}\label{classview_a91e9b24e39a9846a7093949c9a19a118}
+
+
+Renderizacao. 
+
+Metodo que renderiza todos os objetos a cada ciclo definido \index{view@{view}!render\+\_\+text@{render\+\_\+text}}
+\index{render\+\_\+text@{render\+\_\+text}!view@{view}}
+\subsubsection[{\texorpdfstring{render\+\_\+text(\+S\+D\+L\+\_\+\+Renderer $\ast$renderer, int x, int y, const char $\ast$text, T\+T\+F\+\_\+\+Font $\ast$font, S\+D\+L\+\_\+\+Rect $\ast$rect, S\+D\+L\+\_\+\+Color $\ast$color)}{render_text(SDL_Renderer *renderer, int x, int y, const char *text, TTF_Font *font, SDL_Rect *rect, SDL_Color *color)}}]{\setlength{\rightskip}{0pt plus 5cm}void view\+::render\+\_\+text (
+\begin{DoxyParamCaption}
+\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{renderer, }
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{const char $\ast$}]{text, }
+\item[{T\+T\+F\+\_\+\+Font $\ast$}]{font, }
+\item[{S\+D\+L\+\_\+\+Rect $\ast$}]{rect, }
+\item[{S\+D\+L\+\_\+\+Color $\ast$}]{color}
+\end{DoxyParamCaption}
+)}\hypertarget{classview_afa73cff596b36c7009ee17383d039750}{}\label{classview_afa73cff596b36c7009ee17383d039750}
+
+
+Renderiza um texto. 
+
+Renderiza um texto em uma dada posicao, fonte e cor. Todos esses parametros sao passados na funcao
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & objeto S\+D\+L\+\_\+\+Renderer alocado previamente \\
+\hline
+{\em x} & posicao x do texto \\
+\hline
+{\em y} & posicao y do texto \\
+\hline
+{\em text} & vetor de chars que sera renderizado \\
+\hline
+{\em font} & objeto T\+T\+F\+\_\+\+Font com a fonte do texto a ser renderizado \\
+\hline
+{\em rect} & objeto S\+D\+L\+\_\+\+Rect alocado previamente \\
+\hline
+{\em color} & objeto S\+D\+L\+\_\+\+Color com a cor do texto a ser renderizado \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{view@{view}!ba@{ba}}
+\index{ba@{ba}!view@{view}}
+\subsubsection[{\texorpdfstring{ba}{ba}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf barra}$\ast$ view\+::ba\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classview_a0fd146110ca95e73f43c1dbda5a41294}{}\label{classview_a0fd146110ca95e73f43c1dbda5a41294}
+barra (alocado previamente) \index{view@{view}!bar@{bar}}
+\index{bar@{bar}!view@{view}}
+\subsubsection[{\texorpdfstring{bar}{bar}}]{\setlength{\rightskip}{0pt plus 5cm}S\+D\+L\+\_\+\+Rect view\+::bar\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classview_a9c94bf9b55b5c24c5a9289d82a969ebb}{}\label{classview_a9c94bf9b55b5c24c5a9289d82a969ebb}
+\index{view@{view}!bloco@{bloco}}
+\index{bloco@{bloco}!view@{view}}
+\subsubsection[{\texorpdfstring{bloco}{bloco}}]{\setlength{\rightskip}{0pt plus 5cm}S\+D\+L\+\_\+\+Rect view\+::bloco\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classview_ae22fb0558e890ff6ace089b603e2d6d8}{}\label{classview_ae22fb0558e890ff6ace089b603e2d6d8}
+\index{view@{view}!bo@{bo}}
+\index{bo@{bo}!view@{view}}
+\subsubsection[{\texorpdfstring{bo}{bo}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bolinha}$\ast$ view\+::bo\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classview_a9d44d190dd69b906bfeaac4559ee454e}{}\label{classview_a9d44d190dd69b906bfeaac4559ee454e}
+bolinha (alocado previamente) \index{view@{view}!bol@{bol}}
+\index{bol@{bol}!view@{view}}
+\subsubsection[{\texorpdfstring{bol}{bol}}]{\setlength{\rightskip}{0pt plus 5cm}S\+D\+L\+\_\+\+Rect view\+::bol\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classview_a72e360ef18105e2c565f17be3768027d}{}\label{classview_a72e360ef18105e2c565f17be3768027d}
+\index{view@{view}!Font@{Font}}
+\index{Font@{Font}!view@{view}}
+\subsubsection[{\texorpdfstring{Font}{Font}}]{\setlength{\rightskip}{0pt plus 5cm}T\+T\+F\+\_\+\+Font$\ast$ view\+::\+Font\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classview_ad17acebf948f7f42aa7cb8f88a38fe21}{}\label{classview_ad17acebf948f7f42aa7cb8f88a38fe21}
+\index{view@{view}!Message\+\_\+\+Fim\+\_\+rect@{Message\+\_\+\+Fim\+\_\+rect}}
+\index{Message\+\_\+\+Fim\+\_\+rect@{Message\+\_\+\+Fim\+\_\+rect}!view@{view}}
+\subsubsection[{\texorpdfstring{Message\+\_\+\+Fim\+\_\+rect}{Message_Fim_rect}}]{\setlength{\rightskip}{0pt plus 5cm}S\+D\+L\+\_\+\+Rect view\+::\+Message\+\_\+\+Fim\+\_\+rect\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classview_aba853e73ed61ec0078ff6e56bb57e702}{}\label{classview_aba853e73ed61ec0078ff6e56bb57e702}
+\index{view@{view}!Message\+\_\+\+Point\+Value\+\_\+rect@{Message\+\_\+\+Point\+Value\+\_\+rect}}
+\index{Message\+\_\+\+Point\+Value\+\_\+rect@{Message\+\_\+\+Point\+Value\+\_\+rect}!view@{view}}
+\subsubsection[{\texorpdfstring{Message\+\_\+\+Point\+Value\+\_\+rect}{Message_PointValue_rect}}]{\setlength{\rightskip}{0pt plus 5cm}S\+D\+L\+\_\+\+Rect view\+::\+Message\+\_\+\+Point\+Value\+\_\+rect\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classview_ade4cd2992600a54f7cb1f9f20876cd75}{}\label{classview_ade4cd2992600a54f7cb1f9f20876cd75}
+\index{view@{view}!Message\+\_\+\+Pontos\+\_\+rect@{Message\+\_\+\+Pontos\+\_\+rect}}
+\index{Message\+\_\+\+Pontos\+\_\+rect@{Message\+\_\+\+Pontos\+\_\+rect}!view@{view}}
+\subsubsection[{\texorpdfstring{Message\+\_\+\+Pontos\+\_\+rect}{Message_Pontos_rect}}]{\setlength{\rightskip}{0pt plus 5cm}S\+D\+L\+\_\+\+Rect view\+::\+Message\+\_\+\+Pontos\+\_\+rect\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classview_ada3fc542a5e8b9d9e002665b37af781b}{}\label{classview_ada3fc542a5e8b9d9e002665b37af781b}
+\index{view@{view}!Message\+\_\+\+Vida\+\_\+rect@{Message\+\_\+\+Vida\+\_\+rect}}
+\index{Message\+\_\+\+Vida\+\_\+rect@{Message\+\_\+\+Vida\+\_\+rect}!view@{view}}
+\subsubsection[{\texorpdfstring{Message\+\_\+\+Vida\+\_\+rect}{Message_Vida_rect}}]{\setlength{\rightskip}{0pt plus 5cm}S\+D\+L\+\_\+\+Rect view\+::\+Message\+\_\+\+Vida\+\_\+rect\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classview_af1b48d8a8f7f9e16800f9d842717ed2c}{}\label{classview_af1b48d8a8f7f9e16800f9d842717ed2c}
+\index{view@{view}!Message\+\_\+\+Vida\+Value\+\_\+rect@{Message\+\_\+\+Vida\+Value\+\_\+rect}}
+\index{Message\+\_\+\+Vida\+Value\+\_\+rect@{Message\+\_\+\+Vida\+Value\+\_\+rect}!view@{view}}
+\subsubsection[{\texorpdfstring{Message\+\_\+\+Vida\+Value\+\_\+rect}{Message_VidaValue_rect}}]{\setlength{\rightskip}{0pt plus 5cm}S\+D\+L\+\_\+\+Rect view\+::\+Message\+\_\+\+Vida\+Value\+\_\+rect\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classview_a1a7059536cb8e091ff7d4a4f2526bcce}{}\label{classview_a1a7059536cb8e091ff7d4a4f2526bcce}
+\index{view@{view}!po@{po}}
+\index{po@{po}!view@{view}}
+\subsubsection[{\texorpdfstring{po}{po}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pontos}$\ast$ view\+::po\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classview_a8dc345a9799a79220ecca66c4cd3e8ff}{}\label{classview_a8dc345a9799a79220ecca66c4cd3e8ff}
+pontos (alocado previamente) \index{view@{view}!renderer@{renderer}}
+\index{renderer@{renderer}!view@{view}}
+\subsubsection[{\texorpdfstring{renderer}{renderer}}]{\setlength{\rightskip}{0pt plus 5cm}S\+D\+L\+\_\+\+Renderer$\ast$ view\+::renderer\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classview_a8d7b3ec0a0641d24cdc3b04949f5df45}{}\label{classview_a8d7b3ec0a0641d24cdc3b04949f5df45}
+\index{view@{view}!state@{state}}
+\index{state@{state}!view@{view}}
+\subsubsection[{\texorpdfstring{state}{state}}]{\setlength{\rightskip}{0pt plus 5cm}const Uint8$\ast$ view\+::state\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classview_a6fd7fc350d9ad94dfd47e324b107e8ce}{}\label{classview_a6fd7fc350d9ad94dfd47e324b107e8ce}
+\index{view@{view}!t@{t}}
+\index{t@{t}!view@{view}}
+\subsubsection[{\texorpdfstring{t}{t}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf tijolo}$>$\& view\+::t\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classview_af57a3852a171948382275c534ede7987}{}\label{classview_af57a3852a171948382275c534ede7987}
+tijolo (alocado previamente) \index{view@{view}!target@{target}}
+\index{target@{target}!view@{view}}
+\subsubsection[{\texorpdfstring{target}{target}}]{\setlength{\rightskip}{0pt plus 5cm}S\+D\+L\+\_\+\+Rect view\+::target\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classview_a49a628eedba666db008f8c07b96e3a51}{}\label{classview_a49a628eedba666db008f8c07b96e3a51}
+\index{view@{view}!v@{v}}
+\index{v@{v}!view@{view}}
+\subsubsection[{\texorpdfstring{v}{v}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vida}$\ast$ view\+::v\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classview_ae0f8e281f5f7937d84f435437ce03546}{}\label{classview_ae0f8e281f5f7937d84f435437ce03546}
+vida (alocado previamente) \index{view@{view}!window@{window}}
+\index{window@{window}!view@{view}}
+\subsubsection[{\texorpdfstring{window}{window}}]{\setlength{\rightskip}{0pt plus 5cm}S\+D\+L\+\_\+\+Window$\ast$ view\+::window\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classview_ade09c2dbabd1bf59ffaf625156c514f0}{}\label{classview_ade09c2dbabd1bf59ffaf625156c514f0}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{view_8h}{view.\+h}\item 
+src/view/\hyperlink{view_8cpp}{view.\+cpp}\end{DoxyCompactItemize}
