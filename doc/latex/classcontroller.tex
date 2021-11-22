@@ -22,32 +22,34 @@ Collaboration diagram for controller\+:
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classcontroller_a5179368251d444a67542bf506ffa6b9c}{controller} (\hyperlink{classview}{view} \&v\+\_\+, \hyperlink{classbarra}{barra} $\ast$ba\+\_\+, \hyperlink{classbolinha}{bolinha} $\ast$bo\+\_\+)
+\hyperlink{classcontroller_a245fd98c0a70dd1404edda55ec889998}{controller} (\hyperlink{classview}{view} \&v\+\_\+, \hyperlink{classbolinha}{bolinha} $\ast$bo\+\_\+, std\+::vector$<$ \hyperlink{classteclado}{teclado} $>$ \&keyb\+\_\+)
 \begin{DoxyCompactList}\small\item\em Construtor do controller. \end{DoxyCompactList}\item 
 void \hyperlink{classcontroller_ac0373785a91924ce3d480c1c7dedbd99}{update} ()
 \begin{DoxyCompactList}\small\item\em Metodo de acao. \end{DoxyCompactList}\item 
-bool \hyperlink{classcontroller_aaaef2bd34f643183bcd6fad64bea1005}{colisao\+Barra} ()
+void \hyperlink{classcontroller_a419ed502b0ed9a58c409e228edc0d0f4}{update\+Movimento} (\hyperlink{classbarra}{barra} $\ast$ba, \hyperlink{classteclado}{teclado} \hyperlink{classcontroller_a00fc5e42acc7af64df818c8f0dfb4a90}{keyb}, bool space\+\_\+on)
+\begin{DoxyCompactList}\small\item\em Movimento barrinha. \end{DoxyCompactList}\item 
+bool \hyperlink{classcontroller_a498f1975d59eda5db0a9fe02bd776255}{colisao\+Barra} (\hyperlink{classbarra}{barra} $\ast$\hyperlink{classbarra}{barra})
 \begin{DoxyCompactList}\small\item\em Colisao barra/bolinha. \end{DoxyCompactList}\item 
 bool \hyperlink{classcontroller_ac227dd1b72111d1c6da3362d60aa25d6}{colisao\+Bloco} ()
 \begin{DoxyCompactList}\small\item\em Colisao blocos/bolinha. \end{DoxyCompactList}\item 
-void \hyperlink{classcontroller_a03872ff488ab704038e14226a8e031ea}{start} ()
+void \hyperlink{classcontroller_a1f0577d4c55a9ea02c5d87218773e521}{start} (int user)
 \begin{DoxyCompactList}\small\item\em Inicia o jogo. \end{DoxyCompactList}\item 
-bool \hyperlink{classcontroller_a993c5fe7272f0435b4018f4b5d1fc1cb}{finish} ()
-\begin{DoxyCompactList}\small\item\em Finaliza o jogo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+bool \hyperlink{classcontroller_a632afa912bdc2e01eb44849e67e85f1c}{finish} (int user)
+\begin{DoxyCompactList}\small\item\em Finaliza o jogo. \end{DoxyCompactList}\item 
+bool \hyperlink{classcontroller_a668a92caf07126d9924e90bf1567f603}{save} (int user)
+\begin{DoxyCompactList}\small\item\em Salva o jogo. \end{DoxyCompactList}\item 
+bool \hyperlink{classcontroller_ae3b749cea3b4e45e1d078a0389ab95d4}{load} (int user)
+\begin{DoxyCompactList}\small\item\em Carrega o jogo salvo. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classview}{view} \& \hyperlink{classcontroller_a6ff845413a797ed4beff34d3cb6b7774}{v}
 \item 
-\hyperlink{classbarra}{barra} $\ast$ \hyperlink{classcontroller_af46499f5a9ef1afc0c95d899fb128aa1}{ba}
-\item 
 \hyperlink{classbolinha}{bolinha} $\ast$ \hyperlink{classcontroller_ae3e29aaa568c3d374b65416fd49649c5}{bo}
 \item 
-int \hyperlink{classcontroller_ab7bee2a38038001992ab877caccc1a47}{dirX} = 5
+std\+::vector$<$ \hyperlink{classteclado}{teclado} $>$ \& \hyperlink{classcontroller_a00fc5e42acc7af64df818c8f0dfb4a90}{keyb}
 \item 
-int \hyperlink{classcontroller_a136888a5f98296f5266a01330e2881e7}{dirY} = 5
-\item 
-int \hyperlink{classcontroller_ae1229353be5404b8decda1e8775292c4}{veloc} = 10
+int \hyperlink{classcontroller_ae1229353be5404b8decda1e8775292c4}{veloc} = 20
 \end{DoxyCompactItemize}
 
 
@@ -59,13 +61,13 @@ Esta é a classe para o controller. Ela faz o link entre os controles direcionai
 \subsection{Constructor \& Destructor Documentation}
 \index{controller@{controller}!controller@{controller}}
 \index{controller@{controller}!controller@{controller}}
-\subsubsection[{\texorpdfstring{controller(view \&v\+\_\+, barra $\ast$ba\+\_\+, bolinha $\ast$bo\+\_\+)}{controller(view &v_, barra *ba_, bolinha *bo_)}}]{\setlength{\rightskip}{0pt plus 5cm}controller\+::controller (
+\subsubsection[{\texorpdfstring{controller(view \&v\+\_\+, bolinha $\ast$bo\+\_\+, std\+::vector$<$ teclado $>$ \&keyb\+\_\+)}{controller(view &v_, bolinha *bo_, std::vector< teclado > &keyb_)}}]{\setlength{\rightskip}{0pt plus 5cm}controller\+::controller (
 \begin{DoxyParamCaption}
 \item[{{\bf view} \&}]{v\+\_\+, }
-\item[{{\bf barra} $\ast$}]{ba\+\_\+, }
-\item[{{\bf bolinha} $\ast$}]{bo\+\_\+}
+\item[{{\bf bolinha} $\ast$}]{bo\+\_\+, }
+\item[{std\+::vector$<$ {\bf teclado} $>$ \&}]{keyb\+\_\+}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classcontroller_a5179368251d444a67542bf506ffa6b9c}{}\label{classcontroller_a5179368251d444a67542bf506ffa6b9c}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classcontroller_a245fd98c0a70dd1404edda55ec889998}{}\label{classcontroller_a245fd98c0a70dd1404edda55ec889998}
 
 
 Construtor do controller. 
@@ -76,9 +78,9 @@ Recebe um view, uma barra e uma bolinha
 \begin{DoxyParams}{Parameters}
 {\em v\+\_\+} & um objeto view onde os objetos vao ser mostrados \\
 \hline
-{\em ba\+\_\+} & objeto barra \\
-\hline
 {\em bo\+\_\+} & objeto bolinha \\
+\hline
+{\em keyb\+\_\+} & objeto teclado \\
 \hline
 \end{DoxyParams}
 
@@ -86,11 +88,11 @@ Recebe um view, uma barra e uma bolinha
 \subsection{Member Function Documentation}
 \index{controller@{controller}!colisao\+Barra@{colisao\+Barra}}
 \index{colisao\+Barra@{colisao\+Barra}!controller@{controller}}
-\subsubsection[{\texorpdfstring{colisao\+Barra()}{colisaoBarra()}}]{\setlength{\rightskip}{0pt plus 5cm}bool controller\+::colisao\+Barra (
+\subsubsection[{\texorpdfstring{colisao\+Barra(barra $\ast$barra)}{colisaoBarra(barra *barra)}}]{\setlength{\rightskip}{0pt plus 5cm}bool controller\+::colisao\+Barra (
 \begin{DoxyParamCaption}
-{}
+\item[{{\bf barra} $\ast$}]{barra}
 \end{DoxyParamCaption}
-)}\hypertarget{classcontroller_aaaef2bd34f643183bcd6fad64bea1005}{}\label{classcontroller_aaaef2bd34f643183bcd6fad64bea1005}
+)}\hypertarget{classcontroller_a498f1975d59eda5db0a9fe02bd776255}{}\label{classcontroller_a498f1975d59eda5db0a9fe02bd776255}
 
 
 Colisao barra/bolinha. 
@@ -118,22 +120,44 @@ retorna true caso haja colisao
 \end{DoxyReturn}
 \index{controller@{controller}!finish@{finish}}
 \index{finish@{finish}!controller@{controller}}
-\subsubsection[{\texorpdfstring{finish()}{finish()}}]{\setlength{\rightskip}{0pt plus 5cm}bool controller\+::finish (
+\subsubsection[{\texorpdfstring{finish(int user)}{finish(int user)}}]{\setlength{\rightskip}{0pt plus 5cm}bool controller\+::finish (
 \begin{DoxyParamCaption}
-{}
+\item[{int}]{user}
 \end{DoxyParamCaption}
-)}\hypertarget{classcontroller_a993c5fe7272f0435b4018f4b5d1fc1cb}{}\label{classcontroller_a993c5fe7272f0435b4018f4b5d1fc1cb}
+)}\hypertarget{classcontroller_a632afa912bdc2e01eb44849e67e85f1c}{}\label{classcontroller_a632afa912bdc2e01eb44849e67e85f1c}
 
 
 Finaliza o jogo. 
 
-checa se uma tecla previamente estabelecida foi pressionada, encerrando a execução e fechando o programa (Tecla Esc) \index{controller@{controller}!start@{start}}
-\index{start@{start}!controller@{controller}}
-\subsubsection[{\texorpdfstring{start()}{start()}}]{\setlength{\rightskip}{0pt plus 5cm}void controller\+::start (
+checa se uma tecla previamente estabelecida foi pressionada, encerrando a execução e fechando o programa (Tecla Esc) \index{controller@{controller}!load@{load}}
+\index{load@{load}!controller@{controller}}
+\subsubsection[{\texorpdfstring{load(int user)}{load(int user)}}]{\setlength{\rightskip}{0pt plus 5cm}bool controller\+::load (
 \begin{DoxyParamCaption}
-{}
+\item[{int}]{user}
 \end{DoxyParamCaption}
-)}\hypertarget{classcontroller_a03872ff488ab704038e14226a8e031ea}{}\label{classcontroller_a03872ff488ab704038e14226a8e031ea}
+)}\hypertarget{classcontroller_ae3b749cea3b4e45e1d078a0389ab95d4}{}\label{classcontroller_ae3b749cea3b4e45e1d078a0389ab95d4}
+
+
+Carrega o jogo salvo. 
+
+\index{controller@{controller}!save@{save}}
+\index{save@{save}!controller@{controller}}
+\subsubsection[{\texorpdfstring{save(int user)}{save(int user)}}]{\setlength{\rightskip}{0pt plus 5cm}bool controller\+::save (
+\begin{DoxyParamCaption}
+\item[{int}]{user}
+\end{DoxyParamCaption}
+)}\hypertarget{classcontroller_a668a92caf07126d9924e90bf1567f603}{}\label{classcontroller_a668a92caf07126d9924e90bf1567f603}
+
+
+Salva o jogo. 
+
+\index{controller@{controller}!start@{start}}
+\index{start@{start}!controller@{controller}}
+\subsubsection[{\texorpdfstring{start(int user)}{start(int user)}}]{\setlength{\rightskip}{0pt plus 5cm}void controller\+::start (
+\begin{DoxyParamCaption}
+\item[{int}]{user}
+\end{DoxyParamCaption}
+)}\hypertarget{classcontroller_a1f0577d4c55a9ea02c5d87218773e521}{}\label{classcontroller_a1f0577d4c55a9ea02c5d87218773e521}
 
 
 Inicia o jogo. 
@@ -149,28 +173,35 @@ checa se uma tecla previamente estabelecida foi pressionada, iniciando o movimen
 
 Metodo de acao. 
 
-serie de eventos que acontecem a cada ciclo de jogo 
+serie de eventos que acontecem a cada ciclo de jogo \index{controller@{controller}!update\+Movimento@{update\+Movimento}}
+\index{update\+Movimento@{update\+Movimento}!controller@{controller}}
+\subsubsection[{\texorpdfstring{update\+Movimento(barra $\ast$ba, teclado keyb, bool space\+\_\+on)}{updateMovimento(barra *ba, teclado keyb, bool space_on)}}]{\setlength{\rightskip}{0pt plus 5cm}void controller\+::update\+Movimento (
+\begin{DoxyParamCaption}
+\item[{{\bf barra} $\ast$}]{ba, }
+\item[{{\bf teclado}}]{keyb, }
+\item[{bool}]{space\+\_\+on}
+\end{DoxyParamCaption}
+)}\hypertarget{classcontroller_a419ed502b0ed9a58c409e228edc0d0f4}{}\label{classcontroller_a419ed502b0ed9a58c409e228edc0d0f4}
+
+
+Movimento barrinha. 
+
+Recebe parametros de teclado e atualiza o movimento da barrinha 
 
 \subsection{Member Data Documentation}
-\index{controller@{controller}!ba@{ba}}
-\index{ba@{ba}!controller@{controller}}
-\subsubsection[{\texorpdfstring{ba}{ba}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf barra}$\ast$ controller\+::ba\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classcontroller_af46499f5a9ef1afc0c95d899fb128aa1}{}\label{classcontroller_af46499f5a9ef1afc0c95d899fb128aa1}
-barra (alocada previamente \index{controller@{controller}!bo@{bo}}
+\index{controller@{controller}!bo@{bo}}
 \index{bo@{bo}!controller@{controller}}
 \subsubsection[{\texorpdfstring{bo}{bo}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bolinha}$\ast$ controller\+::bo\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classcontroller_ae3e29aaa568c3d374b65416fd49649c5}{}\label{classcontroller_ae3e29aaa568c3d374b65416fd49649c5}
-bolinha (alocada previamente) \index{controller@{controller}!dirX@{dirX}}
-\index{dirX@{dirX}!controller@{controller}}
-\subsubsection[{\texorpdfstring{dirX}{dirX}}]{\setlength{\rightskip}{0pt plus 5cm}int controller\+::dirX = 5\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classcontroller_ab7bee2a38038001992ab877caccc1a47}{}\label{classcontroller_ab7bee2a38038001992ab877caccc1a47}
-direcao de movimentacao da bolinha em X \index{controller@{controller}!dirY@{dirY}}
-\index{dirY@{dirY}!controller@{controller}}
-\subsubsection[{\texorpdfstring{dirY}{dirY}}]{\setlength{\rightskip}{0pt plus 5cm}int controller\+::dirY = 5\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classcontroller_a136888a5f98296f5266a01330e2881e7}{}\label{classcontroller_a136888a5f98296f5266a01330e2881e7}
-direcao de movimentacao da bolinha em Y \index{controller@{controller}!v@{v}}
+bolinha (alocada previamente) \index{controller@{controller}!keyb@{keyb}}
+\index{keyb@{keyb}!controller@{controller}}
+\subsubsection[{\texorpdfstring{keyb}{keyb}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf teclado}$>$\& controller\+::keyb\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classcontroller_a00fc5e42acc7af64df818c8f0dfb4a90}{}\label{classcontroller_a00fc5e42acc7af64df818c8f0dfb4a90}
+tecla pressionada no cliente \index{controller@{controller}!v@{v}}
 \index{v@{v}!controller@{controller}}
 \subsubsection[{\texorpdfstring{v}{v}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf view}\& controller\+::v\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classcontroller_a6ff845413a797ed4beff34d3cb6b7774}{}\label{classcontroller_a6ff845413a797ed4beff34d3cb6b7774}
 view (alocado previamente) \index{controller@{controller}!veloc@{veloc}}
 \index{veloc@{veloc}!controller@{controller}}
-\subsubsection[{\texorpdfstring{veloc}{veloc}}]{\setlength{\rightskip}{0pt plus 5cm}int controller\+::veloc = 10\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classcontroller_ae1229353be5404b8decda1e8775292c4}{}\label{classcontroller_ae1229353be5404b8decda1e8775292c4}
-velocidade de movimentacao da bolinha 
+\subsubsection[{\texorpdfstring{veloc}{veloc}}]{\setlength{\rightskip}{0pt plus 5cm}int controller\+::veloc = 20\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classcontroller_ae1229353be5404b8decda1e8775292c4}{}\label{classcontroller_ae1229353be5404b8decda1e8775292c4}
+velocidade de movimentacao da barrinha 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

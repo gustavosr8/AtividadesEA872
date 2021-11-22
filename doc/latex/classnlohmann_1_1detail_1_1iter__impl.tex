@@ -1,0 +1,653 @@
+\hypertarget{classnlohmann_1_1detail_1_1iter__impl}{}\section{nlohmann\+:\+:detail\+:\+:iter\+\_\+impl$<$ Basic\+Json\+Type $>$ Class Template Reference}
+\label{classnlohmann_1_1detail_1_1iter__impl}\index{nlohmann\+::detail\+::iter\+\_\+impl$<$ Basic\+Json\+Type $>$@{nlohmann\+::detail\+::iter\+\_\+impl$<$ Basic\+Json\+Type $>$}}
+
+
+a template for a bidirectional iterator for the \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} class This class implements a both iterators (iterator and const\+\_\+iterator) for the \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} class.  
+
+
+
+
+{\ttfamily \#include $<$json.\+hpp$>$}
+
+
+
+Collaboration diagram for nlohmann\+:\+:detail\+:\+:iter\+\_\+impl$<$ Basic\+Json\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classnlohmann_1_1detail_1_1iter__impl__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{classnlohmann_1_1detail_1_1iter__impl_ad9e091f5c70b34b5b1abc1ab15fd9106}{iterator\+\_\+category} = std\+::bidirectional\+\_\+iterator\+\_\+tag
+\item 
+using \hyperlink{classnlohmann_1_1detail_1_1iter__impl_ab35586a44f2222272c5346baa3013f67}{value\+\_\+type} = typename Basic\+Json\+Type\+::value\+\_\+type
+\begin{DoxyCompactList}\small\item\em the type of the values when the iterator is dereferenced \end{DoxyCompactList}\item 
+using \hyperlink{classnlohmann_1_1detail_1_1iter__impl_a2f7ea9f7022850809c60fc3263775840}{difference\+\_\+type} = typename Basic\+Json\+Type\+::difference\+\_\+type
+\begin{DoxyCompactList}\small\item\em a type to represent differences between iterators \end{DoxyCompactList}\item 
+using \hyperlink{classnlohmann_1_1detail_1_1iter__impl_a69e52f890ce8c556fd68ce109e24b360}{pointer} = typename std\+::conditional$<$ std\+::is\+\_\+const$<$ \hyperlink{classnlohmann_1_1detail_1_1iter__impl_abf18f18793f84b0222aebb5a2a87da7a}{Basic\+Json\+Type} $>$\+::\hyperlink{classnlohmann_1_1detail_1_1iter__impl_adc4048d25e057ce8ec0b912642c24731}{value}, typename Basic\+Json\+Type\+::const\+\_\+pointer, typename Basic\+Json\+Type\+::pointer $>$\+::type
+\begin{DoxyCompactList}\small\item\em defines a pointer to the type iterated over (value\+\_\+type) \end{DoxyCompactList}\item 
+using \hyperlink{classnlohmann_1_1detail_1_1iter__impl_a5be8001be099c6b82310f4d387b953ce}{reference} = typename std\+::conditional$<$ std\+::is\+\_\+const$<$ \hyperlink{classnlohmann_1_1detail_1_1iter__impl_abf18f18793f84b0222aebb5a2a87da7a}{Basic\+Json\+Type} $>$\+::\hyperlink{classnlohmann_1_1detail_1_1iter__impl_adc4048d25e057ce8ec0b912642c24731}{value}, typename Basic\+Json\+Type\+::const\+\_\+reference, typename Basic\+Json\+Type\+::reference $>$\+::type
+\begin{DoxyCompactList}\small\item\em defines a reference to the type iterated over (value\+\_\+type) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classnlohmann_1_1detail_1_1iter__impl_a19aa457f9c4af1b7e3af59839132cc5c}{iter\+\_\+impl} ()=default
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+\hyperlink{classnlohmann_1_1detail_1_1iter__impl_a88a00484ac201c52fc5f613d88a2918b}{iter\+\_\+impl} (\hyperlink{classnlohmann_1_1detail_1_1iter__impl_a69e52f890ce8c556fd68ce109e24b360}{pointer} \hyperlink{namespacenlohmann_1_1detail_a1ed8fc6239da25abcaf681d30ace4985aa8cfde6331bd59eb2ac96f8911c4b666}{object}) noexcept
+\begin{DoxyCompactList}\small\item\em constructor for a given J\+S\+ON instance \end{DoxyCompactList}\item 
+\hyperlink{classnlohmann_1_1detail_1_1iter__impl_a71f84fb6e009619f12972bcf9002b8cd}{iter\+\_\+impl} (const \hyperlink{classnlohmann_1_1detail_1_1iter__impl}{iter\+\_\+impl}$<$ const \hyperlink{classnlohmann_1_1detail_1_1iter__impl_abf18f18793f84b0222aebb5a2a87da7a}{Basic\+Json\+Type} $>$ \&other) noexcept
+\begin{DoxyCompactList}\small\item\em const copy constructor \end{DoxyCompactList}\item 
+\hyperlink{classnlohmann_1_1detail_1_1iter__impl}{iter\+\_\+impl} \& \hyperlink{classnlohmann_1_1detail_1_1iter__impl_a9a5cd7864a8f848ef107d3f5a330f5e7}{operator=} (const \hyperlink{classnlohmann_1_1detail_1_1iter__impl}{iter\+\_\+impl}$<$ const \hyperlink{classnlohmann_1_1detail_1_1iter__impl_abf18f18793f84b0222aebb5a2a87da7a}{Basic\+Json\+Type} $>$ \&other) noexcept
+\begin{DoxyCompactList}\small\item\em converting assignment \end{DoxyCompactList}\item 
+\hyperlink{classnlohmann_1_1detail_1_1iter__impl_a867f7eb55091be31b013adb3e46816d3}{iter\+\_\+impl} (const \hyperlink{classnlohmann_1_1detail_1_1iter__impl}{iter\+\_\+impl}$<$ typename std\+::remove\+\_\+const$<$ \hyperlink{classnlohmann_1_1detail_1_1iter__impl_abf18f18793f84b0222aebb5a2a87da7a}{Basic\+Json\+Type} $>$\+::type $>$ \&other) noexcept
+\begin{DoxyCompactList}\small\item\em converting constructor \end{DoxyCompactList}\item 
+\hyperlink{classnlohmann_1_1detail_1_1iter__impl}{iter\+\_\+impl} \& \hyperlink{classnlohmann_1_1detail_1_1iter__impl_a7159ed1cfe7c423a2baef8bea0c94509}{operator=} (const \hyperlink{classnlohmann_1_1detail_1_1iter__impl}{iter\+\_\+impl}$<$ typename std\+::remove\+\_\+const$<$ \hyperlink{classnlohmann_1_1detail_1_1iter__impl_abf18f18793f84b0222aebb5a2a87da7a}{Basic\+Json\+Type} $>$\+::type $>$ \&other) noexcept
+\begin{DoxyCompactList}\small\item\em converting assignment \end{DoxyCompactList}\item 
+\hyperlink{classnlohmann_1_1detail_1_1iter__impl_abc2f80067020fae59d7fbccf39f1547a}{switch} (m\+\_\+object-\/$>$m\+\_\+type)
+\item 
+\hyperlink{namespacenlohmann_1_1detail_a59fca69799f6b9e366710cb9043aa77d}{void} \hyperlink{classnlohmann_1_1detail_1_1iter__impl_a23e50ad4c13aa62d9ac7f60a123823ee}{set\+\_\+end} () noexcept
+\begin{DoxyCompactList}\small\item\em set the iterator past the last value \end{DoxyCompactList}\item 
+\hyperlink{classnlohmann_1_1detail_1_1iter__impl_a5be8001be099c6b82310f4d387b953ce}{reference} \hyperlink{classnlohmann_1_1detail_1_1iter__impl_adafa65198cad0cc7295d21cfa7678e6e}{operator$\ast$} () const 
+\begin{DoxyCompactList}\small\item\em return a reference to the value pointed to by the iterator \end{DoxyCompactList}\item 
+\hyperlink{classnlohmann_1_1detail_1_1iter__impl_a69e52f890ce8c556fd68ce109e24b360}{pointer} \hyperlink{classnlohmann_1_1detail_1_1iter__impl_a28a0c92903edd8f86825c8c7784b0913}{operator-\/$>$} () const 
+\begin{DoxyCompactList}\small\item\em dereference the iterator \end{DoxyCompactList}\item 
+\hyperlink{classnlohmann_1_1detail_1_1iter__impl}{iter\+\_\+impl} const \hyperlink{classnlohmann_1_1detail_1_1iter__impl_a7d2397773b2dce42f30f0375a6a1d850}{operator++} (int)
+\begin{DoxyCompactList}\small\item\em post-\/increment (it++) \end{DoxyCompactList}\item 
+\hyperlink{classnlohmann_1_1detail_1_1iter__impl}{iter\+\_\+impl} \& \hyperlink{classnlohmann_1_1detail_1_1iter__impl_abdfe2a7f464400a7ab572782d14b922f}{operator++} ()
+\begin{DoxyCompactList}\small\item\em pre-\/increment (++it) \end{DoxyCompactList}\item 
+\hyperlink{classnlohmann_1_1detail_1_1iter__impl}{iter\+\_\+impl} const \hyperlink{classnlohmann_1_1detail_1_1iter__impl_a1fc43e764467b8ea4a4cdd01f629d757}{operator-\/-\/} (int)
+\begin{DoxyCompactList}\small\item\em post-\/decrement (it--) \end{DoxyCompactList}\item 
+\hyperlink{classnlohmann_1_1detail_1_1iter__impl}{iter\+\_\+impl} \& \hyperlink{classnlohmann_1_1detail_1_1iter__impl_a84e689fb581d651d130039f7cb81494a}{operator-\/-\/} ()
+\begin{DoxyCompactList}\small\item\em pre-\/decrement (--it) \end{DoxyCompactList}\item 
+bool \hyperlink{classnlohmann_1_1detail_1_1iter__impl_abe91c77d1be747fadcbfaf6f685e3ee7}{operator==} (const \hyperlink{classnlohmann_1_1detail_1_1iter__impl}{iter\+\_\+impl} \&other) const 
+\begin{DoxyCompactList}\small\item\em comparison\+: equal \end{DoxyCompactList}\item 
+bool \hyperlink{classnlohmann_1_1detail_1_1iter__impl_a66af27bbbf9743bc000264a0f89c5d0d}{operator!=} (const \hyperlink{classnlohmann_1_1detail_1_1iter__impl}{iter\+\_\+impl} \&other) const 
+\begin{DoxyCompactList}\small\item\em comparison\+: not equal \end{DoxyCompactList}\item 
+bool \hyperlink{classnlohmann_1_1detail_1_1iter__impl_a3a5123a4cfe72a9d674c9ff65c4ec08c}{operator$<$} (const \hyperlink{classnlohmann_1_1detail_1_1iter__impl}{iter\+\_\+impl} \&other) const 
+\begin{DoxyCompactList}\small\item\em comparison\+: smaller \end{DoxyCompactList}\item 
+bool \hyperlink{classnlohmann_1_1detail_1_1iter__impl_aa90b4d1da290b5073778e295dc2985f3}{operator$<$=} (const \hyperlink{classnlohmann_1_1detail_1_1iter__impl}{iter\+\_\+impl} \&other) const 
+\begin{DoxyCompactList}\small\item\em comparison\+: less than or equal \end{DoxyCompactList}\item 
+bool \hyperlink{classnlohmann_1_1detail_1_1iter__impl_afe8894bea0a0b616d9d5975ca04e8b39}{operator$>$} (const \hyperlink{classnlohmann_1_1detail_1_1iter__impl}{iter\+\_\+impl} \&other) const 
+\begin{DoxyCompactList}\small\item\em comparison\+: greater than \end{DoxyCompactList}\item 
+bool \hyperlink{classnlohmann_1_1detail_1_1iter__impl_ae87ea99999c169722b388c69871295e3}{operator$>$=} (const \hyperlink{classnlohmann_1_1detail_1_1iter__impl}{iter\+\_\+impl} \&other) const 
+\begin{DoxyCompactList}\small\item\em comparison\+: greater than or equal \end{DoxyCompactList}\item 
+\hyperlink{classnlohmann_1_1detail_1_1iter__impl}{iter\+\_\+impl} \& \hyperlink{classnlohmann_1_1detail_1_1iter__impl_a3eef94f9d167046e7f773aeb6b78090c}{operator+=} (\hyperlink{classnlohmann_1_1detail_1_1iter__impl_a2f7ea9f7022850809c60fc3263775840}{difference\+\_\+type} i)
+\begin{DoxyCompactList}\small\item\em add to iterator \end{DoxyCompactList}\item 
+\hyperlink{classnlohmann_1_1detail_1_1iter__impl}{iter\+\_\+impl} \& \hyperlink{classnlohmann_1_1detail_1_1iter__impl_abcc9d51bc52f2e8483bbe4018f05e978}{operator-\/=} (\hyperlink{classnlohmann_1_1detail_1_1iter__impl_a2f7ea9f7022850809c60fc3263775840}{difference\+\_\+type} i)
+\begin{DoxyCompactList}\small\item\em subtract from iterator \end{DoxyCompactList}\item 
+\hyperlink{classnlohmann_1_1detail_1_1iter__impl}{iter\+\_\+impl} \hyperlink{classnlohmann_1_1detail_1_1iter__impl_afc5629527a820583cd009c411e30ac64}{operator+} (\hyperlink{classnlohmann_1_1detail_1_1iter__impl_a2f7ea9f7022850809c60fc3263775840}{difference\+\_\+type} i) const 
+\begin{DoxyCompactList}\small\item\em add to iterator \end{DoxyCompactList}\item 
+\hyperlink{classnlohmann_1_1detail_1_1iter__impl}{iter\+\_\+impl} \hyperlink{classnlohmann_1_1detail_1_1iter__impl_aa719903e6d509db51744cfca9c95fd8e}{operator-\/} (\hyperlink{classnlohmann_1_1detail_1_1iter__impl_a2f7ea9f7022850809c60fc3263775840}{difference\+\_\+type} i) const 
+\begin{DoxyCompactList}\small\item\em subtract from iterator \end{DoxyCompactList}\item 
+\hyperlink{classnlohmann_1_1detail_1_1iter__impl_a2f7ea9f7022850809c60fc3263775840}{difference\+\_\+type} \hyperlink{classnlohmann_1_1detail_1_1iter__impl_a327f3f6a97c6d0cdfc9fe232949d916b}{operator-\/} (const \hyperlink{classnlohmann_1_1detail_1_1iter__impl}{iter\+\_\+impl} \&other) const 
+\begin{DoxyCompactList}\small\item\em return difference \end{DoxyCompactList}\item 
+\hyperlink{classnlohmann_1_1detail_1_1iter__impl_a5be8001be099c6b82310f4d387b953ce}{reference} \hyperlink{classnlohmann_1_1detail_1_1iter__impl_ade15572ccb7c5b9c2541ecfd65252e99}{operator\mbox{[}$\,$\mbox{]}} (\hyperlink{classnlohmann_1_1detail_1_1iter__impl_a2f7ea9f7022850809c60fc3263775840}{difference\+\_\+type} n) const 
+\begin{DoxyCompactList}\small\item\em access to successor \end{DoxyCompactList}\item 
+const object\+\_\+t\+::key\+\_\+type \& \hyperlink{classnlohmann_1_1detail_1_1iter__impl_ad14ac9338131d0be2c6bb41c715c2b27}{key} () const 
+\begin{DoxyCompactList}\small\item\em return the key of an object iterator \end{DoxyCompactList}\item 
+\hyperlink{classnlohmann_1_1detail_1_1iter__impl_a5be8001be099c6b82310f4d387b953ce}{reference} \hyperlink{classnlohmann_1_1detail_1_1iter__impl_adc4048d25e057ce8ec0b912642c24731}{value} () const 
+\begin{DoxyCompactList}\small\item\em return the value of an iterator \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{json_8hpp_a2cf645f34610e7f7d6e09ab88a2ab917}{J\+S\+O\+N\+\_\+\+P\+R\+I\+V\+A\+T\+E\+\_\+\+U\+N\+L\+E\+S\+S\+\_\+\+T\+E\+S\+T\+ED} \hyperlink{classnlohmann_1_1detail_1_1iter__impl_aa4bddeaa9a97b2a9b715918a7e8dcc3a}{\+\_\+\+\_\+pad0\+\_\+\+\_\+}\+: \hyperlink{namespacenlohmann_1_1detail_a59fca69799f6b9e366710cb9043aa77d}{void} set\+\_\+begin() noexcept \{ \hyperlink{json_8hpp_a69f131cff49da1989667220173fbeae6}{J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT}(m\+\_\+object != nullptr)
+\item 
+\hyperlink{json_8hpp_a2cf645f34610e7f7d6e09ab88a2ab917}{J\+S\+O\+N\+\_\+\+P\+R\+I\+V\+A\+T\+E\+\_\+\+U\+N\+L\+E\+S\+S\+\_\+\+T\+E\+S\+T\+ED} \hyperlink{classnlohmann_1_1detail_1_1iter__impl_a4a60e9d074cc53929b73eaa7963f1fa9}{\+\_\+\+\_\+pad1\+\_\+\+\_\+}\+: \hyperlink{classnlohmann_1_1detail_1_1iter__impl_a69e52f890ce8c556fd68ce109e24b360}{pointer} m\+\_\+object = nullptr
+\item 
+\hyperlink{structnlohmann_1_1detail_1_1internal__iterator}{internal\+\_\+iterator}$<$ typename std\+::remove\+\_\+const$<$ \hyperlink{classnlohmann_1_1detail_1_1iter__impl_abf18f18793f84b0222aebb5a2a87da7a}{Basic\+Json\+Type} $>$\+::type $>$ \hyperlink{classnlohmann_1_1detail_1_1iter__impl_a8a86a7c0d4af0cc4ab345b6f0e13cdfa}{m\+\_\+it} \{\}
+\begin{DoxyCompactList}\small\item\em the actual iterator of the associated instance \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{classnlohmann_1_1detail_1_1iter__impl_ab9a9598052e83fa14a2288e56d5dda7c}{object\+\_\+t} = typename Basic\+Json\+Type\+::object\+\_\+t
+\item 
+using \hyperlink{classnlohmann_1_1detail_1_1iter__impl_aef02cf75b1cb199286fd2f666c60e38e}{array\+\_\+t} = typename Basic\+Json\+Type\+::array\+\_\+t
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+friend \hyperlink{classnlohmann_1_1detail_1_1iter__impl_abf18f18793f84b0222aebb5a2a87da7a}{Basic\+Json\+Type}
+\item 
+friend \hyperlink{classnlohmann_1_1detail_1_1iter__impl_a28328d17a18d9754c89c5c8159677a6f}{iteration\+\_\+proxy$<$ iter\+\_\+impl $>$}
+\item 
+friend \hyperlink{classnlohmann_1_1detail_1_1iter__impl_ac501dc2374b4d17a884fc9a656e80d5a}{iteration\+\_\+proxy\+\_\+value$<$ iter\+\_\+impl $>$}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classnlohmann_1_1detail_1_1iter__impl}{iter\+\_\+impl} \hyperlink{classnlohmann_1_1detail_1_1iter__impl_a94108d1a7563e103534f23eb5c1ee175}{operator+} (\hyperlink{classnlohmann_1_1detail_1_1iter__impl_a2f7ea9f7022850809c60fc3263775840}{difference\+\_\+type} i, const \hyperlink{classnlohmann_1_1detail_1_1iter__impl}{iter\+\_\+impl} \&it)
+\begin{DoxyCompactList}\small\item\em addition of distance and iterator \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Basic\+Json\+Type$>$\\*
+class nlohmann\+::detail\+::iter\+\_\+impl$<$ Basic\+Json\+Type $>$}
+
+a template for a bidirectional iterator for the \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} class This class implements a both iterators (iterator and const\+\_\+iterator) for the \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} class. 
+
+\begin{DoxyNote}{Note}
+An iterator is called {\itshape initialized} when a pointer to a J\+S\+ON value has been set (e.\+g., by a constructor or a copy assignment). If the iterator is default-\/constructed, it is {\itshape uninitialized} and most methods are undefined. The library uses assertions to detect calls on uninitialized iterators.$\ast$$\ast$  The class satisfies the following concept requirements\+:
+\begin{DoxyItemize}
+\item \href{https://en.cppreference.com/w/cpp/named_req/BidirectionalIterator}{\tt Bidirectional\+Iterator}\+: The iterator that can be moved can be moved in both directions (i.\+e. incremented and decremented). 
+\end{DoxyItemize}
+\end{DoxyNote}
+\begin{DoxySince}{Since}
+version 1.\+0.\+0, simplified in version 2.\+0.\+9, change to bidirectional iterators in version 3.\+0.\+0 (see \href{https://github.com/nlohmann/json/issues/593}{\tt https\+://github.\+com/nlohmann/json/issues/593}) 
+\end{DoxySince}
+
+
+\subsection{Member Typedef Documentation}
+\index{nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}!array\+\_\+t@{array\+\_\+t}}
+\index{array\+\_\+t@{array\+\_\+t}!nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}}
+\subsubsection[{\texorpdfstring{array\+\_\+t}{array_t}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type$>$ using {\bf nlohmann\+::detail\+::iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$\+::{\bf array\+\_\+t} =  typename Basic\+Json\+Type\+::array\+\_\+t\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classnlohmann_1_1detail_1_1iter__impl_aef02cf75b1cb199286fd2f666c60e38e}{}\label{classnlohmann_1_1detail_1_1iter__impl_aef02cf75b1cb199286fd2f666c60e38e}
+\index{nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}!difference\+\_\+type@{difference\+\_\+type}}
+\index{difference\+\_\+type@{difference\+\_\+type}!nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}}
+\subsubsection[{\texorpdfstring{difference\+\_\+type}{difference_type}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type$>$ using {\bf nlohmann\+::detail\+::iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$\+::{\bf difference\+\_\+type} =  typename Basic\+Json\+Type\+::difference\+\_\+type}\hypertarget{classnlohmann_1_1detail_1_1iter__impl_a2f7ea9f7022850809c60fc3263775840}{}\label{classnlohmann_1_1detail_1_1iter__impl_a2f7ea9f7022850809c60fc3263775840}
+
+
+a type to represent differences between iterators 
+
+\index{nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}!iterator\+\_\+category@{iterator\+\_\+category}}
+\index{iterator\+\_\+category@{iterator\+\_\+category}!nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}}
+\subsubsection[{\texorpdfstring{iterator\+\_\+category}{iterator_category}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type$>$ using {\bf nlohmann\+::detail\+::iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$\+::{\bf iterator\+\_\+category} =  std\+::bidirectional\+\_\+iterator\+\_\+tag}\hypertarget{classnlohmann_1_1detail_1_1iter__impl_ad9e091f5c70b34b5b1abc1ab15fd9106}{}\label{classnlohmann_1_1detail_1_1iter__impl_ad9e091f5c70b34b5b1abc1ab15fd9106}
+The std\+::iterator class template (used as a base class to provide typedefs) is deprecated in C++17. The C++ Standard has never required user-\/defined iterators to derive from std\+::iterator. A user-\/defined iterator should provide publicly accessible typedefs named iterator\+\_\+category, value\+\_\+type, difference\+\_\+type, pointer, and reference. Note that value\+\_\+type is required to be non-\/const, even for constant iterators. \index{nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}!object\+\_\+t@{object\+\_\+t}}
+\index{object\+\_\+t@{object\+\_\+t}!nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}}
+\subsubsection[{\texorpdfstring{object\+\_\+t}{object_t}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type$>$ using {\bf nlohmann\+::detail\+::iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$\+::{\bf object\+\_\+t} =  typename Basic\+Json\+Type\+::object\+\_\+t\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classnlohmann_1_1detail_1_1iter__impl_ab9a9598052e83fa14a2288e56d5dda7c}{}\label{classnlohmann_1_1detail_1_1iter__impl_ab9a9598052e83fa14a2288e56d5dda7c}
+\index{nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}!pointer@{pointer}}
+\index{pointer@{pointer}!nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}}
+\subsubsection[{\texorpdfstring{pointer}{pointer}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type$>$ using {\bf nlohmann\+::detail\+::iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$\+::{\bf pointer} =  typename std\+::conditional$<$std\+::is\+\_\+const$<${\bf Basic\+Json\+Type}$>$\+::{\bf value}, typename Basic\+Json\+Type\+::const\+\_\+pointer, typename Basic\+Json\+Type\+::pointer$>$\+::type}\hypertarget{classnlohmann_1_1detail_1_1iter__impl_a69e52f890ce8c556fd68ce109e24b360}{}\label{classnlohmann_1_1detail_1_1iter__impl_a69e52f890ce8c556fd68ce109e24b360}
+
+
+defines a pointer to the type iterated over (value\+\_\+type) 
+
+\index{nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}!reference@{reference}}
+\index{reference@{reference}!nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}}
+\subsubsection[{\texorpdfstring{reference}{reference}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type$>$ using {\bf nlohmann\+::detail\+::iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$\+::{\bf reference} =  typename std\+::conditional$<$std\+::is\+\_\+const$<${\bf Basic\+Json\+Type}$>$\+::{\bf value}, typename Basic\+Json\+Type\+::const\+\_\+reference, typename Basic\+Json\+Type\+::reference$>$\+::type}\hypertarget{classnlohmann_1_1detail_1_1iter__impl_a5be8001be099c6b82310f4d387b953ce}{}\label{classnlohmann_1_1detail_1_1iter__impl_a5be8001be099c6b82310f4d387b953ce}
+
+
+defines a reference to the type iterated over (value\+\_\+type) 
+
+\index{nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}}
+\subsubsection[{\texorpdfstring{value\+\_\+type}{value_type}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type$>$ using {\bf nlohmann\+::detail\+::iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$\+::{\bf value\+\_\+type} =  typename Basic\+Json\+Type\+::value\+\_\+type}\hypertarget{classnlohmann_1_1detail_1_1iter__impl_ab35586a44f2222272c5346baa3013f67}{}\label{classnlohmann_1_1detail_1_1iter__impl_ab35586a44f2222272c5346baa3013f67}
+
+
+the type of the values when the iterator is dereferenced 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}!iter\+\_\+impl@{iter\+\_\+impl}}
+\index{iter\+\_\+impl@{iter\+\_\+impl}!nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}}
+\subsubsection[{\texorpdfstring{iter\+\_\+impl()=default}{iter_impl()=default}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type$>$ {\bf iter\+\_\+impl}$<$ typename std\+::conditional$<$ std\+::is\+\_\+const$<$ {\bf Basic\+Json\+Type} $>$\+::{\bf value}, typename std\+::remove\+\_\+const$<$ {\bf Basic\+Json\+Type} $>$\+::type, const {\bf Basic\+Json\+Type} $>$\+::type $>$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\hypertarget{classnlohmann_1_1detail_1_1iter__impl_a19aa457f9c4af1b7e3af59839132cc5c}{}\label{classnlohmann_1_1detail_1_1iter__impl_a19aa457f9c4af1b7e3af59839132cc5c}
+
+
+default constructor 
+
+allow \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json} to access private members \index{nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}!iter\+\_\+impl@{iter\+\_\+impl}}
+\index{iter\+\_\+impl@{iter\+\_\+impl}!nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}}
+\subsubsection[{\texorpdfstring{iter\+\_\+impl(pointer object) noexcept}{iter_impl(pointer object) noexcept}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type$>$ {\bf nlohmann\+::detail\+::iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$\+::{\bf iter\+\_\+impl} (
+\begin{DoxyParamCaption}
+\item[{{\bf pointer}}]{object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}, {\ttfamily [noexcept]}}\hypertarget{classnlohmann_1_1detail_1_1iter__impl_a88a00484ac201c52fc5f613d88a2918b}{}\label{classnlohmann_1_1detail_1_1iter__impl_a88a00484ac201c52fc5f613d88a2918b}
+
+
+constructor for a given J\+S\+ON instance 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em object} & pointer to a J\+S\+ON object for this iterator \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+object != nullptr 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+The iterator is initialized; i.\+e. {\ttfamily m\+\_\+object != nullptr}. 
+\end{DoxyPostcond}
+\index{nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}!iter\+\_\+impl@{iter\+\_\+impl}}
+\index{iter\+\_\+impl@{iter\+\_\+impl}!nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}}
+\subsubsection[{\texorpdfstring{iter\+\_\+impl(const iter\+\_\+impl$<$ const Basic\+Json\+Type $>$ \&other) noexcept}{iter_impl(const iter_impl< const BasicJsonType > &other) noexcept}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type$>$ {\bf nlohmann\+::detail\+::iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$\+::{\bf iter\+\_\+impl} (
+\begin{DoxyParamCaption}
+\item[{const {\bf iter\+\_\+impl}$<$ const {\bf Basic\+Json\+Type} $>$ \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}\hypertarget{classnlohmann_1_1detail_1_1iter__impl_a71f84fb6e009619f12972bcf9002b8cd}{}\label{classnlohmann_1_1detail_1_1iter__impl_a71f84fb6e009619f12972bcf9002b8cd}
+
+
+const copy constructor 
+
+\begin{DoxyNote}{Note}
+The conventional copy constructor and copy assignment are implicitly defined. Combined with the following converting constructor and assignment, they support\+: (1) copy from iterator to iterator, (2) copy from const iterator to const iterator, and (3) conversion from iterator to const iterator. However conversion from const iterator to iterator is not defined.
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em other} & const iterator to copy from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This copy constructor had to be defined explicitly to circumvent a bug occurring on msvc v19.\+0 compiler (VS 2015) debug build. For more information refer to\+: \href{https://github.com/nlohmann/json/issues/1608}{\tt https\+://github.\+com/nlohmann/json/issues/1608} 
+\end{DoxyNote}
+\index{nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}!iter\+\_\+impl@{iter\+\_\+impl}}
+\index{iter\+\_\+impl@{iter\+\_\+impl}!nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}}
+\subsubsection[{\texorpdfstring{iter\+\_\+impl(const iter\+\_\+impl$<$ typename std\+::remove\+\_\+const$<$ Basic\+Json\+Type $>$\+::type $>$ \&other) noexcept}{iter_impl(const iter_impl< typename std::remove_const< BasicJsonType >::type > &other) noexcept}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type$>$ {\bf nlohmann\+::detail\+::iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$\+::{\bf iter\+\_\+impl} (
+\begin{DoxyParamCaption}
+\item[{const {\bf iter\+\_\+impl}$<$ typename std\+::remove\+\_\+const$<$ {\bf Basic\+Json\+Type} $>$\+::type $>$ \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}\hypertarget{classnlohmann_1_1detail_1_1iter__impl_a867f7eb55091be31b013adb3e46816d3}{}\label{classnlohmann_1_1detail_1_1iter__impl_a867f7eb55091be31b013adb3e46816d3}
+
+
+converting constructor 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em other} & non-\/const iterator to copy from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+It is not checked whether {\itshape other} is initialized. 
+\end{DoxyNote}
+
+
+\subsection{Member Function Documentation}
+\index{nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}!key@{key}}
+\index{key@{key}!nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}}
+\subsubsection[{\texorpdfstring{key() const }{key() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type$>$ const object\+\_\+t\+::key\+\_\+type\& {\bf nlohmann\+::detail\+::iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$\+::key (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classnlohmann_1_1detail_1_1iter__impl_ad14ac9338131d0be2c6bb41c715c2b27}{}\label{classnlohmann_1_1detail_1_1iter__impl_ad14ac9338131d0be2c6bb41c715c2b27}
+
+
+return the key of an object iterator 
+
+\begin{DoxyPrecond}{Precondition}
+The iterator is initialized; i.\+e. {\ttfamily m\+\_\+object != nullptr}. 
+\end{DoxyPrecond}
+\index{nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}}
+\subsubsection[{\texorpdfstring{operator"!=(const iter\+\_\+impl \&other) const }{operator!=(const iter_impl &other) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type$>$ bool {\bf nlohmann\+::detail\+::iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$ \&}]{other}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classnlohmann_1_1detail_1_1iter__impl_a66af27bbbf9743bc000264a0f89c5d0d}{}\label{classnlohmann_1_1detail_1_1iter__impl_a66af27bbbf9743bc000264a0f89c5d0d}
+
+
+comparison\+: not equal 
+
+\begin{DoxyPrecond}{Precondition}
+The iterator is initialized; i.\+e. {\ttfamily m\+\_\+object != nullptr}. 
+\end{DoxyPrecond}
+\index{nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}}
+\subsubsection[{\texorpdfstring{operator$\ast$() const }{operator*() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type$>$ {\bf reference} {\bf nlohmann\+::detail\+::iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$\+::operator$\ast$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classnlohmann_1_1detail_1_1iter__impl_adafa65198cad0cc7295d21cfa7678e6e}{}\label{classnlohmann_1_1detail_1_1iter__impl_adafa65198cad0cc7295d21cfa7678e6e}
+
+
+return a reference to the value pointed to by the iterator 
+
+\begin{DoxyPrecond}{Precondition}
+The iterator is initialized; i.\+e. {\ttfamily m\+\_\+object != nullptr}. 
+\end{DoxyPrecond}
+\index{nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}!operator+@{operator+}}
+\index{operator+@{operator+}!nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}}
+\subsubsection[{\texorpdfstring{operator+(difference\+\_\+type i) const }{operator+(difference_type i) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type$>$ {\bf iter\+\_\+impl} {\bf nlohmann\+::detail\+::iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$\+::operator+ (
+\begin{DoxyParamCaption}
+\item[{{\bf difference\+\_\+type}}]{i}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classnlohmann_1_1detail_1_1iter__impl_afc5629527a820583cd009c411e30ac64}{}\label{classnlohmann_1_1detail_1_1iter__impl_afc5629527a820583cd009c411e30ac64}
+
+
+add to iterator 
+
+\begin{DoxyPrecond}{Precondition}
+The iterator is initialized; i.\+e. {\ttfamily m\+\_\+object != nullptr}. 
+\end{DoxyPrecond}
+\index{nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}!operator++@{operator++}}
+\index{operator++@{operator++}!nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}}
+\subsubsection[{\texorpdfstring{operator++(int)}{operator++(int)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type$>$ {\bf iter\+\_\+impl} const {\bf nlohmann\+::detail\+::iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$\+::operator++ (
+\begin{DoxyParamCaption}
+\item[{int}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classnlohmann_1_1detail_1_1iter__impl_a7d2397773b2dce42f30f0375a6a1d850}{}\label{classnlohmann_1_1detail_1_1iter__impl_a7d2397773b2dce42f30f0375a6a1d850}
+
+
+post-\/increment (it++) 
+
+\begin{DoxyPrecond}{Precondition}
+The iterator is initialized; i.\+e. {\ttfamily m\+\_\+object != nullptr}. 
+\end{DoxyPrecond}
+\index{nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}!operator++@{operator++}}
+\index{operator++@{operator++}!nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}}
+\subsubsection[{\texorpdfstring{operator++()}{operator++()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type$>$ {\bf iter\+\_\+impl}\& {\bf nlohmann\+::detail\+::iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$\+::operator++ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classnlohmann_1_1detail_1_1iter__impl_abdfe2a7f464400a7ab572782d14b922f}{}\label{classnlohmann_1_1detail_1_1iter__impl_abdfe2a7f464400a7ab572782d14b922f}
+
+
+pre-\/increment (++it) 
+
+\begin{DoxyPrecond}{Precondition}
+The iterator is initialized; i.\+e. {\ttfamily m\+\_\+object != nullptr}. 
+\end{DoxyPrecond}
+\index{nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}}
+\subsubsection[{\texorpdfstring{operator+=(difference\+\_\+type i)}{operator+=(difference_type i)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type$>$ {\bf iter\+\_\+impl}\& {\bf nlohmann\+::detail\+::iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$\+::operator+= (
+\begin{DoxyParamCaption}
+\item[{{\bf difference\+\_\+type}}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classnlohmann_1_1detail_1_1iter__impl_a3eef94f9d167046e7f773aeb6b78090c}{}\label{classnlohmann_1_1detail_1_1iter__impl_a3eef94f9d167046e7f773aeb6b78090c}
+
+
+add to iterator 
+
+\begin{DoxyPrecond}{Precondition}
+The iterator is initialized; i.\+e. {\ttfamily m\+\_\+object != nullptr}. 
+\end{DoxyPrecond}
+\index{nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}}
+\subsubsection[{\texorpdfstring{operator-\/(difference\+\_\+type i) const }{operator-(difference_type i) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type$>$ {\bf iter\+\_\+impl} {\bf nlohmann\+::detail\+::iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$\+::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{{\bf difference\+\_\+type}}]{i}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classnlohmann_1_1detail_1_1iter__impl_aa719903e6d509db51744cfca9c95fd8e}{}\label{classnlohmann_1_1detail_1_1iter__impl_aa719903e6d509db51744cfca9c95fd8e}
+
+
+subtract from iterator 
+
+\begin{DoxyPrecond}{Precondition}
+The iterator is initialized; i.\+e. {\ttfamily m\+\_\+object != nullptr}. 
+\end{DoxyPrecond}
+\index{nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}}
+\subsubsection[{\texorpdfstring{operator-\/(const iter\+\_\+impl \&other) const }{operator-(const iter_impl &other) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type$>$ {\bf difference\+\_\+type} {\bf nlohmann\+::detail\+::iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$\+::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$ \&}]{other}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classnlohmann_1_1detail_1_1iter__impl_a327f3f6a97c6d0cdfc9fe232949d916b}{}\label{classnlohmann_1_1detail_1_1iter__impl_a327f3f6a97c6d0cdfc9fe232949d916b}
+
+
+return difference 
+
+\begin{DoxyPrecond}{Precondition}
+The iterator is initialized; i.\+e. {\ttfamily m\+\_\+object != nullptr}. 
+\end{DoxyPrecond}
+\index{nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}}
+\subsubsection[{\texorpdfstring{operator-\/-\/(int)}{operator--(int)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type$>$ {\bf iter\+\_\+impl} const {\bf nlohmann\+::detail\+::iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$\+::operator-\/-\/ (
+\begin{DoxyParamCaption}
+\item[{int}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classnlohmann_1_1detail_1_1iter__impl_a1fc43e764467b8ea4a4cdd01f629d757}{}\label{classnlohmann_1_1detail_1_1iter__impl_a1fc43e764467b8ea4a4cdd01f629d757}
+
+
+post-\/decrement (it--) 
+
+\begin{DoxyPrecond}{Precondition}
+The iterator is initialized; i.\+e. {\ttfamily m\+\_\+object != nullptr}. 
+\end{DoxyPrecond}
+\index{nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}}
+\subsubsection[{\texorpdfstring{operator-\/-\/()}{operator--()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type$>$ {\bf iter\+\_\+impl}\& {\bf nlohmann\+::detail\+::iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$\+::operator-\/-\/ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classnlohmann_1_1detail_1_1iter__impl_a84e689fb581d651d130039f7cb81494a}{}\label{classnlohmann_1_1detail_1_1iter__impl_a84e689fb581d651d130039f7cb81494a}
+
+
+pre-\/decrement (--it) 
+
+\begin{DoxyPrecond}{Precondition}
+The iterator is initialized; i.\+e. {\ttfamily m\+\_\+object != nullptr}. 
+\end{DoxyPrecond}
+\index{nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}}
+\subsubsection[{\texorpdfstring{operator-\/=(difference\+\_\+type i)}{operator-=(difference_type i)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type$>$ {\bf iter\+\_\+impl}\& {\bf nlohmann\+::detail\+::iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$\+::operator-\/= (
+\begin{DoxyParamCaption}
+\item[{{\bf difference\+\_\+type}}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classnlohmann_1_1detail_1_1iter__impl_abcc9d51bc52f2e8483bbe4018f05e978}{}\label{classnlohmann_1_1detail_1_1iter__impl_abcc9d51bc52f2e8483bbe4018f05e978}
+
+
+subtract from iterator 
+
+\begin{DoxyPrecond}{Precondition}
+The iterator is initialized; i.\+e. {\ttfamily m\+\_\+object != nullptr}. 
+\end{DoxyPrecond}
+\index{nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}}
+\subsubsection[{\texorpdfstring{operator-\/$>$() const }{operator->() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type$>$ {\bf pointer} {\bf nlohmann\+::detail\+::iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$\+::operator-\/$>$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classnlohmann_1_1detail_1_1iter__impl_a28a0c92903edd8f86825c8c7784b0913}{}\label{classnlohmann_1_1detail_1_1iter__impl_a28a0c92903edd8f86825c8c7784b0913}
+
+
+dereference the iterator 
+
+\begin{DoxyPrecond}{Precondition}
+The iterator is initialized; i.\+e. {\ttfamily m\+\_\+object != nullptr}. 
+\end{DoxyPrecond}
+\index{nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}}
+\subsubsection[{\texorpdfstring{operator$<$(const iter\+\_\+impl \&other) const }{operator<(const iter_impl &other) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type$>$ bool {\bf nlohmann\+::detail\+::iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$\+::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$ \&}]{other}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classnlohmann_1_1detail_1_1iter__impl_a3a5123a4cfe72a9d674c9ff65c4ec08c}{}\label{classnlohmann_1_1detail_1_1iter__impl_a3a5123a4cfe72a9d674c9ff65c4ec08c}
+
+
+comparison\+: smaller 
+
+\begin{DoxyPrecond}{Precondition}
+The iterator is initialized; i.\+e. {\ttfamily m\+\_\+object != nullptr}. 
+\end{DoxyPrecond}
+\index{nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}}
+\subsubsection[{\texorpdfstring{operator$<$=(const iter\+\_\+impl \&other) const }{operator<=(const iter_impl &other) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type$>$ bool {\bf nlohmann\+::detail\+::iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$\+::operator$<$= (
+\begin{DoxyParamCaption}
+\item[{const {\bf iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$ \&}]{other}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classnlohmann_1_1detail_1_1iter__impl_aa90b4d1da290b5073778e295dc2985f3}{}\label{classnlohmann_1_1detail_1_1iter__impl_aa90b4d1da290b5073778e295dc2985f3}
+
+
+comparison\+: less than or equal 
+
+\begin{DoxyPrecond}{Precondition}
+The iterator is initialized; i.\+e. {\ttfamily m\+\_\+object != nullptr}. 
+\end{DoxyPrecond}
+\index{nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}!operator=@{operator=}}
+\index{operator=@{operator=}!nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}}
+\subsubsection[{\texorpdfstring{operator=(const iter\+\_\+impl$<$ const Basic\+Json\+Type $>$ \&other) noexcept}{operator=(const iter_impl< const BasicJsonType > &other) noexcept}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type$>$ {\bf iter\+\_\+impl}\& {\bf nlohmann\+::detail\+::iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf iter\+\_\+impl}$<$ const {\bf Basic\+Json\+Type} $>$ \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}\hypertarget{classnlohmann_1_1detail_1_1iter__impl_a9a5cd7864a8f848ef107d3f5a330f5e7}{}\label{classnlohmann_1_1detail_1_1iter__impl_a9a5cd7864a8f848ef107d3f5a330f5e7}
+
+
+converting assignment 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em other} & const iterator to copy from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+const/non-\/const iterator 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+It is not checked whether {\itshape other} is initialized. 
+\end{DoxyNote}
+\index{nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}!operator=@{operator=}}
+\index{operator=@{operator=}!nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}}
+\subsubsection[{\texorpdfstring{operator=(const iter\+\_\+impl$<$ typename std\+::remove\+\_\+const$<$ Basic\+Json\+Type $>$\+::type $>$ \&other) noexcept}{operator=(const iter_impl< typename std::remove_const< BasicJsonType >::type > &other) noexcept}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type$>$ {\bf iter\+\_\+impl}\& {\bf nlohmann\+::detail\+::iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf iter\+\_\+impl}$<$ typename std\+::remove\+\_\+const$<$ {\bf Basic\+Json\+Type} $>$\+::type $>$ \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}\hypertarget{classnlohmann_1_1detail_1_1iter__impl_a7159ed1cfe7c423a2baef8bea0c94509}{}\label{classnlohmann_1_1detail_1_1iter__impl_a7159ed1cfe7c423a2baef8bea0c94509}
+
+
+converting assignment 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em other} & non-\/const iterator to copy from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+const/non-\/const iterator 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+It is not checked whether {\itshape other} is initialized. 
+\end{DoxyNote}
+\index{nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}!operator==@{operator==}}
+\index{operator==@{operator==}!nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}}
+\subsubsection[{\texorpdfstring{operator==(const iter\+\_\+impl \&other) const }{operator==(const iter_impl &other) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type$>$ bool {\bf nlohmann\+::detail\+::iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$ \&}]{other}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classnlohmann_1_1detail_1_1iter__impl_abe91c77d1be747fadcbfaf6f685e3ee7}{}\label{classnlohmann_1_1detail_1_1iter__impl_abe91c77d1be747fadcbfaf6f685e3ee7}
+
+
+comparison\+: equal 
+
+\begin{DoxyPrecond}{Precondition}
+The iterator is initialized; i.\+e. {\ttfamily m\+\_\+object != nullptr}. 
+\end{DoxyPrecond}
+\index{nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}}
+\subsubsection[{\texorpdfstring{operator$>$(const iter\+\_\+impl \&other) const }{operator>(const iter_impl &other) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type$>$ bool {\bf nlohmann\+::detail\+::iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$\+::operator$>$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$ \&}]{other}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classnlohmann_1_1detail_1_1iter__impl_afe8894bea0a0b616d9d5975ca04e8b39}{}\label{classnlohmann_1_1detail_1_1iter__impl_afe8894bea0a0b616d9d5975ca04e8b39}
+
+
+comparison\+: greater than 
+
+\begin{DoxyPrecond}{Precondition}
+The iterator is initialized; i.\+e. {\ttfamily m\+\_\+object != nullptr}. 
+\end{DoxyPrecond}
+\index{nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}}
+\subsubsection[{\texorpdfstring{operator$>$=(const iter\+\_\+impl \&other) const }{operator>=(const iter_impl &other) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type$>$ bool {\bf nlohmann\+::detail\+::iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$\+::operator$>$= (
+\begin{DoxyParamCaption}
+\item[{const {\bf iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$ \&}]{other}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classnlohmann_1_1detail_1_1iter__impl_ae87ea99999c169722b388c69871295e3}{}\label{classnlohmann_1_1detail_1_1iter__impl_ae87ea99999c169722b388c69871295e3}
+
+
+comparison\+: greater than or equal 
+
+\begin{DoxyPrecond}{Precondition}
+The iterator is initialized; i.\+e. {\ttfamily m\+\_\+object != nullptr}. 
+\end{DoxyPrecond}
+\index{nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}}
+\subsubsection[{\texorpdfstring{operator[](difference\+\_\+type n) const }{operator[](difference_type n) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type$>$ {\bf reference} {\bf nlohmann\+::detail\+::iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{{\bf difference\+\_\+type}}]{n}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classnlohmann_1_1detail_1_1iter__impl_ade15572ccb7c5b9c2541ecfd65252e99}{}\label{classnlohmann_1_1detail_1_1iter__impl_ade15572ccb7c5b9c2541ecfd65252e99}
+
+
+access to successor 
+
+\begin{DoxyPrecond}{Precondition}
+The iterator is initialized; i.\+e. {\ttfamily m\+\_\+object != nullptr}. 
+\end{DoxyPrecond}
+\index{nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}!set\+\_\+end@{set\+\_\+end}}
+\index{set\+\_\+end@{set\+\_\+end}!nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}}
+\subsubsection[{\texorpdfstring{set\+\_\+end() noexcept}{set_end() noexcept}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type$>$ {\bf void} {\bf nlohmann\+::detail\+::iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$\+::set\+\_\+end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}\hypertarget{classnlohmann_1_1detail_1_1iter__impl_a23e50ad4c13aa62d9ac7f60a123823ee}{}\label{classnlohmann_1_1detail_1_1iter__impl_a23e50ad4c13aa62d9ac7f60a123823ee}
+
+
+set the iterator past the last value 
+
+\begin{DoxyPrecond}{Precondition}
+The iterator is initialized; i.\+e. {\ttfamily m\+\_\+object != nullptr}. 
+\end{DoxyPrecond}
+\index{nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}!switch@{switch}}
+\index{switch@{switch}!nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}}
+\subsubsection[{\texorpdfstring{switch(m\+\_\+object-\/$>$m\+\_\+type)}{switch(m_object->m_type)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type$>$ {\bf nlohmann\+::detail\+::iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$\+::switch (
+\begin{DoxyParamCaption}
+\item[{m\+\_\+object-\/$>$}]{m\+\_\+type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classnlohmann_1_1detail_1_1iter__impl_abc2f80067020fae59d7fbccf39f1547a}{}\label{classnlohmann_1_1detail_1_1iter__impl_abc2f80067020fae59d7fbccf39f1547a}
+\index{nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}!value@{value}}
+\index{value@{value}!nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}}
+\subsubsection[{\texorpdfstring{value() const }{value() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type$>$ {\bf reference} {\bf nlohmann\+::detail\+::iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$\+::value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classnlohmann_1_1detail_1_1iter__impl_adc4048d25e057ce8ec0b912642c24731}{}\label{classnlohmann_1_1detail_1_1iter__impl_adc4048d25e057ce8ec0b912642c24731}
+
+
+return the value of an iterator 
+
+\begin{DoxyPrecond}{Precondition}
+The iterator is initialized; i.\+e. {\ttfamily m\+\_\+object != nullptr}. 
+\end{DoxyPrecond}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}!operator+@{operator+}}
+\index{operator+@{operator+}!nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}}
+\subsubsection[{\texorpdfstring{operator+}{operator+}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type$>$ {\bf iter\+\_\+impl} operator+ (
+\begin{DoxyParamCaption}
+\item[{{\bf difference\+\_\+type}}]{i, }
+\item[{const {\bf iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$ \&}]{it}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classnlohmann_1_1detail_1_1iter__impl_a94108d1a7563e103534f23eb5c1ee175}{}\label{classnlohmann_1_1detail_1_1iter__impl_a94108d1a7563e103534f23eb5c1ee175}
+
+
+addition of distance and iterator 
+
+\begin{DoxyPrecond}{Precondition}
+The iterator is initialized; i.\+e. {\ttfamily m\+\_\+object != nullptr}. 
+\end{DoxyPrecond}
+
+
+\subsection{Member Data Documentation}
+\index{nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}!\+\_\+\+\_\+pad0\+\_\+\+\_\+@{\+\_\+\+\_\+pad0\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+pad0\+\_\+\+\_\+@{\+\_\+\+\_\+pad0\+\_\+\+\_\+}!nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+pad0\+\_\+\+\_\+}{__pad0__}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type$>$ {\bf J\+S\+O\+N\+\_\+\+P\+R\+I\+V\+A\+T\+E\+\_\+\+U\+N\+L\+E\+S\+S\+\_\+\+T\+E\+S\+T\+ED} {\bf nlohmann\+::detail\+::iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$\+::\+\_\+\+\_\+pad0\+\_\+\+\_\+}\hypertarget{classnlohmann_1_1detail_1_1iter__impl_aa4bddeaa9a97b2a9b715918a7e8dcc3a}{}\label{classnlohmann_1_1detail_1_1iter__impl_aa4bddeaa9a97b2a9b715918a7e8dcc3a}
+\index{nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}!\+\_\+\+\_\+pad1\+\_\+\+\_\+@{\+\_\+\+\_\+pad1\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+pad1\+\_\+\+\_\+@{\+\_\+\+\_\+pad1\+\_\+\+\_\+}!nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+pad1\+\_\+\+\_\+}{__pad1__}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type$>$ {\bf J\+S\+O\+N\+\_\+\+P\+R\+I\+V\+A\+T\+E\+\_\+\+U\+N\+L\+E\+S\+S\+\_\+\+T\+E\+S\+T\+ED} {\bf nlohmann\+::detail\+::iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$\+::\+\_\+\+\_\+pad1\+\_\+\+\_\+}\hypertarget{classnlohmann_1_1detail_1_1iter__impl_a4a60e9d074cc53929b73eaa7963f1fa9}{}\label{classnlohmann_1_1detail_1_1iter__impl_a4a60e9d074cc53929b73eaa7963f1fa9}
+\index{nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}!Basic\+Json\+Type@{Basic\+Json\+Type}}
+\index{Basic\+Json\+Type@{Basic\+Json\+Type}!nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}}
+\subsubsection[{\texorpdfstring{Basic\+Json\+Type}{BasicJsonType}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type$>$ friend {\bf nlohmann\+::detail\+::iter\+\_\+impl}$<$ Basic\+Json\+Type $>$\+::Basic\+Json\+Type\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classnlohmann_1_1detail_1_1iter__impl_abf18f18793f84b0222aebb5a2a87da7a}{}\label{classnlohmann_1_1detail_1_1iter__impl_abf18f18793f84b0222aebb5a2a87da7a}
+\index{nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}!iteration\+\_\+proxy$<$ iter\+\_\+impl $>$@{iteration\+\_\+proxy$<$ iter\+\_\+impl $>$}}
+\index{iteration\+\_\+proxy$<$ iter\+\_\+impl $>$@{iteration\+\_\+proxy$<$ iter\+\_\+impl $>$}!nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}}
+\subsubsection[{\texorpdfstring{iteration\+\_\+proxy$<$ iter\+\_\+impl $>$}{iteration_proxy< iter_impl >}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type$>$ friend {\bf nlohmann\+::detail\+::iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$\+::{\bf iteration\+\_\+proxy}$<$ {\bf iter\+\_\+impl} $>$\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classnlohmann_1_1detail_1_1iter__impl_a28328d17a18d9754c89c5c8159677a6f}{}\label{classnlohmann_1_1detail_1_1iter__impl_a28328d17a18d9754c89c5c8159677a6f}
+\index{nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}!iteration\+\_\+proxy\+\_\+value$<$ iter\+\_\+impl $>$@{iteration\+\_\+proxy\+\_\+value$<$ iter\+\_\+impl $>$}}
+\index{iteration\+\_\+proxy\+\_\+value$<$ iter\+\_\+impl $>$@{iteration\+\_\+proxy\+\_\+value$<$ iter\+\_\+impl $>$}!nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}}
+\subsubsection[{\texorpdfstring{iteration\+\_\+proxy\+\_\+value$<$ iter\+\_\+impl $>$}{iteration_proxy_value< iter_impl >}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type$>$ friend {\bf nlohmann\+::detail\+::iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$\+::{\bf iteration\+\_\+proxy\+\_\+value}$<$ {\bf iter\+\_\+impl} $>$\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classnlohmann_1_1detail_1_1iter__impl_ac501dc2374b4d17a884fc9a656e80d5a}{}\label{classnlohmann_1_1detail_1_1iter__impl_ac501dc2374b4d17a884fc9a656e80d5a}
+\index{nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}!m\+\_\+it@{m\+\_\+it}}
+\index{m\+\_\+it@{m\+\_\+it}!nlohmann\+::detail\+::iter\+\_\+impl@{nlohmann\+::detail\+::iter\+\_\+impl}}
+\subsubsection[{\texorpdfstring{m\+\_\+it}{m_it}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type$>$ {\bf internal\+\_\+iterator}$<$typename std\+::remove\+\_\+const$<${\bf Basic\+Json\+Type}$>$\+::type$>$ {\bf nlohmann\+::detail\+::iter\+\_\+impl}$<$ {\bf Basic\+Json\+Type} $>$\+::m\+\_\+it \{\}}\hypertarget{classnlohmann_1_1detail_1_1iter__impl_a8a86a7c0d4af0cc4ab345b6f0e13cdfa}{}\label{classnlohmann_1_1detail_1_1iter__impl_a8a86a7c0d4af0cc4ab345b6f0e13cdfa}
+
+
+the actual iterator of the associated instance 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{json_8hpp}{json.\+hpp}\end{DoxyCompactItemize}

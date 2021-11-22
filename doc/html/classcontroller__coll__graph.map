@@ -1,7 +1,6 @@
 <map id="controller" name="controller">
-<area shape="rect" id="node2" href="$classbolinha.html" title="Classe para a bolinha. " alt="" coords="5,5,104,405"/>
-<area shape="rect" id="node3" href="$classview.html" title="Classe para o view. " alt="" coords="147,468,330,883"/>
-<area shape="rect" id="node4" href="$classvida.html" title="Classe para os pontos. " alt="" coords="128,152,221,259"/>
-<area shape="rect" id="node5" href="$classpontos.html" title="Classe para os pontos. " alt="" coords="245,152,339,259"/>
-<area shape="rect" id="node6" href="$classbarra.html" title="Classe para a barra. " alt="" coords="363,49,461,361"/>
+<area shape="rect" id="node2" href="$classbolinha.html" title="Classe para a bolinha. " alt="" coords="5,5,216,420"/>
+<area shape="rect" id="node3" href="$classview.html" title="Classe para o view. " alt="" coords="223,483,406,912"/>
+<area shape="rect" id="node4" href="$classvida.html" title="Classe para os pontos. " alt="" coords="240,79,451,347"/>
+<area shape="rect" id="node5" href="$classpontos.html" title="Classe para os pontos. " alt="" coords="475,79,685,347"/>
 </map>

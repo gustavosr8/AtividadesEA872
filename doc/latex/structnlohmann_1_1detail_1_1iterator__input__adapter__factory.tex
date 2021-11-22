@@ -1,0 +1,58 @@
+\hypertarget{structnlohmann_1_1detail_1_1iterator__input__adapter__factory}{}\section{nlohmann\+:\+:detail\+:\+:iterator\+\_\+input\+\_\+adapter\+\_\+factory$<$ Iterator\+Type, Enable $>$ Struct Template Reference}
+\label{structnlohmann_1_1detail_1_1iterator__input__adapter__factory}\index{nlohmann\+::detail\+::iterator\+\_\+input\+\_\+adapter\+\_\+factory$<$ Iterator\+Type, Enable $>$@{nlohmann\+::detail\+::iterator\+\_\+input\+\_\+adapter\+\_\+factory$<$ Iterator\+Type, Enable $>$}}
+
+
+{\ttfamily \#include $<$json.\+hpp$>$}
+
+
+
+Collaboration diagram for nlohmann\+:\+:detail\+:\+:iterator\+\_\+input\+\_\+adapter\+\_\+factory$<$ Iterator\+Type, Enable $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{structnlohmann_1_1detail_1_1iterator__input__adapter__factory__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{structnlohmann_1_1detail_1_1iterator__input__adapter__factory_a37663ca283012236415d53145da1a0f9}{iterator\+\_\+type} = Iterator\+Type
+\item 
+using \hyperlink{structnlohmann_1_1detail_1_1iterator__input__adapter__factory_a1439c0eda85f5f67199374d3254b8f2a}{char\+\_\+type} = typename std\+::iterator\+\_\+traits$<$ \hyperlink{structnlohmann_1_1detail_1_1iterator__input__adapter__factory_a37663ca283012236415d53145da1a0f9}{iterator\+\_\+type} $>$\+::value\+\_\+type
+\item 
+using \hyperlink{structnlohmann_1_1detail_1_1iterator__input__adapter__factory_a264935c57ca29dfb5153ade55266d1fa}{adapter\+\_\+type} = \hyperlink{classnlohmann_1_1detail_1_1iterator__input__adapter}{iterator\+\_\+input\+\_\+adapter}$<$ \hyperlink{structnlohmann_1_1detail_1_1iterator__input__adapter__factory_a37663ca283012236415d53145da1a0f9}{iterator\+\_\+type} $>$
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{structnlohmann_1_1detail_1_1iterator__input__adapter__factory_a264935c57ca29dfb5153ade55266d1fa}{adapter\+\_\+type} \hyperlink{structnlohmann_1_1detail_1_1iterator__input__adapter__factory_a1d3a80249cf837448966319310be9ec4}{create} (Iterator\+Type first, Iterator\+Type last)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\index{nlohmann\+::detail\+::iterator\+\_\+input\+\_\+adapter\+\_\+factory@{nlohmann\+::detail\+::iterator\+\_\+input\+\_\+adapter\+\_\+factory}!adapter\+\_\+type@{adapter\+\_\+type}}
+\index{adapter\+\_\+type@{adapter\+\_\+type}!nlohmann\+::detail\+::iterator\+\_\+input\+\_\+adapter\+\_\+factory@{nlohmann\+::detail\+::iterator\+\_\+input\+\_\+adapter\+\_\+factory}}
+\subsubsection[{\texorpdfstring{adapter\+\_\+type}{adapter_type}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Iterator\+Type, typename Enable = void$>$ using {\bf nlohmann\+::detail\+::iterator\+\_\+input\+\_\+adapter\+\_\+factory}$<$ Iterator\+Type, Enable $>$\+::{\bf adapter\+\_\+type} =  {\bf iterator\+\_\+input\+\_\+adapter}$<${\bf iterator\+\_\+type}$>$}\hypertarget{structnlohmann_1_1detail_1_1iterator__input__adapter__factory_a264935c57ca29dfb5153ade55266d1fa}{}\label{structnlohmann_1_1detail_1_1iterator__input__adapter__factory_a264935c57ca29dfb5153ade55266d1fa}
+\index{nlohmann\+::detail\+::iterator\+\_\+input\+\_\+adapter\+\_\+factory@{nlohmann\+::detail\+::iterator\+\_\+input\+\_\+adapter\+\_\+factory}!char\+\_\+type@{char\+\_\+type}}
+\index{char\+\_\+type@{char\+\_\+type}!nlohmann\+::detail\+::iterator\+\_\+input\+\_\+adapter\+\_\+factory@{nlohmann\+::detail\+::iterator\+\_\+input\+\_\+adapter\+\_\+factory}}
+\subsubsection[{\texorpdfstring{char\+\_\+type}{char_type}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Iterator\+Type, typename Enable = void$>$ using {\bf nlohmann\+::detail\+::iterator\+\_\+input\+\_\+adapter\+\_\+factory}$<$ Iterator\+Type, Enable $>$\+::{\bf char\+\_\+type} =  typename std\+::iterator\+\_\+traits$<${\bf iterator\+\_\+type}$>$\+::value\+\_\+type}\hypertarget{structnlohmann_1_1detail_1_1iterator__input__adapter__factory_a1439c0eda85f5f67199374d3254b8f2a}{}\label{structnlohmann_1_1detail_1_1iterator__input__adapter__factory_a1439c0eda85f5f67199374d3254b8f2a}
+\index{nlohmann\+::detail\+::iterator\+\_\+input\+\_\+adapter\+\_\+factory@{nlohmann\+::detail\+::iterator\+\_\+input\+\_\+adapter\+\_\+factory}!iterator\+\_\+type@{iterator\+\_\+type}}
+\index{iterator\+\_\+type@{iterator\+\_\+type}!nlohmann\+::detail\+::iterator\+\_\+input\+\_\+adapter\+\_\+factory@{nlohmann\+::detail\+::iterator\+\_\+input\+\_\+adapter\+\_\+factory}}
+\subsubsection[{\texorpdfstring{iterator\+\_\+type}{iterator_type}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Iterator\+Type, typename Enable = void$>$ using {\bf nlohmann\+::detail\+::iterator\+\_\+input\+\_\+adapter\+\_\+factory}$<$ Iterator\+Type, Enable $>$\+::{\bf iterator\+\_\+type} =  Iterator\+Type}\hypertarget{structnlohmann_1_1detail_1_1iterator__input__adapter__factory_a37663ca283012236415d53145da1a0f9}{}\label{structnlohmann_1_1detail_1_1iterator__input__adapter__factory_a37663ca283012236415d53145da1a0f9}
+
+
+\subsection{Member Function Documentation}
+\index{nlohmann\+::detail\+::iterator\+\_\+input\+\_\+adapter\+\_\+factory@{nlohmann\+::detail\+::iterator\+\_\+input\+\_\+adapter\+\_\+factory}!create@{create}}
+\index{create@{create}!nlohmann\+::detail\+::iterator\+\_\+input\+\_\+adapter\+\_\+factory@{nlohmann\+::detail\+::iterator\+\_\+input\+\_\+adapter\+\_\+factory}}
+\subsubsection[{\texorpdfstring{create(\+Iterator\+Type first, Iterator\+Type last)}{create(IteratorType first, IteratorType last)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Iterator\+Type, typename Enable = void$>$ static {\bf adapter\+\_\+type} {\bf nlohmann\+::detail\+::iterator\+\_\+input\+\_\+adapter\+\_\+factory}$<$ Iterator\+Type, Enable $>$\+::create (
+\begin{DoxyParamCaption}
+\item[{Iterator\+Type}]{first, }
+\item[{Iterator\+Type}]{last}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{structnlohmann_1_1detail_1_1iterator__input__adapter__factory_a1d3a80249cf837448966319310be9ec4}{}\label{structnlohmann_1_1detail_1_1iterator__input__adapter__factory_a1d3a80249cf837448966319310be9ec4}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{json_8hpp}{json.\+hpp}\end{DoxyCompactItemize}

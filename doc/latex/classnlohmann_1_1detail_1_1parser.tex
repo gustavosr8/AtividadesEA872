@@ -1,0 +1,233 @@
+\hypertarget{classnlohmann_1_1detail_1_1parser}{}\section{nlohmann\+:\+:detail\+:\+:parser$<$ Basic\+Json\+Type, Input\+Adapter\+Type $>$ Class Template Reference}
+\label{classnlohmann_1_1detail_1_1parser}\index{nlohmann\+::detail\+::parser$<$ Basic\+Json\+Type, Input\+Adapter\+Type $>$@{nlohmann\+::detail\+::parser$<$ Basic\+Json\+Type, Input\+Adapter\+Type $>$}}
+
+
+syntax analysis  
+
+
+
+
+{\ttfamily \#include $<$json.\+hpp$>$}
+
+
+
+Collaboration diagram for nlohmann\+:\+:detail\+:\+:parser$<$ Basic\+Json\+Type, Input\+Adapter\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{classnlohmann_1_1detail_1_1parser__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classnlohmann_1_1detail_1_1parser_a33b852bf63cba58310d9c0d1242cfb12}{parser} (Input\+Adapter\+Type \&\&adapter, const \hyperlink{namespacenlohmann_1_1detail_a9980144ad77e50ae944d1fe797ceec08}{parser\+\_\+callback\+\_\+t}$<$ Basic\+Json\+Type $>$ cb=nullptr, const bool allow\+\_\+exceptions\+\_\+=true, const bool skip\+\_\+comments=false)
+\begin{DoxyCompactList}\small\item\em a parser reading from an input adapter \end{DoxyCompactList}\item 
+\hyperlink{namespacenlohmann_1_1detail_a59fca69799f6b9e366710cb9043aa77d}{void} \hyperlink{classnlohmann_1_1detail_1_1parser_a75fb9145ea85f1ad9cc14f61981e1111}{parse} (const bool \hyperlink{namespacenlohmann_1_1detail_a5a76b60b26dc8c47256a996d18d967dfa2133fd717402a7966ee88d06f9e0b792}{strict}, Basic\+Json\+Type \&result)
+\begin{DoxyCompactList}\small\item\em public parser interface \end{DoxyCompactList}\item 
+bool \hyperlink{classnlohmann_1_1detail_1_1parser_a39784a586867c05388cb0adca0fd72b5}{accept} (const bool \hyperlink{namespacenlohmann_1_1detail_a5a76b60b26dc8c47256a996d18d967dfa2133fd717402a7966ee88d06f9e0b792}{strict}=true)
+\begin{DoxyCompactList}\small\item\em public accept interface \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename S\+AX $>$ }\\bool \hyperlink{classnlohmann_1_1detail_1_1parser_a073b8313a5194aac3a7d5da0d935788c}{sax\+\_\+parse} (S\+AX $\ast$sax, const bool \hyperlink{namespacenlohmann_1_1detail_a5a76b60b26dc8c47256a996d18d967dfa2133fd717402a7966ee88d06f9e0b792}{strict}=true)
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{classnlohmann_1_1detail_1_1parser_ab70e418cdc4271afd487a7d7704766c5}{number\+\_\+integer\+\_\+t} = typename Basic\+Json\+Type\+::number\+\_\+integer\+\_\+t
+\item 
+using \hyperlink{classnlohmann_1_1detail_1_1parser_a5590596704edc4a1a983e26f6f3211ff}{number\+\_\+unsigned\+\_\+t} = typename Basic\+Json\+Type\+::number\+\_\+unsigned\+\_\+t
+\item 
+using \hyperlink{classnlohmann_1_1detail_1_1parser_aaf0c8640d0360fca5334314f0a7e9bad}{number\+\_\+float\+\_\+t} = typename Basic\+Json\+Type\+::number\+\_\+float\+\_\+t
+\item 
+using \hyperlink{classnlohmann_1_1detail_1_1parser_a4c46f613c87af09f56679253dce768e4}{string\+\_\+t} = typename Basic\+Json\+Type\+::string\+\_\+t
+\item 
+using \hyperlink{classnlohmann_1_1detail_1_1parser_a5fbd320c5b713fda15d467e8455e4298}{lexer\+\_\+t} = \hyperlink{classnlohmann_1_1detail_1_1lexer}{lexer}$<$ Basic\+Json\+Type, Input\+Adapter\+Type $>$
+\item 
+using \hyperlink{classnlohmann_1_1detail_1_1parser_a5cb5ea47f09f116e71a908c556325710}{token\+\_\+type} = typename \hyperlink{classnlohmann_1_1detail_1_1lexer_a986907dff5ceb4fa06aa8ff301822726}{lexer\+\_\+t\+::token\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename S\+AX $>$ }\\bool \hyperlink{classnlohmann_1_1detail_1_1parser_a678fdebccc8ddd3242c67b6bce2f8f1a}{sax\+\_\+parse\+\_\+internal} (S\+AX $\ast$sax)
+\item 
+\hyperlink{classnlohmann_1_1detail_1_1parser_a5cb5ea47f09f116e71a908c556325710}{token\+\_\+type} \hyperlink{classnlohmann_1_1detail_1_1parser_a1212088ee1e23633a76b2ed80514de79}{get\+\_\+token} ()
+\begin{DoxyCompactList}\small\item\em get next token from lexer \end{DoxyCompactList}\item 
+\hyperlink{namespacenlohmann_1_1detail_a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21}{std\+::string} \hyperlink{classnlohmann_1_1detail_1_1parser_a94e7f8a0f880c20c8a48f591f56cbd85}{exception\+\_\+message} (const \hyperlink{classnlohmann_1_1detail_1_1parser_a5cb5ea47f09f116e71a908c556325710}{token\+\_\+type} expected, const \hyperlink{namespacenlohmann_1_1detail_a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21}{std\+::string} \&context)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{namespacenlohmann_1_1detail_a9980144ad77e50ae944d1fe797ceec08}{parser\+\_\+callback\+\_\+t}$<$ Basic\+Json\+Type $>$ \hyperlink{classnlohmann_1_1detail_1_1parser_a6bf70a72a1632ef55c0068557b1be37a}{callback} = nullptr
+\begin{DoxyCompactList}\small\item\em callback function \end{DoxyCompactList}\item 
+\hyperlink{classnlohmann_1_1detail_1_1parser_a5cb5ea47f09f116e71a908c556325710}{token\+\_\+type} \hyperlink{classnlohmann_1_1detail_1_1parser_a307ed42d5f31a9c5bec991ceee87b0e7}{last\+\_\+token} = token\+\_\+type\+::uninitialized
+\begin{DoxyCompactList}\small\item\em the type of the last read token \end{DoxyCompactList}\item 
+\hyperlink{classnlohmann_1_1detail_1_1parser_a5fbd320c5b713fda15d467e8455e4298}{lexer\+\_\+t} \hyperlink{classnlohmann_1_1detail_1_1parser_a01a73810f794c239aaf123aa2af7371d}{m\+\_\+lexer}
+\begin{DoxyCompactList}\small\item\em the lexer \end{DoxyCompactList}\item 
+const bool \hyperlink{classnlohmann_1_1detail_1_1parser_ab0dbaeaa6df00631072f902068c57750}{allow\+\_\+exceptions} = true
+\begin{DoxyCompactList}\small\item\em whether to throw exceptions in case of errors \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Basic\+Json\+Type, typename Input\+Adapter\+Type$>$\\*
+class nlohmann\+::detail\+::parser$<$ Basic\+Json\+Type, Input\+Adapter\+Type $>$}
+
+syntax analysis 
+
+This class implements a recursive descent parser. 
+
+\subsection{Member Typedef Documentation}
+\index{nlohmann\+::detail\+::parser@{nlohmann\+::detail\+::parser}!lexer\+\_\+t@{lexer\+\_\+t}}
+\index{lexer\+\_\+t@{lexer\+\_\+t}!nlohmann\+::detail\+::parser@{nlohmann\+::detail\+::parser}}
+\subsubsection[{\texorpdfstring{lexer\+\_\+t}{lexer_t}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type , typename Input\+Adapter\+Type $>$ using {\bf nlohmann\+::detail\+::parser}$<$ Basic\+Json\+Type, Input\+Adapter\+Type $>$\+::{\bf lexer\+\_\+t} =  {\bf lexer}$<$Basic\+Json\+Type, Input\+Adapter\+Type$>$\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classnlohmann_1_1detail_1_1parser_a5fbd320c5b713fda15d467e8455e4298}{}\label{classnlohmann_1_1detail_1_1parser_a5fbd320c5b713fda15d467e8455e4298}
+\index{nlohmann\+::detail\+::parser@{nlohmann\+::detail\+::parser}!number\+\_\+float\+\_\+t@{number\+\_\+float\+\_\+t}}
+\index{number\+\_\+float\+\_\+t@{number\+\_\+float\+\_\+t}!nlohmann\+::detail\+::parser@{nlohmann\+::detail\+::parser}}
+\subsubsection[{\texorpdfstring{number\+\_\+float\+\_\+t}{number_float_t}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type , typename Input\+Adapter\+Type $>$ using {\bf nlohmann\+::detail\+::parser}$<$ Basic\+Json\+Type, Input\+Adapter\+Type $>$\+::{\bf number\+\_\+float\+\_\+t} =  typename Basic\+Json\+Type\+::number\+\_\+float\+\_\+t\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classnlohmann_1_1detail_1_1parser_aaf0c8640d0360fca5334314f0a7e9bad}{}\label{classnlohmann_1_1detail_1_1parser_aaf0c8640d0360fca5334314f0a7e9bad}
+\index{nlohmann\+::detail\+::parser@{nlohmann\+::detail\+::parser}!number\+\_\+integer\+\_\+t@{number\+\_\+integer\+\_\+t}}
+\index{number\+\_\+integer\+\_\+t@{number\+\_\+integer\+\_\+t}!nlohmann\+::detail\+::parser@{nlohmann\+::detail\+::parser}}
+\subsubsection[{\texorpdfstring{number\+\_\+integer\+\_\+t}{number_integer_t}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type , typename Input\+Adapter\+Type $>$ using {\bf nlohmann\+::detail\+::parser}$<$ Basic\+Json\+Type, Input\+Adapter\+Type $>$\+::{\bf number\+\_\+integer\+\_\+t} =  typename Basic\+Json\+Type\+::number\+\_\+integer\+\_\+t\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classnlohmann_1_1detail_1_1parser_ab70e418cdc4271afd487a7d7704766c5}{}\label{classnlohmann_1_1detail_1_1parser_ab70e418cdc4271afd487a7d7704766c5}
+\index{nlohmann\+::detail\+::parser@{nlohmann\+::detail\+::parser}!number\+\_\+unsigned\+\_\+t@{number\+\_\+unsigned\+\_\+t}}
+\index{number\+\_\+unsigned\+\_\+t@{number\+\_\+unsigned\+\_\+t}!nlohmann\+::detail\+::parser@{nlohmann\+::detail\+::parser}}
+\subsubsection[{\texorpdfstring{number\+\_\+unsigned\+\_\+t}{number_unsigned_t}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type , typename Input\+Adapter\+Type $>$ using {\bf nlohmann\+::detail\+::parser}$<$ Basic\+Json\+Type, Input\+Adapter\+Type $>$\+::{\bf number\+\_\+unsigned\+\_\+t} =  typename Basic\+Json\+Type\+::number\+\_\+unsigned\+\_\+t\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classnlohmann_1_1detail_1_1parser_a5590596704edc4a1a983e26f6f3211ff}{}\label{classnlohmann_1_1detail_1_1parser_a5590596704edc4a1a983e26f6f3211ff}
+\index{nlohmann\+::detail\+::parser@{nlohmann\+::detail\+::parser}!string\+\_\+t@{string\+\_\+t}}
+\index{string\+\_\+t@{string\+\_\+t}!nlohmann\+::detail\+::parser@{nlohmann\+::detail\+::parser}}
+\subsubsection[{\texorpdfstring{string\+\_\+t}{string_t}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type , typename Input\+Adapter\+Type $>$ using {\bf nlohmann\+::detail\+::parser}$<$ Basic\+Json\+Type, Input\+Adapter\+Type $>$\+::{\bf string\+\_\+t} =  typename Basic\+Json\+Type\+::string\+\_\+t\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classnlohmann_1_1detail_1_1parser_a4c46f613c87af09f56679253dce768e4}{}\label{classnlohmann_1_1detail_1_1parser_a4c46f613c87af09f56679253dce768e4}
+\index{nlohmann\+::detail\+::parser@{nlohmann\+::detail\+::parser}!token\+\_\+type@{token\+\_\+type}}
+\index{token\+\_\+type@{token\+\_\+type}!nlohmann\+::detail\+::parser@{nlohmann\+::detail\+::parser}}
+\subsubsection[{\texorpdfstring{token\+\_\+type}{token_type}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type , typename Input\+Adapter\+Type $>$ using {\bf nlohmann\+::detail\+::parser}$<$ Basic\+Json\+Type, Input\+Adapter\+Type $>$\+::{\bf token\+\_\+type} =  typename {\bf lexer\+\_\+t\+::token\+\_\+type}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classnlohmann_1_1detail_1_1parser_a5cb5ea47f09f116e71a908c556325710}{}\label{classnlohmann_1_1detail_1_1parser_a5cb5ea47f09f116e71a908c556325710}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{nlohmann\+::detail\+::parser@{nlohmann\+::detail\+::parser}!parser@{parser}}
+\index{parser@{parser}!nlohmann\+::detail\+::parser@{nlohmann\+::detail\+::parser}}
+\subsubsection[{\texorpdfstring{parser(\+Input\+Adapter\+Type \&\&adapter, const parser\+\_\+callback\+\_\+t$<$ Basic\+Json\+Type $>$ cb=nullptr, const bool allow\+\_\+exceptions\+\_\+=true, const bool skip\+\_\+comments=false)}{parser(InputAdapterType &&adapter, const parser_callback_t< BasicJsonType > cb=nullptr, const bool allow_exceptions_=true, const bool skip_comments=false)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type , typename Input\+Adapter\+Type $>$ {\bf nlohmann\+::detail\+::parser}$<$ Basic\+Json\+Type, Input\+Adapter\+Type $>$\+::{\bf parser} (
+\begin{DoxyParamCaption}
+\item[{Input\+Adapter\+Type \&\&}]{adapter, }
+\item[{const {\bf parser\+\_\+callback\+\_\+t}$<$ Basic\+Json\+Type $>$}]{cb = {\ttfamily nullptr}, }
+\item[{const bool}]{allow\+\_\+exceptions\+\_\+ = {\ttfamily true}, }
+\item[{const bool}]{skip\+\_\+comments = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classnlohmann_1_1detail_1_1parser_a33b852bf63cba58310d9c0d1242cfb12}{}\label{classnlohmann_1_1detail_1_1parser_a33b852bf63cba58310d9c0d1242cfb12}
+
+
+a parser reading from an input adapter 
+
+
+
+\subsection{Member Function Documentation}
+\index{nlohmann\+::detail\+::parser@{nlohmann\+::detail\+::parser}!accept@{accept}}
+\index{accept@{accept}!nlohmann\+::detail\+::parser@{nlohmann\+::detail\+::parser}}
+\subsubsection[{\texorpdfstring{accept(const bool strict=true)}{accept(const bool strict=true)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type , typename Input\+Adapter\+Type $>$ bool {\bf nlohmann\+::detail\+::parser}$<$ Basic\+Json\+Type, Input\+Adapter\+Type $>$\+::accept (
+\begin{DoxyParamCaption}
+\item[{const bool}]{strict = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classnlohmann_1_1detail_1_1parser_a39784a586867c05388cb0adca0fd72b5}{}\label{classnlohmann_1_1detail_1_1parser_a39784a586867c05388cb0adca0fd72b5}
+
+
+public accept interface 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em strict} & whether to expect the last token to be E\+OF \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+whether the input is a proper J\+S\+ON text 
+\end{DoxyReturn}
+\index{nlohmann\+::detail\+::parser@{nlohmann\+::detail\+::parser}!exception\+\_\+message@{exception\+\_\+message}}
+\index{exception\+\_\+message@{exception\+\_\+message}!nlohmann\+::detail\+::parser@{nlohmann\+::detail\+::parser}}
+\subsubsection[{\texorpdfstring{exception\+\_\+message(const token\+\_\+type expected, const std\+::string \&context)}{exception_message(const token_type expected, const std::string &context)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type , typename Input\+Adapter\+Type $>$ {\bf std\+::string} {\bf nlohmann\+::detail\+::parser}$<$ Basic\+Json\+Type, Input\+Adapter\+Type $>$\+::exception\+\_\+message (
+\begin{DoxyParamCaption}
+\item[{const {\bf token\+\_\+type}}]{expected, }
+\item[{const {\bf std\+::string} \&}]{context}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classnlohmann_1_1detail_1_1parser_a94e7f8a0f880c20c8a48f591f56cbd85}{}\label{classnlohmann_1_1detail_1_1parser_a94e7f8a0f880c20c8a48f591f56cbd85}
+\index{nlohmann\+::detail\+::parser@{nlohmann\+::detail\+::parser}!get\+\_\+token@{get\+\_\+token}}
+\index{get\+\_\+token@{get\+\_\+token}!nlohmann\+::detail\+::parser@{nlohmann\+::detail\+::parser}}
+\subsubsection[{\texorpdfstring{get\+\_\+token()}{get_token()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type , typename Input\+Adapter\+Type $>$ {\bf token\+\_\+type} {\bf nlohmann\+::detail\+::parser}$<$ Basic\+Json\+Type, Input\+Adapter\+Type $>$\+::get\+\_\+token (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classnlohmann_1_1detail_1_1parser_a1212088ee1e23633a76b2ed80514de79}{}\label{classnlohmann_1_1detail_1_1parser_a1212088ee1e23633a76b2ed80514de79}
+
+
+get next token from lexer 
+
+\index{nlohmann\+::detail\+::parser@{nlohmann\+::detail\+::parser}!parse@{parse}}
+\index{parse@{parse}!nlohmann\+::detail\+::parser@{nlohmann\+::detail\+::parser}}
+\subsubsection[{\texorpdfstring{parse(const bool strict, Basic\+Json\+Type \&result)}{parse(const bool strict, BasicJsonType &result)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type , typename Input\+Adapter\+Type $>$ {\bf void} {\bf nlohmann\+::detail\+::parser}$<$ Basic\+Json\+Type, Input\+Adapter\+Type $>$\+::parse (
+\begin{DoxyParamCaption}
+\item[{const bool}]{strict, }
+\item[{Basic\+Json\+Type \&}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classnlohmann_1_1detail_1_1parser_a75fb9145ea85f1ad9cc14f61981e1111}{}\label{classnlohmann_1_1detail_1_1parser_a75fb9145ea85f1ad9cc14f61981e1111}
+
+
+public parser interface 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em strict} & whether to expect the last token to be E\+OF \\
+\hline
+\mbox{\tt in,out}  & {\em result} & parsed J\+S\+ON value\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em parse\+\_\+error.\+101} & in case of an unexpected token \\
+\hline
+{\em parse\+\_\+error.\+102} & if to\+\_\+unicode fails or surrogate error \\
+\hline
+{\em parse\+\_\+error.\+103} & if to\+\_\+unicode fails \\
+\hline
+\end{DoxyExceptions}
+\index{nlohmann\+::detail\+::parser@{nlohmann\+::detail\+::parser}!sax\+\_\+parse@{sax\+\_\+parse}}
+\index{sax\+\_\+parse@{sax\+\_\+parse}!nlohmann\+::detail\+::parser@{nlohmann\+::detail\+::parser}}
+\subsubsection[{\texorpdfstring{sax\+\_\+parse(\+S\+A\+X $\ast$sax, const bool strict=true)}{sax_parse(SAX *sax, const bool strict=true)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type , typename Input\+Adapter\+Type $>$ template$<$typename S\+AX $>$ bool {\bf nlohmann\+::detail\+::parser}$<$ Basic\+Json\+Type, Input\+Adapter\+Type $>$\+::sax\+\_\+parse (
+\begin{DoxyParamCaption}
+\item[{S\+AX $\ast$}]{sax, }
+\item[{const bool}]{strict = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classnlohmann_1_1detail_1_1parser_a073b8313a5194aac3a7d5da0d935788c}{}\label{classnlohmann_1_1detail_1_1parser_a073b8313a5194aac3a7d5da0d935788c}
+\index{nlohmann\+::detail\+::parser@{nlohmann\+::detail\+::parser}!sax\+\_\+parse\+\_\+internal@{sax\+\_\+parse\+\_\+internal}}
+\index{sax\+\_\+parse\+\_\+internal@{sax\+\_\+parse\+\_\+internal}!nlohmann\+::detail\+::parser@{nlohmann\+::detail\+::parser}}
+\subsubsection[{\texorpdfstring{sax\+\_\+parse\+\_\+internal(\+S\+A\+X $\ast$sax)}{sax_parse_internal(SAX *sax)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type , typename Input\+Adapter\+Type $>$ template$<$typename S\+AX $>$ bool {\bf nlohmann\+::detail\+::parser}$<$ Basic\+Json\+Type, Input\+Adapter\+Type $>$\+::sax\+\_\+parse\+\_\+internal (
+\begin{DoxyParamCaption}
+\item[{S\+AX $\ast$}]{sax}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classnlohmann_1_1detail_1_1parser_a678fdebccc8ddd3242c67b6bce2f8f1a}{}\label{classnlohmann_1_1detail_1_1parser_a678fdebccc8ddd3242c67b6bce2f8f1a}
+
+
+\subsection{Member Data Documentation}
+\index{nlohmann\+::detail\+::parser@{nlohmann\+::detail\+::parser}!allow\+\_\+exceptions@{allow\+\_\+exceptions}}
+\index{allow\+\_\+exceptions@{allow\+\_\+exceptions}!nlohmann\+::detail\+::parser@{nlohmann\+::detail\+::parser}}
+\subsubsection[{\texorpdfstring{allow\+\_\+exceptions}{allow_exceptions}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type , typename Input\+Adapter\+Type $>$ const bool {\bf nlohmann\+::detail\+::parser}$<$ Basic\+Json\+Type, Input\+Adapter\+Type $>$\+::allow\+\_\+exceptions = true\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classnlohmann_1_1detail_1_1parser_ab0dbaeaa6df00631072f902068c57750}{}\label{classnlohmann_1_1detail_1_1parser_ab0dbaeaa6df00631072f902068c57750}
+
+
+whether to throw exceptions in case of errors 
+
+\index{nlohmann\+::detail\+::parser@{nlohmann\+::detail\+::parser}!callback@{callback}}
+\index{callback@{callback}!nlohmann\+::detail\+::parser@{nlohmann\+::detail\+::parser}}
+\subsubsection[{\texorpdfstring{callback}{callback}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type , typename Input\+Adapter\+Type $>$ const {\bf parser\+\_\+callback\+\_\+t}$<$Basic\+Json\+Type$>$ {\bf nlohmann\+::detail\+::parser}$<$ Basic\+Json\+Type, Input\+Adapter\+Type $>$\+::callback = nullptr\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classnlohmann_1_1detail_1_1parser_a6bf70a72a1632ef55c0068557b1be37a}{}\label{classnlohmann_1_1detail_1_1parser_a6bf70a72a1632ef55c0068557b1be37a}
+
+
+callback function 
+
+\index{nlohmann\+::detail\+::parser@{nlohmann\+::detail\+::parser}!last\+\_\+token@{last\+\_\+token}}
+\index{last\+\_\+token@{last\+\_\+token}!nlohmann\+::detail\+::parser@{nlohmann\+::detail\+::parser}}
+\subsubsection[{\texorpdfstring{last\+\_\+token}{last_token}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type , typename Input\+Adapter\+Type $>$ {\bf token\+\_\+type} {\bf nlohmann\+::detail\+::parser}$<$ Basic\+Json\+Type, Input\+Adapter\+Type $>$\+::last\+\_\+token = token\+\_\+type\+::uninitialized\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classnlohmann_1_1detail_1_1parser_a307ed42d5f31a9c5bec991ceee87b0e7}{}\label{classnlohmann_1_1detail_1_1parser_a307ed42d5f31a9c5bec991ceee87b0e7}
+
+
+the type of the last read token 
+
+\index{nlohmann\+::detail\+::parser@{nlohmann\+::detail\+::parser}!m\+\_\+lexer@{m\+\_\+lexer}}
+\index{m\+\_\+lexer@{m\+\_\+lexer}!nlohmann\+::detail\+::parser@{nlohmann\+::detail\+::parser}}
+\subsubsection[{\texorpdfstring{m\+\_\+lexer}{m_lexer}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Basic\+Json\+Type , typename Input\+Adapter\+Type $>$ {\bf lexer\+\_\+t} {\bf nlohmann\+::detail\+::parser}$<$ Basic\+Json\+Type, Input\+Adapter\+Type $>$\+::m\+\_\+lexer\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classnlohmann_1_1detail_1_1parser_a01a73810f794c239aaf123aa2af7371d}{}\label{classnlohmann_1_1detail_1_1parser_a01a73810f794c239aaf123aa2af7371d}
+
+
+the lexer 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{json_8hpp}{json.\+hpp}\end{DoxyCompactItemize}

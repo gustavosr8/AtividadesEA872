@@ -16,26 +16,32 @@ Collaboration diagram for view\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=550pt]{classview__coll__graph}
+\includegraphics[width=350pt]{classview__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classview_ae68420027fc8352dc303107eb0305ea6}{view} (std\+::vector$<$ \hyperlink{classtijolo}{tijolo} $>$ \&t\+\_\+, \hyperlink{classbarra}{barra} $\ast$ba\+\_\+, \hyperlink{classbolinha}{bolinha} $\ast$bo\+\_\+, \hyperlink{classpontos}{pontos} $\ast$po\+\_\+, \hyperlink{classvida}{vida} $\ast$v\+\_\+)
+\hyperlink{classview_a809bdce6090439ac99ab0e5856c130e2}{view} (std\+::vector$<$ std\+::vector$<$ \hyperlink{classtijolo}{tijolo} $>$ $>$ \&t\+\_\+, std\+::vector$<$ \hyperlink{classbarra}{barra} $>$ \&ba\+\_\+, \hyperlink{classbolinha}{bolinha} $\ast$bo\+\_\+, \hyperlink{classpontos}{pontos} $\ast$po\+\_\+, \hyperlink{classvida}{vida} $\ast$v\+\_\+)
 \begin{DoxyCompactList}\small\item\em Construtor do view. \end{DoxyCompactList}\item 
 void \hyperlink{classview_afa73cff596b36c7009ee17383d039750}{render\+\_\+text} (S\+D\+L\+\_\+\+Renderer $\ast$\hyperlink{classview_a8d7b3ec0a0641d24cdc3b04949f5df45}{renderer}, int x, int y, const char $\ast$text, T\+T\+F\+\_\+\+Font $\ast$font, S\+D\+L\+\_\+\+Rect $\ast$rect, S\+D\+L\+\_\+\+Color $\ast$color)
 \begin{DoxyCompactList}\small\item\em Renderiza um texto. \end{DoxyCompactList}\item 
 int \hyperlink{classview_a21d953772b41dd9c08c9ea9895e002d7}{init} ()
 \begin{DoxyCompactList}\small\item\em Rotina de inicializacao. \end{DoxyCompactList}\item 
-void \hyperlink{classview_a91e9b24e39a9846a7093949c9a19a118}{render} ()
+int \hyperlink{classview_ac0e552fdef69accb371177ef955e1b38}{init\+Client} ()
+\item 
+void \hyperlink{classview_a6ce9703fff0ea8ae911fee1d24a418e0}{render} (int user)
 \begin{DoxyCompactList}\small\item\em Renderizacao. \end{DoxyCompactList}\item 
 void \hyperlink{classview_ad8c046a243e52ee4f902abec6fbec9bb}{quit} ()
 \begin{DoxyCompactList}\small\item\em Encerramento. \end{DoxyCompactList}\item 
-void \hyperlink{classview_a1839c52cc61779be195b51e4fddcb659}{perdeu} ()
+void \hyperlink{classview_a23918beecf637e8226bc1ff64a67e811}{perdeu} (int user)
 \begin{DoxyCompactList}\small\item\em Derrota. \end{DoxyCompactList}\item 
-void \hyperlink{classview_abbf5bc2a4455e61eb8155f8256a5d870}{ganhou} ()
-\begin{DoxyCompactList}\small\item\em Vitoria. \end{DoxyCompactList}\item 
+void \hyperlink{classview_af4509b82ea85ae1e29b0fa51e2156f73}{ganhou} (int user)
+\begin{DoxyCompactList}\small\item\em Vitoria Singleplayer. \end{DoxyCompactList}\item 
+void \hyperlink{classview_a81553c85d81a253c49b002440a039fd3}{ganhou\+Multi} (int user\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Vitoria Multiplayer. \end{DoxyCompactList}\item 
+int \hyperlink{classview_a987e7c197e87c90671d6f5347d2dab9d}{window\+\_\+create} (int size)
+\item 
 int \hyperlink{classview_a257d50065961954053fbf5402b2e2968}{quantidade\+Tijolos} ()
 \item 
 S\+D\+L\+\_\+\+Rect $\ast$ \hyperlink{classview_a4bf37f4171f4bb15c0e5b4ab8c2a9faa}{get\+Target} ()
@@ -46,7 +52,9 @@ S\+D\+L\+\_\+\+Rect $\ast$ \hyperlink{classview_a8eb9d89d9b55a5d2ee529c96e0dc246
 \item 
 S\+D\+L\+\_\+\+Rect $\ast$ \hyperlink{classview_a57b60e5da21e0484081d71c69ba4d03e}{get\+Barra} ()
 \item 
-std\+::vector$<$ \hyperlink{classtijolo}{tijolo} $>$ \& \hyperlink{classview_a7546f44b45cd308c1c893e222701ec51}{get\+Tijolos} ()
+std\+::vector$<$ \hyperlink{classbarra}{barra} $>$ \& \hyperlink{classview_abae031de8054f66f9b0e7a5caabdc513}{get\+Barras} ()
+\item 
+std\+::vector$<$ std\+::vector$<$ \hyperlink{classtijolo}{tijolo} $>$ $>$ \& \hyperlink{classview_aba52b9c597c0b8acfacf96f21547977a}{get\+Tijolos} ()
 \item 
 \hyperlink{classpontos}{pontos} $\ast$ \hyperlink{classview_a6cd53aa4df2642579992803a18f0bc8b}{get\+Ponto} ()
 \item 
@@ -61,11 +69,11 @@ const Uint8 $\ast$ \hyperlink{classview_a5dd0f6c8f5d5f9123353986607c7fb77}{get\+
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-std\+::vector$<$ \hyperlink{classtijolo}{tijolo} $>$ \& \hyperlink{classview_af57a3852a171948382275c534ede7987}{t}
+std\+::vector$<$ std\+::vector$<$ \hyperlink{classtijolo}{tijolo} $>$ $>$ \& \hyperlink{classview_adf9164a1a6940c4224d67b5c33424f10}{t}
 \item 
 \hyperlink{classbolinha}{bolinha} $\ast$ \hyperlink{classview_a9d44d190dd69b906bfeaac4559ee454e}{bo}
 \item 
-\hyperlink{classbarra}{barra} $\ast$ \hyperlink{classview_a0fd146110ca95e73f43c1dbda5a41294}{ba}
+std\+::vector$<$ \hyperlink{classbarra}{barra} $>$ \& \hyperlink{classview_a38f555c4b8b985a9788a4196f5be917f}{ba}
 \item 
 \hyperlink{classpontos}{pontos} $\ast$ \hyperlink{classview_a8dc345a9799a79220ecca66c4cd3e8ff}{po}
 \item 
@@ -107,15 +115,15 @@ Esta é a classe para o view. Ela recebe todos os objetos que precisam ser mostr
 \subsection{Constructor \& Destructor Documentation}
 \index{view@{view}!view@{view}}
 \index{view@{view}!view@{view}}
-\subsubsection[{\texorpdfstring{view(std\+::vector$<$ tijolo $>$ \&t\+\_\+, barra $\ast$ba\+\_\+, bolinha $\ast$bo\+\_\+, pontos $\ast$po\+\_\+, vida $\ast$v\+\_\+)}{view(std::vector< tijolo > &t_, barra *ba_, bolinha *bo_, pontos *po_, vida *v_)}}]{\setlength{\rightskip}{0pt plus 5cm}view\+::view (
+\subsubsection[{\texorpdfstring{view(std\+::vector$<$ std\+::vector$<$ tijolo $>$ $>$ \&t\+\_\+, std\+::vector$<$ barra $>$ \&ba\+\_\+, bolinha $\ast$bo\+\_\+, pontos $\ast$po\+\_\+, vida $\ast$v\+\_\+)}{view(std::vector< std::vector< tijolo > > &t_, std::vector< barra > &ba_, bolinha *bo_, pontos *po_, vida *v_)}}]{\setlength{\rightskip}{0pt plus 5cm}view\+::view (
 \begin{DoxyParamCaption}
-\item[{std\+::vector$<$ {\bf tijolo} $>$ \&}]{t\+\_\+, }
-\item[{{\bf barra} $\ast$}]{ba\+\_\+, }
+\item[{std\+::vector$<$ std\+::vector$<$ {\bf tijolo} $>$ $>$ \&}]{t\+\_\+, }
+\item[{std\+::vector$<$ {\bf barra} $>$ \&}]{ba\+\_\+, }
 \item[{{\bf bolinha} $\ast$}]{bo\+\_\+, }
 \item[{{\bf pontos} $\ast$}]{po\+\_\+, }
 \item[{{\bf vida} $\ast$}]{v\+\_\+}
 \end{DoxyParamCaption}
-)}\hypertarget{classview_ae68420027fc8352dc303107eb0305ea6}{}\label{classview_ae68420027fc8352dc303107eb0305ea6}
+)}\hypertarget{classview_a809bdce6090439ac99ab0e5856c130e2}{}\label{classview_a809bdce6090439ac99ab0e5856c130e2}
 
 
 Construtor do view. 
@@ -140,22 +148,40 @@ Recebe um tudo o que for ser mostrado em tela
 \subsection{Member Function Documentation}
 \index{view@{view}!ganhou@{ganhou}}
 \index{ganhou@{ganhou}!view@{view}}
-\subsubsection[{\texorpdfstring{ganhou()}{ganhou()}}]{\setlength{\rightskip}{0pt plus 5cm}void view\+::ganhou (
+\subsubsection[{\texorpdfstring{ganhou(int user)}{ganhou(int user)}}]{\setlength{\rightskip}{0pt plus 5cm}void view\+::ganhou (
 \begin{DoxyParamCaption}
-{}
+\item[{int}]{user}
 \end{DoxyParamCaption}
-)}\hypertarget{classview_abbf5bc2a4455e61eb8155f8256a5d870}{}\label{classview_abbf5bc2a4455e61eb8155f8256a5d870}
+)}\hypertarget{classview_af4509b82ea85ae1e29b0fa51e2156f73}{}\label{classview_af4509b82ea85ae1e29b0fa51e2156f73}
 
 
-Vitoria. 
+Vitoria Singleplayer. 
 
-Sequencia de acoes para quando um jogador ganha \index{view@{view}!get\+Barra@{get\+Barra}}
+Sequencia de acoes para quando um jogador ganha \index{view@{view}!ganhou\+Multi@{ganhou\+Multi}}
+\index{ganhou\+Multi@{ganhou\+Multi}!view@{view}}
+\subsubsection[{\texorpdfstring{ganhou\+Multi(int user\+\_\+id)}{ganhouMulti(int user_id)}}]{\setlength{\rightskip}{0pt plus 5cm}void view\+::ganhou\+Multi (
+\begin{DoxyParamCaption}
+\item[{int}]{user\+\_\+id}
+\end{DoxyParamCaption}
+)}\hypertarget{classview_a81553c85d81a253c49b002440a039fd3}{}\label{classview_a81553c85d81a253c49b002440a039fd3}
+
+
+Vitoria Multiplayer. 
+
+Sequencia de acoes para quando um jogador ganha no multiplayer \index{view@{view}!get\+Barra@{get\+Barra}}
 \index{get\+Barra@{get\+Barra}!view@{view}}
 \subsubsection[{\texorpdfstring{get\+Barra()}{getBarra()}}]{\setlength{\rightskip}{0pt plus 5cm}S\+D\+L\+\_\+\+Rect $\ast$ view\+::get\+Barra (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
 )}\hypertarget{classview_a57b60e5da21e0484081d71c69ba4d03e}{}\label{classview_a57b60e5da21e0484081d71c69ba4d03e}
+\index{view@{view}!get\+Barras@{get\+Barras}}
+\index{get\+Barras@{get\+Barras}!view@{view}}
+\subsubsection[{\texorpdfstring{get\+Barras()}{getBarras()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf barra} $>$ \& view\+::get\+Barras (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classview_abae031de8054f66f9b0e7a5caabdc513}{}\label{classview_abae031de8054f66f9b0e7a5caabdc513}
 \index{view@{view}!get\+Bloco@{get\+Bloco}}
 \index{get\+Bloco@{get\+Bloco}!view@{view}}
 \subsubsection[{\texorpdfstring{get\+Bloco()}{getBloco()}}]{\setlength{\rightskip}{0pt plus 5cm}S\+D\+L\+\_\+\+Rect $\ast$ view\+::get\+Bloco (
@@ -200,11 +226,11 @@ Sequencia de acoes para quando um jogador ganha \index{view@{view}!get\+Barra@{g
 )}\hypertarget{classview_a4bf37f4171f4bb15c0e5b4ab8c2a9faa}{}\label{classview_a4bf37f4171f4bb15c0e5b4ab8c2a9faa}
 \index{view@{view}!get\+Tijolos@{get\+Tijolos}}
 \index{get\+Tijolos@{get\+Tijolos}!view@{view}}
-\subsubsection[{\texorpdfstring{get\+Tijolos()}{getTijolos()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf tijolo} $>$ \& view\+::get\+Tijolos (
+\subsubsection[{\texorpdfstring{get\+Tijolos()}{getTijolos()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::vector$<$ {\bf tijolo} $>$ $>$ \& view\+::get\+Tijolos (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\hypertarget{classview_a7546f44b45cd308c1c893e222701ec51}{}\label{classview_a7546f44b45cd308c1c893e222701ec51}
+)}\hypertarget{classview_aba52b9c597c0b8acfacf96f21547977a}{}\label{classview_aba52b9c597c0b8acfacf96f21547977a}
 \index{view@{view}!get\+Vida@{get\+Vida}}
 \index{get\+Vida@{get\+Vida}!view@{view}}
 \subsubsection[{\texorpdfstring{get\+Vida()}{getVida()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vida} $\ast$ view\+::get\+Vida (
@@ -230,13 +256,20 @@ Sequencia de acoes para quando um jogador ganha \index{view@{view}!get\+Barra@{g
 
 Rotina de inicializacao. 
 
-Sequencia de acoes que inicializam a janela de visualizacao \index{view@{view}!perdeu@{perdeu}}
-\index{perdeu@{perdeu}!view@{view}}
-\subsubsection[{\texorpdfstring{perdeu()}{perdeu()}}]{\setlength{\rightskip}{0pt plus 5cm}void view\+::perdeu (
+Sequencia de acoes que inicializam a janela de visualizacao \index{view@{view}!init\+Client@{init\+Client}}
+\index{init\+Client@{init\+Client}!view@{view}}
+\subsubsection[{\texorpdfstring{init\+Client()}{initClient()}}]{\setlength{\rightskip}{0pt plus 5cm}int view\+::init\+Client (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\hypertarget{classview_a1839c52cc61779be195b51e4fddcb659}{}\label{classview_a1839c52cc61779be195b51e4fddcb659}
+)}\hypertarget{classview_ac0e552fdef69accb371177ef955e1b38}{}\label{classview_ac0e552fdef69accb371177ef955e1b38}
+\index{view@{view}!perdeu@{perdeu}}
+\index{perdeu@{perdeu}!view@{view}}
+\subsubsection[{\texorpdfstring{perdeu(int user)}{perdeu(int user)}}]{\setlength{\rightskip}{0pt plus 5cm}void view\+::perdeu (
+\begin{DoxyParamCaption}
+\item[{int}]{user}
+\end{DoxyParamCaption}
+)}\hypertarget{classview_a23918beecf637e8226bc1ff64a67e811}{}\label{classview_a23918beecf637e8226bc1ff64a67e811}
 
 
 Derrota. 
@@ -261,11 +294,11 @@ Encerramento.
 
 Metodo que encerra os objetos de visualizacao e fecha o programa \index{view@{view}!render@{render}}
 \index{render@{render}!view@{view}}
-\subsubsection[{\texorpdfstring{render()}{render()}}]{\setlength{\rightskip}{0pt plus 5cm}void view\+::render (
+\subsubsection[{\texorpdfstring{render(int user)}{render(int user)}}]{\setlength{\rightskip}{0pt plus 5cm}void view\+::render (
 \begin{DoxyParamCaption}
-{}
+\item[{int}]{user}
 \end{DoxyParamCaption}
-)}\hypertarget{classview_a91e9b24e39a9846a7093949c9a19a118}{}\label{classview_a91e9b24e39a9846a7093949c9a19a118}
+)}\hypertarget{classview_a6ce9703fff0ea8ae911fee1d24a418e0}{}\label{classview_a6ce9703fff0ea8ae911fee1d24a418e0}
 
 
 Renderizacao. 
@@ -306,12 +339,19 @@ Renderiza um texto em uma dada posicao, fonte e cor. Todos esses parametros sao 
 {\em color} & objeto S\+D\+L\+\_\+\+Color com a cor do texto a ser renderizado \\
 \hline
 \end{DoxyParams}
+\index{view@{view}!window\+\_\+create@{window\+\_\+create}}
+\index{window\+\_\+create@{window\+\_\+create}!view@{view}}
+\subsubsection[{\texorpdfstring{window\+\_\+create(int size)}{window_create(int size)}}]{\setlength{\rightskip}{0pt plus 5cm}int view\+::window\+\_\+create (
+\begin{DoxyParamCaption}
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)}\hypertarget{classview_a987e7c197e87c90671d6f5347d2dab9d}{}\label{classview_a987e7c197e87c90671d6f5347d2dab9d}
 
 
 \subsection{Member Data Documentation}
 \index{view@{view}!ba@{ba}}
 \index{ba@{ba}!view@{view}}
-\subsubsection[{\texorpdfstring{ba}{ba}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf barra}$\ast$ view\+::ba\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classview_a0fd146110ca95e73f43c1dbda5a41294}{}\label{classview_a0fd146110ca95e73f43c1dbda5a41294}
+\subsubsection[{\texorpdfstring{ba}{ba}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf barra}$>$\& view\+::ba\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classview_a38f555c4b8b985a9788a4196f5be917f}{}\label{classview_a38f555c4b8b985a9788a4196f5be917f}
 barra (alocado previamente) \index{view@{view}!bar@{bar}}
 \index{bar@{bar}!view@{view}}
 \subsubsection[{\texorpdfstring{bar}{bar}}]{\setlength{\rightskip}{0pt plus 5cm}S\+D\+L\+\_\+\+Rect view\+::bar\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classview_a9c94bf9b55b5c24c5a9289d82a969ebb}{}\label{classview_a9c94bf9b55b5c24c5a9289d82a969ebb}
@@ -353,7 +393,7 @@ pontos (alocado previamente) \index{view@{view}!renderer@{renderer}}
 \subsubsection[{\texorpdfstring{state}{state}}]{\setlength{\rightskip}{0pt plus 5cm}const Uint8$\ast$ view\+::state\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classview_a6fd7fc350d9ad94dfd47e324b107e8ce}{}\label{classview_a6fd7fc350d9ad94dfd47e324b107e8ce}
 \index{view@{view}!t@{t}}
 \index{t@{t}!view@{view}}
-\subsubsection[{\texorpdfstring{t}{t}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf tijolo}$>$\& view\+::t\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classview_af57a3852a171948382275c534ede7987}{}\label{classview_af57a3852a171948382275c534ede7987}
+\subsubsection[{\texorpdfstring{t}{t}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::vector$<${\bf tijolo}$>$ $>$\& view\+::t\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classview_adf9164a1a6940c4224d67b5c33424f10}{}\label{classview_adf9164a1a6940c4224d67b5c33424f10}
 tijolo (alocado previamente) \index{view@{view}!target@{target}}
 \index{target@{target}!view@{view}}
 \subsubsection[{\texorpdfstring{target}{target}}]{\setlength{\rightskip}{0pt plus 5cm}S\+D\+L\+\_\+\+Rect view\+::target\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classview_a49a628eedba666db008f8c07b96e3a51}{}\label{classview_a49a628eedba666db008f8c07b96e3a51}

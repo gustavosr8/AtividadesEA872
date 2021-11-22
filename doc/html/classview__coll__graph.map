@@ -1,6 +1,5 @@
 <map id="view" name="view">
-<area shape="rect" id="node2" href="$classvida.html" title="Classe para os pontos. " alt="" coords="5,152,99,259"/>
-<area shape="rect" id="node3" href="$classbolinha.html" title="Classe para a bolinha. " alt="" coords="123,5,221,405"/>
-<area shape="rect" id="node4" href="$classpontos.html" title="Classe para os pontos. " alt="" coords="245,152,339,259"/>
-<area shape="rect" id="node5" href="$classbarra.html" title="Classe para a barra. " alt="" coords="363,49,461,361"/>
+<area shape="rect" id="node2" href="$classvida.html" title="Classe para os pontos. " alt="" coords="5,79,216,347"/>
+<area shape="rect" id="node3" href="$classbolinha.html" title="Classe para a bolinha. " alt="" coords="240,5,451,420"/>
+<area shape="rect" id="node4" href="$classpontos.html" title="Classe para os pontos. " alt="" coords="475,79,685,347"/>
 </map>

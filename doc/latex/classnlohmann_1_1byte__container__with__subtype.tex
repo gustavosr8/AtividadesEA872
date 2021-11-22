@@ -1,0 +1,279 @@
+\hypertarget{classnlohmann_1_1byte__container__with__subtype}{}\section{nlohmann\+:\+:byte\+\_\+container\+\_\+with\+\_\+subtype$<$ Binary\+Type $>$ Class Template Reference}
+\label{classnlohmann_1_1byte__container__with__subtype}\index{nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype$<$ Binary\+Type $>$@{nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype$<$ Binary\+Type $>$}}
+
+
+an internal type for a backed binary type  
+
+
+
+
+{\ttfamily \#include $<$json.\+hpp$>$}
+
+
+
+Inheritance diagram for nlohmann\+:\+:byte\+\_\+container\+\_\+with\+\_\+subtype$<$ Binary\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{classnlohmann_1_1byte__container__with__subtype__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for nlohmann\+:\+:byte\+\_\+container\+\_\+with\+\_\+subtype$<$ Binary\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{classnlohmann_1_1byte__container__with__subtype__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{classnlohmann_1_1byte__container__with__subtype_a4d27e8633c5a5e3b49dd4ccb06515713}{container\+\_\+type} = Binary\+Type
+\begin{DoxyCompactList}\small\item\em the type of the underlying container \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classnlohmann_1_1byte__container__with__subtype_a89c78caf8c7b54dc1bcfa4b0b23d2fc8}{byte\+\_\+container\+\_\+with\+\_\+subtype} () noexcept(noexcept(\hyperlink{classnlohmann_1_1byte__container__with__subtype_a4d27e8633c5a5e3b49dd4ccb06515713}{container\+\_\+type}()))
+\item 
+\hyperlink{classnlohmann_1_1byte__container__with__subtype_a640b6dd55847e86dbb936f97b946170e}{byte\+\_\+container\+\_\+with\+\_\+subtype} (const \hyperlink{classnlohmann_1_1byte__container__with__subtype_a4d27e8633c5a5e3b49dd4ccb06515713}{container\+\_\+type} \&b) noexcept(noexcept(\hyperlink{classnlohmann_1_1byte__container__with__subtype_a4d27e8633c5a5e3b49dd4ccb06515713}{container\+\_\+type}(b)))
+\item 
+\hyperlink{classnlohmann_1_1byte__container__with__subtype_a73dcae1798eab1b496936bfae7b4b9c0}{byte\+\_\+container\+\_\+with\+\_\+subtype} (\hyperlink{classnlohmann_1_1byte__container__with__subtype_a4d27e8633c5a5e3b49dd4ccb06515713}{container\+\_\+type} \&\&b) noexcept(noexcept(\hyperlink{classnlohmann_1_1byte__container__with__subtype_a4d27e8633c5a5e3b49dd4ccb06515713}{container\+\_\+type}(std\+::move(b))))
+\item 
+\hyperlink{classnlohmann_1_1byte__container__with__subtype_ac267e4fe960124976452bb46d7fe6792}{byte\+\_\+container\+\_\+with\+\_\+subtype} (const \hyperlink{classnlohmann_1_1byte__container__with__subtype_a4d27e8633c5a5e3b49dd4ccb06515713}{container\+\_\+type} \&b, std\+::uint8\+\_\+t \hyperlink{classnlohmann_1_1byte__container__with__subtype_ac3ca9d09e55342f9588404e1dc2222f0}{subtype}) noexcept(noexcept(\hyperlink{classnlohmann_1_1byte__container__with__subtype_a4d27e8633c5a5e3b49dd4ccb06515713}{container\+\_\+type}(b)))
+\item 
+\hyperlink{classnlohmann_1_1byte__container__with__subtype_a7e3da6b709fc1ee661d298e74a29c06b}{byte\+\_\+container\+\_\+with\+\_\+subtype} (\hyperlink{classnlohmann_1_1byte__container__with__subtype_a4d27e8633c5a5e3b49dd4ccb06515713}{container\+\_\+type} \&\&b, std\+::uint8\+\_\+t \hyperlink{classnlohmann_1_1byte__container__with__subtype_ac3ca9d09e55342f9588404e1dc2222f0}{subtype}) noexcept(noexcept(\hyperlink{classnlohmann_1_1byte__container__with__subtype_a4d27e8633c5a5e3b49dd4ccb06515713}{container\+\_\+type}(std\+::move(b))))
+\item 
+bool \hyperlink{classnlohmann_1_1byte__container__with__subtype_a87c3145111f072121997835c00ffbd02}{operator==} (const \hyperlink{classnlohmann_1_1byte__container__with__subtype}{byte\+\_\+container\+\_\+with\+\_\+subtype} \&rhs) const 
+\item 
+bool \hyperlink{classnlohmann_1_1byte__container__with__subtype_a8213028e58c64392b4bcb1de74f2b4c5}{operator!=} (const \hyperlink{classnlohmann_1_1byte__container__with__subtype}{byte\+\_\+container\+\_\+with\+\_\+subtype} \&rhs) const 
+\item 
+void \hyperlink{classnlohmann_1_1byte__container__with__subtype_aa1653b01b420607b359a3e8815b516c2}{set\+\_\+subtype} (std\+::uint8\+\_\+t \hyperlink{classnlohmann_1_1byte__container__with__subtype_ac3ca9d09e55342f9588404e1dc2222f0}{subtype}) noexcept
+\begin{DoxyCompactList}\small\item\em sets the binary subtype \end{DoxyCompactList}\item 
+constexpr std\+::uint8\+\_\+t \hyperlink{classnlohmann_1_1byte__container__with__subtype_ac3ca9d09e55342f9588404e1dc2222f0}{subtype} () const noexcept
+\begin{DoxyCompactList}\small\item\em return the binary subtype \end{DoxyCompactList}\item 
+constexpr bool \hyperlink{classnlohmann_1_1byte__container__with__subtype_a9fc42fb07003bf7048c2f1fc79478e02}{has\+\_\+subtype} () const noexcept
+\begin{DoxyCompactList}\small\item\em return whether the value has a subtype \end{DoxyCompactList}\item 
+void \hyperlink{classnlohmann_1_1byte__container__with__subtype_a7b122b28ff2b8680557ca44ac9748e49}{clear\+\_\+subtype} () noexcept
+\begin{DoxyCompactList}\small\item\em clears the binary subtype \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::uint8\+\_\+t \hyperlink{classnlohmann_1_1byte__container__with__subtype_ae36c8f29f4f50a00962b0e9110ba2756}{m\+\_\+subtype} = 0
+\item 
+bool \hyperlink{classnlohmann_1_1byte__container__with__subtype_a69aa7a914a7a31b61d3a9567d74ddf7b}{m\+\_\+has\+\_\+subtype} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Binary\+Type$>$\\*
+class nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype$<$ Binary\+Type $>$}
+
+an internal type for a backed binary type 
+
+This type extends the template parameter {\itshape Binary\+Type} provided to {\ttfamily \hyperlink{classnlohmann_1_1basic__json}{basic\+\_\+json}} with a subtype used by B\+S\+ON and Message\+Pack. This type exists so that the user does not have to specify a type themselves with a specific naming scheme in order to override the binary type.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Binary\+Type} & container to store bytes ({\ttfamily std\+::vector$<$std\+::uint8\+\_\+t$>$} by default)\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxySince}{Since}
+version 3.\+8.\+0 
+\end{DoxySince}
+
+
+\subsection{Member Typedef Documentation}
+\index{nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype@{nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype}!container\+\_\+type@{container\+\_\+type}}
+\index{container\+\_\+type@{container\+\_\+type}!nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype@{nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype}}
+\subsubsection[{\texorpdfstring{container\+\_\+type}{container_type}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Binary\+Type $>$ using {\bf nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype}$<$ Binary\+Type $>$\+::{\bf container\+\_\+type} =  Binary\+Type}\hypertarget{classnlohmann_1_1byte__container__with__subtype_a4d27e8633c5a5e3b49dd4ccb06515713}{}\label{classnlohmann_1_1byte__container__with__subtype_a4d27e8633c5a5e3b49dd4ccb06515713}
+
+
+the type of the underlying container 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype@{nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype}!byte\+\_\+container\+\_\+with\+\_\+subtype@{byte\+\_\+container\+\_\+with\+\_\+subtype}}
+\index{byte\+\_\+container\+\_\+with\+\_\+subtype@{byte\+\_\+container\+\_\+with\+\_\+subtype}!nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype@{nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype}}
+\subsubsection[{\texorpdfstring{byte\+\_\+container\+\_\+with\+\_\+subtype() noexcept(noexcept(container\+\_\+type()))}{byte_container_with_subtype() noexcept(noexcept(container_type()))}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Binary\+Type $>$ {\bf nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype}$<$ Binary\+Type $>$\+::{\bf byte\+\_\+container\+\_\+with\+\_\+subtype} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}\hypertarget{classnlohmann_1_1byte__container__with__subtype_a89c78caf8c7b54dc1bcfa4b0b23d2fc8}{}\label{classnlohmann_1_1byte__container__with__subtype_a89c78caf8c7b54dc1bcfa4b0b23d2fc8}
+\index{nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype@{nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype}!byte\+\_\+container\+\_\+with\+\_\+subtype@{byte\+\_\+container\+\_\+with\+\_\+subtype}}
+\index{byte\+\_\+container\+\_\+with\+\_\+subtype@{byte\+\_\+container\+\_\+with\+\_\+subtype}!nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype@{nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype}}
+\subsubsection[{\texorpdfstring{byte\+\_\+container\+\_\+with\+\_\+subtype(const container\+\_\+type \&b) noexcept(noexcept(container\+\_\+type(b)))}{byte_container_with_subtype(const container_type &b) noexcept(noexcept(container_type(b)))}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Binary\+Type $>$ {\bf nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype}$<$ Binary\+Type $>$\+::{\bf byte\+\_\+container\+\_\+with\+\_\+subtype} (
+\begin{DoxyParamCaption}
+\item[{const {\bf container\+\_\+type} \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}\hypertarget{classnlohmann_1_1byte__container__with__subtype_a640b6dd55847e86dbb936f97b946170e}{}\label{classnlohmann_1_1byte__container__with__subtype_a640b6dd55847e86dbb936f97b946170e}
+\index{nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype@{nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype}!byte\+\_\+container\+\_\+with\+\_\+subtype@{byte\+\_\+container\+\_\+with\+\_\+subtype}}
+\index{byte\+\_\+container\+\_\+with\+\_\+subtype@{byte\+\_\+container\+\_\+with\+\_\+subtype}!nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype@{nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype}}
+\subsubsection[{\texorpdfstring{byte\+\_\+container\+\_\+with\+\_\+subtype(container\+\_\+type \&\&b) noexcept(noexcept(container\+\_\+type(std\+::move(b))))}{byte_container_with_subtype(container_type &&b) noexcept(noexcept(container_type(std::move(b))))}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Binary\+Type $>$ {\bf nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype}$<$ Binary\+Type $>$\+::{\bf byte\+\_\+container\+\_\+with\+\_\+subtype} (
+\begin{DoxyParamCaption}
+\item[{{\bf container\+\_\+type} \&\&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}\hypertarget{classnlohmann_1_1byte__container__with__subtype_a73dcae1798eab1b496936bfae7b4b9c0}{}\label{classnlohmann_1_1byte__container__with__subtype_a73dcae1798eab1b496936bfae7b4b9c0}
+\index{nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype@{nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype}!byte\+\_\+container\+\_\+with\+\_\+subtype@{byte\+\_\+container\+\_\+with\+\_\+subtype}}
+\index{byte\+\_\+container\+\_\+with\+\_\+subtype@{byte\+\_\+container\+\_\+with\+\_\+subtype}!nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype@{nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype}}
+\subsubsection[{\texorpdfstring{byte\+\_\+container\+\_\+with\+\_\+subtype(const container\+\_\+type \&b, std\+::uint8\+\_\+t subtype) noexcept(noexcept(container\+\_\+type(b)))}{byte_container_with_subtype(const container_type &b, std::uint8_t subtype) noexcept(noexcept(container_type(b)))}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Binary\+Type $>$ {\bf nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype}$<$ Binary\+Type $>$\+::{\bf byte\+\_\+container\+\_\+with\+\_\+subtype} (
+\begin{DoxyParamCaption}
+\item[{const {\bf container\+\_\+type} \&}]{b, }
+\item[{std\+::uint8\+\_\+t}]{subtype}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}\hypertarget{classnlohmann_1_1byte__container__with__subtype_ac267e4fe960124976452bb46d7fe6792}{}\label{classnlohmann_1_1byte__container__with__subtype_ac267e4fe960124976452bb46d7fe6792}
+\index{nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype@{nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype}!byte\+\_\+container\+\_\+with\+\_\+subtype@{byte\+\_\+container\+\_\+with\+\_\+subtype}}
+\index{byte\+\_\+container\+\_\+with\+\_\+subtype@{byte\+\_\+container\+\_\+with\+\_\+subtype}!nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype@{nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype}}
+\subsubsection[{\texorpdfstring{byte\+\_\+container\+\_\+with\+\_\+subtype(container\+\_\+type \&\&b, std\+::uint8\+\_\+t subtype) noexcept(noexcept(container\+\_\+type(std\+::move(b))))}{byte_container_with_subtype(container_type &&b, std::uint8_t subtype) noexcept(noexcept(container_type(std::move(b))))}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Binary\+Type $>$ {\bf nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype}$<$ Binary\+Type $>$\+::{\bf byte\+\_\+container\+\_\+with\+\_\+subtype} (
+\begin{DoxyParamCaption}
+\item[{{\bf container\+\_\+type} \&\&}]{b, }
+\item[{std\+::uint8\+\_\+t}]{subtype}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}\hypertarget{classnlohmann_1_1byte__container__with__subtype_a7e3da6b709fc1ee661d298e74a29c06b}{}\label{classnlohmann_1_1byte__container__with__subtype_a7e3da6b709fc1ee661d298e74a29c06b}
+
+
+\subsection{Member Function Documentation}
+\index{nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype@{nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype}!clear\+\_\+subtype@{clear\+\_\+subtype}}
+\index{clear\+\_\+subtype@{clear\+\_\+subtype}!nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype@{nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype}}
+\subsubsection[{\texorpdfstring{clear\+\_\+subtype() noexcept}{clear_subtype() noexcept}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Binary\+Type $>$ void {\bf nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype}$<$ Binary\+Type $>$\+::clear\+\_\+subtype (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}\hypertarget{classnlohmann_1_1byte__container__with__subtype_a7b122b28ff2b8680557ca44ac9748e49}{}\label{classnlohmann_1_1byte__container__with__subtype_a7b122b28ff2b8680557ca44ac9748e49}
+
+
+clears the binary subtype 
+
+Clears the binary subtype and flags the value as not having a subtype, which has implications for serialization; for instance Message\+Pack will prefer the bin family over the ext family.
+
+Constant.
+
+No-\/throw guarantee\+: this member function never throws exceptions.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classnlohmann_1_1byte__container__with__subtype_ac3ca9d09e55342f9588404e1dc2222f0}{subtype()} -- return the binary \hyperlink{classnlohmann_1_1byte__container__with__subtype_ac3ca9d09e55342f9588404e1dc2222f0}{subtype} 
+
+\hyperlink{classnlohmann_1_1byte__container__with__subtype_aa1653b01b420607b359a3e8815b516c2}{set\+\_\+subtype()} -- sets the binary \hyperlink{classnlohmann_1_1byte__container__with__subtype_ac3ca9d09e55342f9588404e1dc2222f0}{subtype} 
+
+\hyperlink{classnlohmann_1_1byte__container__with__subtype_a9fc42fb07003bf7048c2f1fc79478e02}{has\+\_\+subtype()} -- returns whether or not the binary value has a \hyperlink{classnlohmann_1_1byte__container__with__subtype_ac3ca9d09e55342f9588404e1dc2222f0}{subtype}
+\end{DoxySeeAlso}
+\begin{DoxySince}{Since}
+version 3.\+8.\+0 
+\end{DoxySince}
+\index{nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype@{nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype}!has\+\_\+subtype@{has\+\_\+subtype}}
+\index{has\+\_\+subtype@{has\+\_\+subtype}!nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype@{nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype}}
+\subsubsection[{\texorpdfstring{has\+\_\+subtype() const noexcept}{has_subtype() const noexcept}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Binary\+Type $>$ constexpr bool {\bf nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype}$<$ Binary\+Type $>$\+::has\+\_\+subtype (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}\hypertarget{classnlohmann_1_1byte__container__with__subtype_a9fc42fb07003bf7048c2f1fc79478e02}{}\label{classnlohmann_1_1byte__container__with__subtype_a9fc42fb07003bf7048c2f1fc79478e02}
+
+
+return whether the value has a subtype 
+
+\begin{DoxyReturn}{Returns}
+whether the value has a subtype
+\end{DoxyReturn}
+Constant.
+
+No-\/throw guarantee\+: this member function never throws exceptions.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classnlohmann_1_1byte__container__with__subtype_ac3ca9d09e55342f9588404e1dc2222f0}{subtype()} -- return the binary \hyperlink{classnlohmann_1_1byte__container__with__subtype_ac3ca9d09e55342f9588404e1dc2222f0}{subtype} 
+
+\hyperlink{classnlohmann_1_1byte__container__with__subtype_aa1653b01b420607b359a3e8815b516c2}{set\+\_\+subtype()} -- sets the binary \hyperlink{classnlohmann_1_1byte__container__with__subtype_ac3ca9d09e55342f9588404e1dc2222f0}{subtype} 
+
+\hyperlink{classnlohmann_1_1byte__container__with__subtype_a7b122b28ff2b8680557ca44ac9748e49}{clear\+\_\+subtype()} -- clears the binary \hyperlink{classnlohmann_1_1byte__container__with__subtype_ac3ca9d09e55342f9588404e1dc2222f0}{subtype}
+\end{DoxySeeAlso}
+\begin{DoxySince}{Since}
+version 3.\+8.\+0 
+\end{DoxySince}
+\index{nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype@{nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype@{nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype}}
+\subsubsection[{\texorpdfstring{operator"!=(const byte\+\_\+container\+\_\+with\+\_\+subtype \&rhs) const }{operator!=(const byte_container_with_subtype &rhs) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Binary\+Type $>$ bool {\bf nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype}$<$ Binary\+Type $>$\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf byte\+\_\+container\+\_\+with\+\_\+subtype}$<$ Binary\+Type $>$ \&}]{rhs}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classnlohmann_1_1byte__container__with__subtype_a8213028e58c64392b4bcb1de74f2b4c5}{}\label{classnlohmann_1_1byte__container__with__subtype_a8213028e58c64392b4bcb1de74f2b4c5}
+\index{nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype@{nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype}!operator==@{operator==}}
+\index{operator==@{operator==}!nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype@{nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype}}
+\subsubsection[{\texorpdfstring{operator==(const byte\+\_\+container\+\_\+with\+\_\+subtype \&rhs) const }{operator==(const byte_container_with_subtype &rhs) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Binary\+Type $>$ bool {\bf nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype}$<$ Binary\+Type $>$\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf byte\+\_\+container\+\_\+with\+\_\+subtype}$<$ Binary\+Type $>$ \&}]{rhs}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classnlohmann_1_1byte__container__with__subtype_a87c3145111f072121997835c00ffbd02}{}\label{classnlohmann_1_1byte__container__with__subtype_a87c3145111f072121997835c00ffbd02}
+\index{nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype@{nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype}!set\+\_\+subtype@{set\+\_\+subtype}}
+\index{set\+\_\+subtype@{set\+\_\+subtype}!nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype@{nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype}}
+\subsubsection[{\texorpdfstring{set\+\_\+subtype(std\+::uint8\+\_\+t subtype) noexcept}{set_subtype(std::uint8_t subtype) noexcept}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Binary\+Type $>$ void {\bf nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype}$<$ Binary\+Type $>$\+::set\+\_\+subtype (
+\begin{DoxyParamCaption}
+\item[{std\+::uint8\+\_\+t}]{subtype}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}\hypertarget{classnlohmann_1_1byte__container__with__subtype_aa1653b01b420607b359a3e8815b516c2}{}\label{classnlohmann_1_1byte__container__with__subtype_aa1653b01b420607b359a3e8815b516c2}
+
+
+sets the binary subtype 
+
+Sets the binary subtype of the value, also flags a binary J\+S\+ON value as having a subtype, which has implications for serialization.
+
+Constant.
+
+No-\/throw guarantee\+: this member function never throws exceptions.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classnlohmann_1_1byte__container__with__subtype_ac3ca9d09e55342f9588404e1dc2222f0}{subtype()} -- return the binary \hyperlink{classnlohmann_1_1byte__container__with__subtype_ac3ca9d09e55342f9588404e1dc2222f0}{subtype} 
+
+\hyperlink{classnlohmann_1_1byte__container__with__subtype_a7b122b28ff2b8680557ca44ac9748e49}{clear\+\_\+subtype()} -- clears the binary \hyperlink{classnlohmann_1_1byte__container__with__subtype_ac3ca9d09e55342f9588404e1dc2222f0}{subtype} 
+
+\hyperlink{classnlohmann_1_1byte__container__with__subtype_a9fc42fb07003bf7048c2f1fc79478e02}{has\+\_\+subtype()} -- returns whether or not the binary value has a \hyperlink{classnlohmann_1_1byte__container__with__subtype_ac3ca9d09e55342f9588404e1dc2222f0}{subtype}
+\end{DoxySeeAlso}
+\begin{DoxySince}{Since}
+version 3.\+8.\+0 
+\end{DoxySince}
+\index{nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype@{nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype}!subtype@{subtype}}
+\index{subtype@{subtype}!nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype@{nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype}}
+\subsubsection[{\texorpdfstring{subtype() const noexcept}{subtype() const noexcept}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Binary\+Type $>$ constexpr std\+::uint8\+\_\+t {\bf nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype}$<$ Binary\+Type $>$\+::subtype (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}\hypertarget{classnlohmann_1_1byte__container__with__subtype_ac3ca9d09e55342f9588404e1dc2222f0}{}\label{classnlohmann_1_1byte__container__with__subtype_ac3ca9d09e55342f9588404e1dc2222f0}
+
+
+return the binary subtype 
+
+Returns the numerical subtype of the value if it has a subtype. If it does not have a subtype, this function will return size\+\_\+t(-\/1) as a sentinel value.
+
+\begin{DoxyReturn}{Returns}
+the numerical subtype of the binary value
+\end{DoxyReturn}
+Constant.
+
+No-\/throw guarantee\+: this member function never throws exceptions.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classnlohmann_1_1byte__container__with__subtype_aa1653b01b420607b359a3e8815b516c2}{set\+\_\+subtype()} -- sets the binary \hyperlink{classnlohmann_1_1byte__container__with__subtype_ac3ca9d09e55342f9588404e1dc2222f0}{subtype} 
+
+\hyperlink{classnlohmann_1_1byte__container__with__subtype_a7b122b28ff2b8680557ca44ac9748e49}{clear\+\_\+subtype()} -- clears the binary \hyperlink{classnlohmann_1_1byte__container__with__subtype_ac3ca9d09e55342f9588404e1dc2222f0}{subtype} 
+
+\hyperlink{classnlohmann_1_1byte__container__with__subtype_a9fc42fb07003bf7048c2f1fc79478e02}{has\+\_\+subtype()} -- returns whether or not the binary value has a \hyperlink{classnlohmann_1_1byte__container__with__subtype_ac3ca9d09e55342f9588404e1dc2222f0}{subtype}
+\end{DoxySeeAlso}
+\begin{DoxySince}{Since}
+version 3.\+8.\+0 
+\end{DoxySince}
+
+
+\subsection{Member Data Documentation}
+\index{nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype@{nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype}!m\+\_\+has\+\_\+subtype@{m\+\_\+has\+\_\+subtype}}
+\index{m\+\_\+has\+\_\+subtype@{m\+\_\+has\+\_\+subtype}!nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype@{nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype}}
+\subsubsection[{\texorpdfstring{m\+\_\+has\+\_\+subtype}{m_has_subtype}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Binary\+Type $>$ bool {\bf nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype}$<$ Binary\+Type $>$\+::m\+\_\+has\+\_\+subtype = false\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classnlohmann_1_1byte__container__with__subtype_a69aa7a914a7a31b61d3a9567d74ddf7b}{}\label{classnlohmann_1_1byte__container__with__subtype_a69aa7a914a7a31b61d3a9567d74ddf7b}
+\index{nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype@{nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype}!m\+\_\+subtype@{m\+\_\+subtype}}
+\index{m\+\_\+subtype@{m\+\_\+subtype}!nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype@{nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype}}
+\subsubsection[{\texorpdfstring{m\+\_\+subtype}{m_subtype}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Binary\+Type $>$ std\+::uint8\+\_\+t {\bf nlohmann\+::byte\+\_\+container\+\_\+with\+\_\+subtype}$<$ Binary\+Type $>$\+::m\+\_\+subtype = 0\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classnlohmann_1_1byte__container__with__subtype_ae36c8f29f4f50a00962b0e9110ba2756}{}\label{classnlohmann_1_1byte__container__with__subtype_ae36c8f29f4f50a00962b0e9110ba2756}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{json_8hpp}{json.\+hpp}\end{DoxyCompactItemize}

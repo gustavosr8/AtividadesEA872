@@ -1,0 +1,7 @@
+var searchData=
+[
+  ['value',['value',['../classnlohmann_1_1detail_1_1iteration__proxy__value.html#ad2fa3bf4e2598666dbf8d1b77c17d003',1,'nlohmann::detail::iteration_proxy_value::value()'],['../classnlohmann_1_1detail_1_1iter__impl.html#adc4048d25e057ce8ec0b912642c24731',1,'nlohmann::detail::iter_impl::value()'],['../classnlohmann_1_1detail_1_1json__reverse__iterator.html#a4c4e94317f95315f95e9909cf8d65dbf',1,'nlohmann::detail::json_reverse_iterator::value()'],['../classnlohmann_1_1basic__json.html#ac9e014095170d72c4c57e3daf8efc059',1,'nlohmann::basic_json::value(const typename object_t::key_type &amp;key, const ValueType &amp;default_value) const '],['../classnlohmann_1_1basic__json.html#a4976904f3320a5a9896742de35c7d3e1',1,'nlohmann::basic_json::value(const typename object_t::key_type &amp;key, const char *default_value) const '],['../classnlohmann_1_1basic__json.html#a0412570ccb3a87690f6f2c043ef961b8',1,'nlohmann::basic_json::value(const json_pointer &amp;ptr, const ValueType &amp;default_value) const '],['../classnlohmann_1_1basic__json.html#a70b0721f01af67fa596ab5d11dec9773',1,'nlohmann::basic_json::value(const json_pointer &amp;ptr, const char *default_value) const ']]],
+  ['vida',['vida',['../classvida.html#ad384ba4be61ab721939ebd0a7ed818b8',1,'vida::vida(int value_)'],['../classvida.html#abfe8a67f7f8dcae0ab10ec1c0db79fd5',1,'vida::vida()']]],
+  ['view',['view',['../classview.html#a809bdce6090439ac99ab0e5856c130e2',1,'view']]],
+  ['void',['void',['../namespacenlohmann_1_1detail.html#a59fca69799f6b9e366710cb9043aa77d',1,'nlohmann::detail']]]
+];

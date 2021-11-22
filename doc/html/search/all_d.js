@@ -1,14 +1,21 @@
 var searchData=
 [
-  ['screen_5fheight',['SCREEN_HEIGHT',['../view_8cpp.html#af1c710caf1e3a9e81829078054e83799',1,'view.cpp']]],
-  ['screen_5fwidth',['SCREEN_WIDTH',['../view_8cpp.html#a599adbe412c60e0cc5abb86be7ee4507',1,'view.cpp']]],
-  ['setexit',['setExit',['../classbolinha.html#a69c7848b06c9436027e3e1d117b03b26',1,'bolinha']]],
-  ['seth',['setH',['../classbarra.html#a527670e645cee76fd476f0fd731040a4',1,'barra::setH()'],['../classbolinha.html#ac77f2965fe5b0fab4879d5eeb89b1560',1,'bolinha::setH()'],['../classtijolo.html#ac15a68731bbf0019493a54ab0bccb04d',1,'tijolo::setH()']]],
-  ['setpause',['setPause',['../classbolinha.html#af223163ae42634912c3e4cba05e48acd',1,'bolinha']]],
-  ['setvalue',['setValue',['../classpontos.html#a75f82ace742aedeb18c05e4130f45951',1,'pontos::setValue()'],['../classvida.html#a0aa2965112fb4a5cd4497a2fc4d01544',1,'vida::setValue()']]],
-  ['setw',['setW',['../classbarra.html#a1653a2f02c5c429afac46845ab35b50f',1,'barra::setW()'],['../classbolinha.html#a67d6d1e736779f2bbc845860103cc8fc',1,'bolinha::setW()'],['../classtijolo.html#a6f5eed3413774d0e4d9ee7505a0a68e3',1,'tijolo::setW()']]],
-  ['setx',['setX',['../classbarra.html#a9b3d595be05ea5ddb56f3f0b598dbb0b',1,'barra::setX()'],['../classbolinha.html#aa96439a9d3655912359a58a2096f8adc',1,'bolinha::setX()'],['../classtijolo.html#afce75411c77a0f53037c33e7a3321d4b',1,'tijolo::setX()']]],
-  ['sety',['setY',['../classbarra.html#a3571249441c47aa48766ab10fec170ad',1,'barra::setY()'],['../classbolinha.html#a28c1acdaebe902ba404ac6873800d8bf',1,'bolinha::setY()'],['../classtijolo.html#ac1d41f557b4d2170dc4fd4ff53a78c13',1,'tijolo::setY()']]],
-  ['start',['start',['../classcontroller.html#a03872ff488ab704038e14226a8e031ea',1,'controller']]],
-  ['state',['state',['../classview.html#a6fd7fc350d9ad94dfd47e324b107e8ce',1,'view']]]
+  ['last_5ftoken',['last_token',['../classnlohmann_1_1detail_1_1parser.html#a307ed42d5f31a9c5bec991ceee87b0e7',1,'nlohmann::detail::parser']]],
+  ['left',['Left',['../classteclado.html#ae5bf7dd52b8143a12bcac7de5502fdab',1,'teclado::Left()'],['../classteclado.html#a5322f750a38a41e0c252b450592cb606',1,'teclado::left()']]],
+  ['less_3c_3a_3anlohmann_3a_3adetail_3a_3avalue_5ft_20_3e',['less&lt;::nlohmann::detail::value_t &gt;',['../structstd_1_1less_3_1_1nlohmann_1_1detail_1_1value__t_01_4.html',1,'std']]],
+  ['lexer',['lexer',['../classnlohmann_1_1detail_1_1lexer.html',1,'nlohmann::detail']]],
+  ['lexer',['lexer',['../classnlohmann_1_1detail_1_1lexer.html#a5498021440ac08dc6079a3597ae1e459',1,'nlohmann::detail::lexer::lexer(InputAdapterType &amp;&amp;adapter, bool ignore_comments_=false)'],['../classnlohmann_1_1detail_1_1lexer.html#ab75d61c4de687717648c7698850ddb9b',1,'nlohmann::detail::lexer::lexer(const lexer &amp;)=delete'],['../classnlohmann_1_1detail_1_1lexer.html#ae95416c7ae8b36f0dd0ab349eaa754a2',1,'nlohmann::detail::lexer::lexer(lexer &amp;&amp;)=default']]],
+  ['lexer_5fbase',['lexer_base',['../classnlohmann_1_1detail_1_1lexer__base.html',1,'nlohmann::detail']]],
+  ['lexer_5ft',['lexer_t',['../classnlohmann_1_1detail_1_1parser.html#a5fbd320c5b713fda15d467e8455e4298',1,'nlohmann::detail::parser']]],
+  ['lim_5fleft',['lim_left',['../classbarra.html#af750951229deafd940b877200cfe8475',1,'barra']]],
+  ['lim_5frigth',['lim_rigth',['../classbarra.html#a5582b336cf268a203551806b0c1af495',1,'barra']]],
+  ['lines_5fread',['lines_read',['../structnlohmann_1_1detail_1_1position__t.html#a4bbad8bc2c0d17c1b61c3ce729908b71',1,'nlohmann::detail::position_t']]],
+  ['literal_5ffalse',['literal_false',['../classnlohmann_1_1detail_1_1lexer__base.html#aa3538cce439a2de6c7893e627b38c454afab1694b1b3937a079f4625fe0b6108b',1,'nlohmann::detail::lexer_base']]],
+  ['literal_5fnull',['literal_null',['../classnlohmann_1_1detail_1_1lexer__base.html#aa3538cce439a2de6c7893e627b38c454ab7ae4c0e46d86f884677768160b26e9e',1,'nlohmann::detail::lexer_base']]],
+  ['literal_5for_5fvalue',['literal_or_value',['../classnlohmann_1_1detail_1_1lexer__base.html#aa3538cce439a2de6c7893e627b38c454ad2a8e6f6721cccec0b466301dd9495a5',1,'nlohmann::detail::lexer_base']]],
+  ['literal_5ftrue',['literal_true',['../classnlohmann_1_1detail_1_1lexer__base.html#aa3538cce439a2de6c7893e627b38c454a85cc1a37b0aaa52de40e72f0ed4e0c0d',1,'nlohmann::detail::lexer_base']]],
+  ['little_5fendianess',['little_endianess',['../namespacenlohmann_1_1detail.html#ad2860d9bcd96cd7b8258a5b94674508c',1,'nlohmann::detail']]],
+  ['load',['Load',['../classteclado.html#ace06f3cb6f9f4be497efb14c0ec1aaad',1,'teclado::Load()'],['../classteclado.html#acfdc58aa2a9455f551659c6cd59f92fd',1,'teclado::load()'],['../classcontroller.html#ae3b749cea3b4e45e1d078a0389ab95d4',1,'controller::load()']]],
+  ['loc',['loc',['../classnlohmann_1_1detail_1_1serializer.html#a1952945b7652afb59d3903cc8457a589',1,'nlohmann::detail::serializer']]],
+  ['local_5fendpoint',['local_endpoint',['../breakoutServer_8cpp.html#a2bb5bc96a8c8ebdae75397c79ffeff71',1,'breakoutServer.cpp']]]
 ];

@@ -16,7 +16,7 @@ Collaboration diagram for barra\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=154pt]{classbarra__coll__graph}
+\includegraphics[width=238pt]{classbarra__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
@@ -24,17 +24,35 @@ Collaboration diagram for barra\+:
 \item 
 \hyperlink{classbarra_a5acfb9b82a30794e040d4f156562317c}{barra} (int x\+\_\+, int y\+\_\+)
 \begin{DoxyCompactList}\small\item\em Construtor da barra. \end{DoxyCompactList}\item 
+\hyperlink{classbarra_a2c2e10e1b5a443af251cc29e8480ceb9}{barra} ()
+\item 
+\hyperlink{classbarra_a6c1099038386c0fd206319dd71fcf030}{N\+L\+O\+H\+M\+A\+N\+N\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+T\+R\+U\+S\+I\+VE} (\hyperlink{classbarra}{barra}, \hyperlink{classbarra_a60f0c711fd29434f3fb07a3f584a83a1}{x}, \hyperlink{classbarra_a93b604008af3593ac1b80366c387f2e9}{y}, \hyperlink{classbarra_a31fd53ae11742f912eb9e0b20707cb82}{w}, \hyperlink{classbarra_add2a64a98c1781d1cc9b7b1f744df1a5}{h}, \hyperlink{classbarra_af6bfdf384cdef9648b4ad8e83901308c}{x\+\_\+param}, \hyperlink{classbarra_a90bcebf4760d9c8deba7b0f94aa2a155}{y\+\_\+param}, \hyperlink{classbarra_af750951229deafd940b877200cfe8475}{lim\+\_\+left}, \hyperlink{classbarra_a5582b336cf268a203551806b0c1af495}{lim\+\_\+rigth}, \hyperlink{classbarra_a9e692d2ae2421c2d8cc591d5456790ec}{show})
+\item 
 int \hyperlink{classbarra_a2f3787aab4304ccd3e5ac813d5387f26}{getX} ()
 \item 
 int \hyperlink{classbarra_a5eed7412b3afaa38f74ab8ce2e3cf80c}{getY} ()
+\item 
+int \hyperlink{classbarra_af044e973bc7c1c284a7474ae49a152dc}{get\+Left\+Lim} ()
+\item 
+int \hyperlink{classbarra_a872b85b7744104ac27724d2975be02aa}{get\+Right\+Lim} ()
 \item 
 int \hyperlink{classbarra_aad00b16b2f10c8f2e9b11981c44037c6}{getW} ()
 \item 
 int \hyperlink{classbarra_a640467fe10e4d76eba2cdddf560ac08a}{getH} ()
 \item 
+bool \hyperlink{classbarra_ad2fd8265fb070b4161862918d56ed437}{is\+Visible} ()
+\item 
 float \hyperlink{classbarra_a2e8656df299ddc913bcacac2505a6733}{get\+Wmult} ()
 \item 
 float \hyperlink{classbarra_ac3e797dcb0cfdeba9cb3ff813f16021e}{get\+Hmult} ()
+\item 
+float \hyperlink{classbarra_a040b06fae60c37a8d0bf920ec81bdd2e}{get\+Xparam} ()
+\item 
+float \hyperlink{classbarra_a2ad1e1404c26777ae5eaf4d061b5c59a}{get\+Yparam} ()
+\item 
+void \hyperlink{classbarra_a00b29986c97ade4c38fa733b4313c70a}{set\+Xparam} (float x\+\_\+param\+\_\+)
+\item 
+void \hyperlink{classbarra_ae8b4eda32ffea3d5d9dd3df639863a92}{set\+Yparam} (float y\+\_\+param\+\_\+)
 \item 
 void \hyperlink{classbarra_a1653a2f02c5c429afac46845ab35b50f}{setW} (int w\+\_\+)
 \item 
@@ -43,6 +61,14 @@ void \hyperlink{classbarra_a527670e645cee76fd476f0fd731040a4}{setH} (int h\+\_\+
 void \hyperlink{classbarra_a9b3d595be05ea5ddb56f3f0b598dbb0b}{setX} (int x\+\_\+)
 \item 
 void \hyperlink{classbarra_a3571249441c47aa48766ab10fec170ad}{setY} (int y\+\_\+)
+\item 
+void \hyperlink{classbarra_a4e10b071b98e0573069c7336b98eeb48}{set\+Left\+Lim} (int lim\+\_\+left\+\_\+)
+\item 
+void \hyperlink{classbarra_a2758284b2c1f5a130b58809d29e12033}{set\+Rigth\+Lim} (int lim\+\_\+rigth\+\_\+)
+\item 
+bool \hyperlink{classbarra_a3adba01206e426ff809b896268c11996}{set\+Visibility} (bool show\+\_\+)
+\item 
+std\+::string \hyperlink{classbarra_a0a271777a0ec0abb48b1d5e5e1e0d5f1}{print} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -50,6 +76,10 @@ void \hyperlink{classbarra_a3571249441c47aa48766ab10fec170ad}{setY} (int y\+\_\+
 int \hyperlink{classbarra_a60f0c711fd29434f3fb07a3f584a83a1}{x}
 \item 
 int \hyperlink{classbarra_a93b604008af3593ac1b80366c387f2e9}{y}
+\item 
+float \hyperlink{classbarra_af6bfdf384cdef9648b4ad8e83901308c}{x\+\_\+param}
+\item 
+float \hyperlink{classbarra_a90bcebf4760d9c8deba7b0f94aa2a155}{y\+\_\+param}
 \item 
 int \hyperlink{classbarra_add2a64a98c1781d1cc9b7b1f744df1a5}{h}
 \item 
@@ -60,6 +90,12 @@ float \hyperlink{classbarra_a7ca620e27ef6e75eb8dfcc05a738a97c}{w\+\_\+mult} = 2
 float \hyperlink{classbarra_a6ee439263b66198984d59f0ef128e7a6}{h\+\_\+mult} = 0.\+25
 \item 
 int \hyperlink{classbarra_a7234eb8aa0b635f9c1fb0456ebd7901c}{color}
+\item 
+int \hyperlink{classbarra_af750951229deafd940b877200cfe8475}{lim\+\_\+left}
+\item 
+int \hyperlink{classbarra_a5582b336cf268a203551806b0c1af495}{lim\+\_\+rigth}
+\item 
+bool \hyperlink{classbarra_a9e692d2ae2421c2d8cc591d5456790ec}{show} = true
 \end{DoxyCompactItemize}
 
 
@@ -81,7 +117,14 @@ Esta é a classe para a barra. Ela possui variaveis internas para guardar suas d
 
 Construtor da barra. 
 
-Recebe uma posicao (x,y) inicial da barra 
+Recebe uma posicao (x,y) inicial da barra \index{barra@{barra}!barra@{barra}}
+\index{barra@{barra}!barra@{barra}}
+\subsubsection[{\texorpdfstring{barra()}{barra()}}]{\setlength{\rightskip}{0pt plus 5cm}barra\+::barra (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classbarra_a2c2e10e1b5a443af251cc29e8480ceb9}{}\label{classbarra_a2c2e10e1b5a443af251cc29e8480ceb9}
+
 
 \subsection{Member Function Documentation}
 \index{barra@{barra}!getH@{getH}}
@@ -98,6 +141,20 @@ Recebe uma posicao (x,y) inicial da barra
 {}
 \end{DoxyParamCaption}
 )}\hypertarget{classbarra_ac3e797dcb0cfdeba9cb3ff813f16021e}{}\label{classbarra_ac3e797dcb0cfdeba9cb3ff813f16021e}
+\index{barra@{barra}!get\+Left\+Lim@{get\+Left\+Lim}}
+\index{get\+Left\+Lim@{get\+Left\+Lim}!barra@{barra}}
+\subsubsection[{\texorpdfstring{get\+Left\+Lim()}{getLeftLim()}}]{\setlength{\rightskip}{0pt plus 5cm}int barra\+::get\+Left\+Lim (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classbarra_af044e973bc7c1c284a7474ae49a152dc}{}\label{classbarra_af044e973bc7c1c284a7474ae49a152dc}
+\index{barra@{barra}!get\+Right\+Lim@{get\+Right\+Lim}}
+\index{get\+Right\+Lim@{get\+Right\+Lim}!barra@{barra}}
+\subsubsection[{\texorpdfstring{get\+Right\+Lim()}{getRightLim()}}]{\setlength{\rightskip}{0pt plus 5cm}int barra\+::get\+Right\+Lim (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classbarra_a872b85b7744104ac27724d2975be02aa}{}\label{classbarra_a872b85b7744104ac27724d2975be02aa}
 \index{barra@{barra}!getW@{getW}}
 \index{getW@{getW}!barra@{barra}}
 \subsubsection[{\texorpdfstring{get\+W()}{getW()}}]{\setlength{\rightskip}{0pt plus 5cm}int barra\+::getW (
@@ -119,6 +176,13 @@ Recebe uma posicao (x,y) inicial da barra
 {}
 \end{DoxyParamCaption}
 )}\hypertarget{classbarra_a2f3787aab4304ccd3e5ac813d5387f26}{}\label{classbarra_a2f3787aab4304ccd3e5ac813d5387f26}
+\index{barra@{barra}!get\+Xparam@{get\+Xparam}}
+\index{get\+Xparam@{get\+Xparam}!barra@{barra}}
+\subsubsection[{\texorpdfstring{get\+Xparam()}{getXparam()}}]{\setlength{\rightskip}{0pt plus 5cm}float barra\+::get\+Xparam (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classbarra_a040b06fae60c37a8d0bf920ec81bdd2e}{}\label{classbarra_a040b06fae60c37a8d0bf920ec81bdd2e}
 \index{barra@{barra}!getY@{getY}}
 \index{getY@{getY}!barra@{barra}}
 \subsubsection[{\texorpdfstring{get\+Y()}{getY()}}]{\setlength{\rightskip}{0pt plus 5cm}int barra\+::getY (
@@ -126,6 +190,43 @@ Recebe uma posicao (x,y) inicial da barra
 {}
 \end{DoxyParamCaption}
 )}\hypertarget{classbarra_a5eed7412b3afaa38f74ab8ce2e3cf80c}{}\label{classbarra_a5eed7412b3afaa38f74ab8ce2e3cf80c}
+\index{barra@{barra}!get\+Yparam@{get\+Yparam}}
+\index{get\+Yparam@{get\+Yparam}!barra@{barra}}
+\subsubsection[{\texorpdfstring{get\+Yparam()}{getYparam()}}]{\setlength{\rightskip}{0pt plus 5cm}float barra\+::get\+Yparam (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classbarra_a2ad1e1404c26777ae5eaf4d061b5c59a}{}\label{classbarra_a2ad1e1404c26777ae5eaf4d061b5c59a}
+\index{barra@{barra}!is\+Visible@{is\+Visible}}
+\index{is\+Visible@{is\+Visible}!barra@{barra}}
+\subsubsection[{\texorpdfstring{is\+Visible()}{isVisible()}}]{\setlength{\rightskip}{0pt plus 5cm}bool barra\+::is\+Visible (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classbarra_ad2fd8265fb070b4161862918d56ed437}{}\label{classbarra_ad2fd8265fb070b4161862918d56ed437}
+\index{barra@{barra}!N\+L\+O\+H\+M\+A\+N\+N\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+T\+R\+U\+S\+I\+VE@{N\+L\+O\+H\+M\+A\+N\+N\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+T\+R\+U\+S\+I\+VE}}
+\index{N\+L\+O\+H\+M\+A\+N\+N\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+T\+R\+U\+S\+I\+VE@{N\+L\+O\+H\+M\+A\+N\+N\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+T\+R\+U\+S\+I\+VE}!barra@{barra}}
+\subsubsection[{\texorpdfstring{N\+L\+O\+H\+M\+A\+N\+N\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+T\+R\+U\+S\+I\+V\+E(barra, x, y, w, h, x\+\_\+param, y\+\_\+param, lim\+\_\+left, lim\+\_\+rigth, show)}{NLOHMANN_DEFINE_TYPE_INTRUSIVE(barra, x, y, w, h, x_param, y_param, lim_left, lim_rigth, show)}}]{\setlength{\rightskip}{0pt plus 5cm}barra\+::\+N\+L\+O\+H\+M\+A\+N\+N\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+T\+R\+U\+S\+I\+VE (
+\begin{DoxyParamCaption}
+\item[{{\bf barra}}]{, }
+\item[{{\bf x}}]{, }
+\item[{{\bf y}}]{, }
+\item[{{\bf w}}]{, }
+\item[{{\bf h}}]{, }
+\item[{{\bf x\+\_\+param}}]{, }
+\item[{{\bf y\+\_\+param}}]{, }
+\item[{{\bf lim\+\_\+left}}]{, }
+\item[{{\bf lim\+\_\+rigth}}]{, }
+\item[{{\bf show}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classbarra_a6c1099038386c0fd206319dd71fcf030}{}\label{classbarra_a6c1099038386c0fd206319dd71fcf030}
+\index{barra@{barra}!print@{print}}
+\index{print@{print}!barra@{barra}}
+\subsubsection[{\texorpdfstring{print()}{print()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string barra\+::print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classbarra_a0a271777a0ec0abb48b1d5e5e1e0d5f1}{}\label{classbarra_a0a271777a0ec0abb48b1d5e5e1e0d5f1}
 \index{barra@{barra}!setH@{setH}}
 \index{setH@{setH}!barra@{barra}}
 \subsubsection[{\texorpdfstring{set\+H(int h\+\_\+)}{setH(int h_)}}]{\setlength{\rightskip}{0pt plus 5cm}void barra\+::setH (
@@ -133,6 +234,27 @@ Recebe uma posicao (x,y) inicial da barra
 \item[{int}]{h\+\_\+}
 \end{DoxyParamCaption}
 )}\hypertarget{classbarra_a527670e645cee76fd476f0fd731040a4}{}\label{classbarra_a527670e645cee76fd476f0fd731040a4}
+\index{barra@{barra}!set\+Left\+Lim@{set\+Left\+Lim}}
+\index{set\+Left\+Lim@{set\+Left\+Lim}!barra@{barra}}
+\subsubsection[{\texorpdfstring{set\+Left\+Lim(int lim\+\_\+left\+\_\+)}{setLeftLim(int lim_left_)}}]{\setlength{\rightskip}{0pt plus 5cm}void barra\+::set\+Left\+Lim (
+\begin{DoxyParamCaption}
+\item[{int}]{lim\+\_\+left\+\_\+}
+\end{DoxyParamCaption}
+)}\hypertarget{classbarra_a4e10b071b98e0573069c7336b98eeb48}{}\label{classbarra_a4e10b071b98e0573069c7336b98eeb48}
+\index{barra@{barra}!set\+Rigth\+Lim@{set\+Rigth\+Lim}}
+\index{set\+Rigth\+Lim@{set\+Rigth\+Lim}!barra@{barra}}
+\subsubsection[{\texorpdfstring{set\+Rigth\+Lim(int lim\+\_\+rigth\+\_\+)}{setRigthLim(int lim_rigth_)}}]{\setlength{\rightskip}{0pt plus 5cm}void barra\+::set\+Rigth\+Lim (
+\begin{DoxyParamCaption}
+\item[{int}]{lim\+\_\+rigth\+\_\+}
+\end{DoxyParamCaption}
+)}\hypertarget{classbarra_a2758284b2c1f5a130b58809d29e12033}{}\label{classbarra_a2758284b2c1f5a130b58809d29e12033}
+\index{barra@{barra}!set\+Visibility@{set\+Visibility}}
+\index{set\+Visibility@{set\+Visibility}!barra@{barra}}
+\subsubsection[{\texorpdfstring{set\+Visibility(bool show\+\_\+)}{setVisibility(bool show_)}}]{\setlength{\rightskip}{0pt plus 5cm}bool barra\+::set\+Visibility (
+\begin{DoxyParamCaption}
+\item[{bool}]{show\+\_\+}
+\end{DoxyParamCaption}
+)}\hypertarget{classbarra_a3adba01206e426ff809b896268c11996}{}\label{classbarra_a3adba01206e426ff809b896268c11996}
 \index{barra@{barra}!setW@{setW}}
 \index{setW@{setW}!barra@{barra}}
 \subsubsection[{\texorpdfstring{set\+W(int w\+\_\+)}{setW(int w_)}}]{\setlength{\rightskip}{0pt plus 5cm}void barra\+::setW (
@@ -147,6 +269,13 @@ Recebe uma posicao (x,y) inicial da barra
 \item[{int}]{x\+\_\+}
 \end{DoxyParamCaption}
 )}\hypertarget{classbarra_a9b3d595be05ea5ddb56f3f0b598dbb0b}{}\label{classbarra_a9b3d595be05ea5ddb56f3f0b598dbb0b}
+\index{barra@{barra}!set\+Xparam@{set\+Xparam}}
+\index{set\+Xparam@{set\+Xparam}!barra@{barra}}
+\subsubsection[{\texorpdfstring{set\+Xparam(float x\+\_\+param\+\_\+)}{setXparam(float x_param_)}}]{\setlength{\rightskip}{0pt plus 5cm}void barra\+::set\+Xparam (
+\begin{DoxyParamCaption}
+\item[{float}]{x\+\_\+param\+\_\+}
+\end{DoxyParamCaption}
+)}\hypertarget{classbarra_a00b29986c97ade4c38fa733b4313c70a}{}\label{classbarra_a00b29986c97ade4c38fa733b4313c70a}
 \index{barra@{barra}!setY@{setY}}
 \index{setY@{setY}!barra@{barra}}
 \subsubsection[{\texorpdfstring{set\+Y(int y\+\_\+)}{setY(int y_)}}]{\setlength{\rightskip}{0pt plus 5cm}void barra\+::setY (
@@ -154,6 +283,13 @@ Recebe uma posicao (x,y) inicial da barra
 \item[{int}]{y\+\_\+}
 \end{DoxyParamCaption}
 )}\hypertarget{classbarra_a3571249441c47aa48766ab10fec170ad}{}\label{classbarra_a3571249441c47aa48766ab10fec170ad}
+\index{barra@{barra}!set\+Yparam@{set\+Yparam}}
+\index{set\+Yparam@{set\+Yparam}!barra@{barra}}
+\subsubsection[{\texorpdfstring{set\+Yparam(float y\+\_\+param\+\_\+)}{setYparam(float y_param_)}}]{\setlength{\rightskip}{0pt plus 5cm}void barra\+::set\+Yparam (
+\begin{DoxyParamCaption}
+\item[{float}]{y\+\_\+param\+\_\+}
+\end{DoxyParamCaption}
+)}\hypertarget{classbarra_ae8b4eda32ffea3d5d9dd3df639863a92}{}\label{classbarra_ae8b4eda32ffea3d5d9dd3df639863a92}
 
 
 \subsection{Member Data Documentation}
@@ -166,7 +302,16 @@ Cor da barra \index{barra@{barra}!h@{h}}
 \index{barra@{barra}!h\+\_\+mult@{h\+\_\+mult}}
 \index{h\+\_\+mult@{h\+\_\+mult}!barra@{barra}}
 \subsubsection[{\texorpdfstring{h\+\_\+mult}{h_mult}}]{\setlength{\rightskip}{0pt plus 5cm}float barra\+::h\+\_\+mult = 0.\+25\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classbarra_a6ee439263b66198984d59f0ef128e7a6}{}\label{classbarra_a6ee439263b66198984d59f0ef128e7a6}
-Fator de multiplicacao para visualizacao \index{barra@{barra}!w@{w}}
+Fator de multiplicacao para visualizacao \index{barra@{barra}!lim\+\_\+left@{lim\+\_\+left}}
+\index{lim\+\_\+left@{lim\+\_\+left}!barra@{barra}}
+\subsubsection[{\texorpdfstring{lim\+\_\+left}{lim_left}}]{\setlength{\rightskip}{0pt plus 5cm}int barra\+::lim\+\_\+left\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classbarra_af750951229deafd940b877200cfe8475}{}\label{classbarra_af750951229deafd940b877200cfe8475}
+\index{barra@{barra}!lim\+\_\+rigth@{lim\+\_\+rigth}}
+\index{lim\+\_\+rigth@{lim\+\_\+rigth}!barra@{barra}}
+\subsubsection[{\texorpdfstring{lim\+\_\+rigth}{lim_rigth}}]{\setlength{\rightskip}{0pt plus 5cm}int barra\+::lim\+\_\+rigth\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classbarra_a5582b336cf268a203551806b0c1af495}{}\label{classbarra_a5582b336cf268a203551806b0c1af495}
+Limites laterais de movimento \index{barra@{barra}!show@{show}}
+\index{show@{show}!barra@{barra}}
+\subsubsection[{\texorpdfstring{show}{show}}]{\setlength{\rightskip}{0pt plus 5cm}bool barra\+::show = true\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classbarra_a9e692d2ae2421c2d8cc591d5456790ec}{}\label{classbarra_a9e692d2ae2421c2d8cc591d5456790ec}
+Diz se a barra deve ser mostrada na tela \index{barra@{barra}!w@{w}}
 \index{w@{w}!barra@{barra}}
 \subsubsection[{\texorpdfstring{w}{w}}]{\setlength{\rightskip}{0pt plus 5cm}int barra\+::w\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classbarra_a31fd53ae11742f912eb9e0b20707cb82}{}\label{classbarra_a31fd53ae11742f912eb9e0b20707cb82}
 Variaveis de dimensao \index{barra@{barra}!w\+\_\+mult@{w\+\_\+mult}}
@@ -175,10 +320,16 @@ Variaveis de dimensao \index{barra@{barra}!w\+\_\+mult@{w\+\_\+mult}}
 \index{barra@{barra}!x@{x}}
 \index{x@{x}!barra@{barra}}
 \subsubsection[{\texorpdfstring{x}{x}}]{\setlength{\rightskip}{0pt plus 5cm}int barra\+::x\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classbarra_a60f0c711fd29434f3fb07a3f584a83a1}{}\label{classbarra_a60f0c711fd29434f3fb07a3f584a83a1}
+\index{barra@{barra}!x\+\_\+param@{x\+\_\+param}}
+\index{x\+\_\+param@{x\+\_\+param}!barra@{barra}}
+\subsubsection[{\texorpdfstring{x\+\_\+param}{x_param}}]{\setlength{\rightskip}{0pt plus 5cm}float barra\+::x\+\_\+param\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classbarra_af6bfdf384cdef9648b4ad8e83901308c}{}\label{classbarra_af6bfdf384cdef9648b4ad8e83901308c}
 \index{barra@{barra}!y@{y}}
 \index{y@{y}!barra@{barra}}
 \subsubsection[{\texorpdfstring{y}{y}}]{\setlength{\rightskip}{0pt plus 5cm}int barra\+::y\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classbarra_a93b604008af3593ac1b80366c387f2e9}{}\label{classbarra_a93b604008af3593ac1b80366c387f2e9}
-Variaveis de posicao 
+Variaveis de posicao \index{barra@{barra}!y\+\_\+param@{y\+\_\+param}}
+\index{y\+\_\+param@{y\+\_\+param}!barra@{barra}}
+\subsubsection[{\texorpdfstring{y\+\_\+param}{y_param}}]{\setlength{\rightskip}{0pt plus 5cm}float barra\+::y\+\_\+param\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classbarra_a90bcebf4760d9c8deba7b0f94aa2a155}{}\label{classbarra_a90bcebf4760d9c8deba7b0f94aa2a155}
+
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

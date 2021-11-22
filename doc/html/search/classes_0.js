@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['barra',['barra',['../classbarra.html',1,'']]],
-  ['bolinha',['bolinha',['../classbolinha.html',1,'']]]
+  ['adl_5fserializer',['adl_serializer',['../structnlohmann_1_1adl__serializer.html',1,'nlohmann']]]
 ];

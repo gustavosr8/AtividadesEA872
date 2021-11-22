@@ -1,0 +1,70 @@
+\hypertarget{classnlohmann_1_1detail_1_1span__input__adapter}{}\section{nlohmann\+:\+:detail\+:\+:span\+\_\+input\+\_\+adapter Class Reference}
+\label{classnlohmann_1_1detail_1_1span__input__adapter}\index{nlohmann\+::detail\+::span\+\_\+input\+\_\+adapter@{nlohmann\+::detail\+::span\+\_\+input\+\_\+adapter}}
+
+
+{\ttfamily \#include $<$json.\+hpp$>$}
+
+
+
+Collaboration diagram for nlohmann\+:\+:detail\+:\+:span\+\_\+input\+\_\+adapter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classnlohmann_1_1detail_1_1span__input__adapter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename CharT , typename std\+::enable\+\_\+if$<$ std\+::is\+\_\+pointer$<$ Char\+T $>$\+::value \&\&std\+::is\+\_\+integral$<$ typename std\+::remove\+\_\+pointer$<$ Char\+T $>$\+::type $>$\+::value \&\&sizeof(typename std\+::remove\+\_\+pointer$<$ Char\+T $>$\+::type)==1, int $>$\+::type  = 0$>$ }\\\hyperlink{classnlohmann_1_1detail_1_1span__input__adapter_a3a328a45b2c2c87145106ce4b2d02365}{span\+\_\+input\+\_\+adapter} (CharT b, std\+::size\+\_\+t l)
+\item 
+{\footnotesize template$<$class Iterator\+Type , typename std\+::enable\+\_\+if$<$ std\+::is\+\_\+same$<$ typename iterator\+\_\+traits$<$ Iterator\+Type $>$\+::iterator\+\_\+category, std\+::random\+\_\+access\+\_\+iterator\+\_\+tag $>$\+::value, int $>$\+::type  = 0$>$ }\\\hyperlink{classnlohmann_1_1detail_1_1span__input__adapter_a714c6cf8e15b9af4e1723d9f7f92d4c8}{span\+\_\+input\+\_\+adapter} (Iterator\+Type first, Iterator\+Type last)
+\item 
+\hyperlink{namespacenlohmann_1_1detail_abc51edd46a1d1a0ff06a19f08ceff563}{contiguous\+\_\+bytes\+\_\+input\+\_\+adapter} \&\& \hyperlink{classnlohmann_1_1detail_1_1span__input__adapter_a478dfb78d0bf28d2665a19fccf221f02}{get} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacenlohmann_1_1detail_abc51edd46a1d1a0ff06a19f08ceff563}{contiguous\+\_\+bytes\+\_\+input\+\_\+adapter} \hyperlink{classnlohmann_1_1detail_1_1span__input__adapter_a3e223a7784502be20ace441e84f8cf43}{ia}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{nlohmann\+::detail\+::span\+\_\+input\+\_\+adapter@{nlohmann\+::detail\+::span\+\_\+input\+\_\+adapter}!span\+\_\+input\+\_\+adapter@{span\+\_\+input\+\_\+adapter}}
+\index{span\+\_\+input\+\_\+adapter@{span\+\_\+input\+\_\+adapter}!nlohmann\+::detail\+::span\+\_\+input\+\_\+adapter@{nlohmann\+::detail\+::span\+\_\+input\+\_\+adapter}}
+\subsubsection[{\texorpdfstring{span\+\_\+input\+\_\+adapter(\+Char\+T b, std\+::size\+\_\+t l)}{span_input_adapter(CharT b, std::size_t l)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename CharT , typename std\+::enable\+\_\+if$<$ std\+::is\+\_\+pointer$<$ Char\+T $>$\+::value \&\&std\+::is\+\_\+integral$<$ typename std\+::remove\+\_\+pointer$<$ Char\+T $>$\+::type $>$\+::value \&\&sizeof(typename std\+::remove\+\_\+pointer$<$ Char\+T $>$\+::type)==1, int $>$\+::type  = 0$>$ nlohmann\+::detail\+::span\+\_\+input\+\_\+adapter\+::span\+\_\+input\+\_\+adapter (
+\begin{DoxyParamCaption}
+\item[{CharT}]{b, }
+\item[{std\+::size\+\_\+t}]{l}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classnlohmann_1_1detail_1_1span__input__adapter_a3a328a45b2c2c87145106ce4b2d02365}{}\label{classnlohmann_1_1detail_1_1span__input__adapter_a3a328a45b2c2c87145106ce4b2d02365}
+\index{nlohmann\+::detail\+::span\+\_\+input\+\_\+adapter@{nlohmann\+::detail\+::span\+\_\+input\+\_\+adapter}!span\+\_\+input\+\_\+adapter@{span\+\_\+input\+\_\+adapter}}
+\index{span\+\_\+input\+\_\+adapter@{span\+\_\+input\+\_\+adapter}!nlohmann\+::detail\+::span\+\_\+input\+\_\+adapter@{nlohmann\+::detail\+::span\+\_\+input\+\_\+adapter}}
+\subsubsection[{\texorpdfstring{span\+\_\+input\+\_\+adapter(\+Iterator\+Type first, Iterator\+Type last)}{span_input_adapter(IteratorType first, IteratorType last)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Iterator\+Type , typename std\+::enable\+\_\+if$<$ std\+::is\+\_\+same$<$ typename iterator\+\_\+traits$<$ Iterator\+Type $>$\+::iterator\+\_\+category, std\+::random\+\_\+access\+\_\+iterator\+\_\+tag $>$\+::value, int $>$\+::type  = 0$>$ nlohmann\+::detail\+::span\+\_\+input\+\_\+adapter\+::span\+\_\+input\+\_\+adapter (
+\begin{DoxyParamCaption}
+\item[{Iterator\+Type}]{first, }
+\item[{Iterator\+Type}]{last}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classnlohmann_1_1detail_1_1span__input__adapter_a714c6cf8e15b9af4e1723d9f7f92d4c8}{}\label{classnlohmann_1_1detail_1_1span__input__adapter_a714c6cf8e15b9af4e1723d9f7f92d4c8}
+
+
+\subsection{Member Function Documentation}
+\index{nlohmann\+::detail\+::span\+\_\+input\+\_\+adapter@{nlohmann\+::detail\+::span\+\_\+input\+\_\+adapter}!get@{get}}
+\index{get@{get}!nlohmann\+::detail\+::span\+\_\+input\+\_\+adapter@{nlohmann\+::detail\+::span\+\_\+input\+\_\+adapter}}
+\subsubsection[{\texorpdfstring{get()}{get()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf contiguous\+\_\+bytes\+\_\+input\+\_\+adapter}\&\& nlohmann\+::detail\+::span\+\_\+input\+\_\+adapter\+::get (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classnlohmann_1_1detail_1_1span__input__adapter_a478dfb78d0bf28d2665a19fccf221f02}{}\label{classnlohmann_1_1detail_1_1span__input__adapter_a478dfb78d0bf28d2665a19fccf221f02}
+
+
+\subsection{Member Data Documentation}
+\index{nlohmann\+::detail\+::span\+\_\+input\+\_\+adapter@{nlohmann\+::detail\+::span\+\_\+input\+\_\+adapter}!ia@{ia}}
+\index{ia@{ia}!nlohmann\+::detail\+::span\+\_\+input\+\_\+adapter@{nlohmann\+::detail\+::span\+\_\+input\+\_\+adapter}}
+\subsubsection[{\texorpdfstring{ia}{ia}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf contiguous\+\_\+bytes\+\_\+input\+\_\+adapter} nlohmann\+::detail\+::span\+\_\+input\+\_\+adapter\+::ia\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classnlohmann_1_1detail_1_1span__input__adapter_a3e223a7784502be20ace441e84f8cf43}{}\label{classnlohmann_1_1detail_1_1span__input__adapter_a3e223a7784502be20ace441e84f8cf43}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{json_8hpp}{json.\+hpp}\end{DoxyCompactItemize}

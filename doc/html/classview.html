@@ -38,6 +38,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -62,6 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -99,36 +102,42 @@ Collaboration diagram for view:</div>
 <div class="dyncontent">
 <div class="center"><img src="classview__coll__graph.png" border="0" usemap="#view_coll__map" alt="Collaboration graph"/></div>
 <map name="view_coll__map" id="view_coll__map">
-<area shape="rect" id="node2" href="classvida.html" title="Classe para os pontos. " alt="" coords="5,152,99,259"/>
-<area shape="rect" id="node3" href="classbolinha.html" title="Classe para a bolinha. " alt="" coords="123,5,221,405"/>
-<area shape="rect" id="node4" href="classpontos.html" title="Classe para os pontos. " alt="" coords="245,152,339,259"/>
-<area shape="rect" id="node5" href="classbarra.html" title="Classe para a barra. " alt="" coords="363,49,461,361"/>
+<area shape="rect" id="node2" href="classvida.html" title="Classe para os pontos. " alt="" coords="5,79,216,347"/>
+<area shape="rect" id="node3" href="classbolinha.html" title="Classe para a bolinha. " alt="" coords="240,5,451,420"/>
+<area shape="rect" id="node4" href="classpontos.html" title="Classe para os pontos. " alt="" coords="475,79,685,347"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae68420027fc8352dc303107eb0305ea6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classview.html#ae68420027fc8352dc303107eb0305ea6">view</a> (std::vector&lt; <a class="el" href="classtijolo.html">tijolo</a> &gt; &amp;t_, <a class="el" href="classbarra.html">barra</a> *ba_, <a class="el" href="classbolinha.html">bolinha</a> *bo_, <a class="el" href="classpontos.html">pontos</a> *po_, <a class="el" href="classvida.html">vida</a> *v_)</td></tr>
-<tr class="memdesc:ae68420027fc8352dc303107eb0305ea6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor do view.  <a href="#ae68420027fc8352dc303107eb0305ea6">More...</a><br /></td></tr>
-<tr class="separator:ae68420027fc8352dc303107eb0305ea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a809bdce6090439ac99ab0e5856c130e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classview.html#a809bdce6090439ac99ab0e5856c130e2">view</a> (std::vector&lt; std::vector&lt; <a class="el" href="classtijolo.html">tijolo</a> &gt; &gt; &amp;t_, std::vector&lt; <a class="el" href="classbarra.html">barra</a> &gt; &amp;ba_, <a class="el" href="classbolinha.html">bolinha</a> *bo_, <a class="el" href="classpontos.html">pontos</a> *po_, <a class="el" href="classvida.html">vida</a> *v_)</td></tr>
+<tr class="memdesc:a809bdce6090439ac99ab0e5856c130e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor do view.  <a href="#a809bdce6090439ac99ab0e5856c130e2">More...</a><br /></td></tr>
+<tr class="separator:a809bdce6090439ac99ab0e5856c130e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa73cff596b36c7009ee17383d039750"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classview.html#afa73cff596b36c7009ee17383d039750">render_text</a> (SDL_Renderer *<a class="el" href="classview.html#a8d7b3ec0a0641d24cdc3b04949f5df45">renderer</a>, int x, int y, const char *text, TTF_Font *font, SDL_Rect *rect, SDL_Color *color)</td></tr>
 <tr class="memdesc:afa73cff596b36c7009ee17383d039750"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renderiza um texto.  <a href="#afa73cff596b36c7009ee17383d039750">More...</a><br /></td></tr>
 <tr class="separator:afa73cff596b36c7009ee17383d039750"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21d953772b41dd9c08c9ea9895e002d7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classview.html#a21d953772b41dd9c08c9ea9895e002d7">init</a> ()</td></tr>
 <tr class="memdesc:a21d953772b41dd9c08c9ea9895e002d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotina de inicializacao.  <a href="#a21d953772b41dd9c08c9ea9895e002d7">More...</a><br /></td></tr>
 <tr class="separator:a21d953772b41dd9c08c9ea9895e002d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91e9b24e39a9846a7093949c9a19a118"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classview.html#a91e9b24e39a9846a7093949c9a19a118">render</a> ()</td></tr>
-<tr class="memdesc:a91e9b24e39a9846a7093949c9a19a118"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renderizacao.  <a href="#a91e9b24e39a9846a7093949c9a19a118">More...</a><br /></td></tr>
-<tr class="separator:a91e9b24e39a9846a7093949c9a19a118"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0e552fdef69accb371177ef955e1b38"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classview.html#ac0e552fdef69accb371177ef955e1b38">initClient</a> ()</td></tr>
+<tr class="separator:ac0e552fdef69accb371177ef955e1b38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ce9703fff0ea8ae911fee1d24a418e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classview.html#a6ce9703fff0ea8ae911fee1d24a418e0">render</a> (int user)</td></tr>
+<tr class="memdesc:a6ce9703fff0ea8ae911fee1d24a418e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renderizacao.  <a href="#a6ce9703fff0ea8ae911fee1d24a418e0">More...</a><br /></td></tr>
+<tr class="separator:a6ce9703fff0ea8ae911fee1d24a418e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8c046a243e52ee4f902abec6fbec9bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classview.html#ad8c046a243e52ee4f902abec6fbec9bb">quit</a> ()</td></tr>
 <tr class="memdesc:ad8c046a243e52ee4f902abec6fbec9bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encerramento.  <a href="#ad8c046a243e52ee4f902abec6fbec9bb">More...</a><br /></td></tr>
 <tr class="separator:ad8c046a243e52ee4f902abec6fbec9bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1839c52cc61779be195b51e4fddcb659"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classview.html#a1839c52cc61779be195b51e4fddcb659">perdeu</a> ()</td></tr>
-<tr class="memdesc:a1839c52cc61779be195b51e4fddcb659"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derrota.  <a href="#a1839c52cc61779be195b51e4fddcb659">More...</a><br /></td></tr>
-<tr class="separator:a1839c52cc61779be195b51e4fddcb659"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbf5bc2a4455e61eb8155f8256a5d870"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classview.html#abbf5bc2a4455e61eb8155f8256a5d870">ganhou</a> ()</td></tr>
-<tr class="memdesc:abbf5bc2a4455e61eb8155f8256a5d870"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vitoria.  <a href="#abbf5bc2a4455e61eb8155f8256a5d870">More...</a><br /></td></tr>
-<tr class="separator:abbf5bc2a4455e61eb8155f8256a5d870"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23918beecf637e8226bc1ff64a67e811"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classview.html#a23918beecf637e8226bc1ff64a67e811">perdeu</a> (int user)</td></tr>
+<tr class="memdesc:a23918beecf637e8226bc1ff64a67e811"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derrota.  <a href="#a23918beecf637e8226bc1ff64a67e811">More...</a><br /></td></tr>
+<tr class="separator:a23918beecf637e8226bc1ff64a67e811"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4509b82ea85ae1e29b0fa51e2156f73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classview.html#af4509b82ea85ae1e29b0fa51e2156f73">ganhou</a> (int user)</td></tr>
+<tr class="memdesc:af4509b82ea85ae1e29b0fa51e2156f73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vitoria Singleplayer.  <a href="#af4509b82ea85ae1e29b0fa51e2156f73">More...</a><br /></td></tr>
+<tr class="separator:af4509b82ea85ae1e29b0fa51e2156f73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81553c85d81a253c49b002440a039fd3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classview.html#a81553c85d81a253c49b002440a039fd3">ganhouMulti</a> (int user_id)</td></tr>
+<tr class="memdesc:a81553c85d81a253c49b002440a039fd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vitoria Multiplayer.  <a href="#a81553c85d81a253c49b002440a039fd3">More...</a><br /></td></tr>
+<tr class="separator:a81553c85d81a253c49b002440a039fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a987e7c197e87c90671d6f5347d2dab9d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classview.html#a987e7c197e87c90671d6f5347d2dab9d">window_create</a> (int size)</td></tr>
+<tr class="separator:a987e7c197e87c90671d6f5347d2dab9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a257d50065961954053fbf5402b2e2968"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classview.html#a257d50065961954053fbf5402b2e2968">quantidadeTijolos</a> ()</td></tr>
 <tr class="separator:a257d50065961954053fbf5402b2e2968"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bf37f4171f4bb15c0e5b4ab8c2a9faa"><td class="memItemLeft" align="right" valign="top">SDL_Rect *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classview.html#a4bf37f4171f4bb15c0e5b4ab8c2a9faa">getTarget</a> ()</td></tr>
@@ -139,8 +148,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8eb9d89d9b55a5d2ee529c96e0dc246a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57b60e5da21e0484081d71c69ba4d03e"><td class="memItemLeft" align="right" valign="top">SDL_Rect *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classview.html#a57b60e5da21e0484081d71c69ba4d03e">getBarra</a> ()</td></tr>
 <tr class="separator:a57b60e5da21e0484081d71c69ba4d03e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7546f44b45cd308c1c893e222701ec51"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classtijolo.html">tijolo</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classview.html#a7546f44b45cd308c1c893e222701ec51">getTijolos</a> ()</td></tr>
-<tr class="separator:a7546f44b45cd308c1c893e222701ec51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abae031de8054f66f9b0e7a5caabdc513"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classbarra.html">barra</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classview.html#abae031de8054f66f9b0e7a5caabdc513">getBarras</a> ()</td></tr>
+<tr class="separator:abae031de8054f66f9b0e7a5caabdc513"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba52b9c597c0b8acfacf96f21547977a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; <a class="el" href="classtijolo.html">tijolo</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classview.html#aba52b9c597c0b8acfacf96f21547977a">getTijolos</a> ()</td></tr>
+<tr class="separator:aba52b9c597c0b8acfacf96f21547977a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6cd53aa4df2642579992803a18f0bc8b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpontos.html">pontos</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classview.html#a6cd53aa4df2642579992803a18f0bc8b">getPonto</a> ()</td></tr>
 <tr class="separator:a6cd53aa4df2642579992803a18f0bc8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa33f3e6bf59ada95ee9fd0bff5af22c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvida.html">vida</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classview.html#aa33f3e6bf59ada95ee9fd0bff5af22c0">getVida</a> ()</td></tr>
@@ -154,12 +165,12 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:af57a3852a171948382275c534ede7987"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classtijolo.html">tijolo</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classview.html#af57a3852a171948382275c534ede7987">t</a></td></tr>
-<tr class="separator:af57a3852a171948382275c534ede7987"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf9164a1a6940c4224d67b5c33424f10"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; <a class="el" href="classtijolo.html">tijolo</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classview.html#adf9164a1a6940c4224d67b5c33424f10">t</a></td></tr>
+<tr class="separator:adf9164a1a6940c4224d67b5c33424f10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d44d190dd69b906bfeaac4559ee454e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbolinha.html">bolinha</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classview.html#a9d44d190dd69b906bfeaac4559ee454e">bo</a></td></tr>
 <tr class="separator:a9d44d190dd69b906bfeaac4559ee454e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fd146110ca95e73f43c1dbda5a41294"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbarra.html">barra</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classview.html#a0fd146110ca95e73f43c1dbda5a41294">ba</a></td></tr>
-<tr class="separator:a0fd146110ca95e73f43c1dbda5a41294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38f555c4b8b985a9788a4196f5be917f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classbarra.html">barra</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classview.html#a38f555c4b8b985a9788a4196f5be917f">ba</a></td></tr>
+<tr class="separator:a38f555c4b8b985a9788a4196f5be917f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8dc345a9799a79220ecca66c4cd3e8ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpontos.html">pontos</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classview.html#a8dc345a9799a79220ecca66c4cd3e8ff">po</a></td></tr>
 <tr class="separator:a8dc345a9799a79220ecca66c4cd3e8ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0f8e281f5f7937d84f435437ce03546"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvida.html">vida</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classview.html#ae0f8e281f5f7937d84f435437ce03546">v</a></td></tr>
@@ -195,20 +206,20 @@ Private Attributes</h2></td></tr>
 <div class="textblock"><p>Classe para o view. </p>
 <p>Esta é a classe para o view. Ela recebe todos os objetos que precisam ser mostrados em tela, e utiliza a biblioteca SDL2 para isso. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ae68420027fc8352dc303107eb0305ea6"></a>
+<a class="anchor" id="a809bdce6090439ac99ab0e5856c130e2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">view::view </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="classtijolo.html">tijolo</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; std::vector&lt; <a class="el" href="classtijolo.html">tijolo</a> &gt; &gt; &amp;&#160;</td>
           <td class="paramname"><em>t_</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classbarra.html">barra</a> *&#160;</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classbarra.html">barra</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>ba_</em>, </td>
         </tr>
         <tr>
@@ -253,21 +264,41 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="abbf5bc2a4455e61eb8155f8256a5d870"></a>
+<a class="anchor" id="af4509b82ea85ae1e29b0fa51e2156f73"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void view::ganhou </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>user</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Vitoria. </p>
+<p>Vitoria Singleplayer. </p>
 <p>Sequencia de acoes para quando um jogador ganha </p>
+
+</div>
+</div>
+<a class="anchor" id="a81553c85d81a253c49b002440a039fd3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void view::ganhouMulti </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>user_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Vitoria Multiplayer. </p>
+<p>Sequencia de acoes para quando um jogador ganha no multiplayer </p>
 
 </div>
 </div>
@@ -277,6 +308,21 @@ Private Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">SDL_Rect * view::getBarra </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abae031de8054f66f9b0e7a5caabdc513"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="classbarra.html">barra</a> &gt; &amp; view::getBarras </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -376,12 +422,12 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7546f44b45cd308c1c893e222701ec51"></a>
+<a class="anchor" id="aba52b9c597c0b8acfacf96f21547977a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="classtijolo.html">tijolo</a> &gt; &amp; view::getTijolos </td>
+          <td class="memname">std::vector&lt; std::vector&lt; <a class="el" href="classtijolo.html">tijolo</a> &gt; &gt; &amp; view::getTijolos </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -439,14 +485,30 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a1839c52cc61779be195b51e4fddcb659"></a>
+<a class="anchor" id="ac0e552fdef69accb371177ef955e1b38"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int view::initClient </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a23918beecf637e8226bc1ff64a67e811"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void view::perdeu </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>user</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -490,14 +552,15 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a91e9b24e39a9846a7093949c9a19a118"></a>
+<a class="anchor" id="a6ce9703fff0ea8ae911fee1d24a418e0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void view::render </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>user</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -579,8 +642,24 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a987e7c197e87c90671d6f5347d2dab9d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int view::window_create </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a0fd146110ca95e73f43c1dbda5a41294"></a>
+<a class="anchor" id="a38f555c4b8b985a9788a4196f5be917f"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -588,7 +667,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classbarra.html">barra</a>* view::ba</td>
+          <td class="memname">std::vector&lt;<a class="el" href="classbarra.html">barra</a>&gt;&amp; view::ba</td>
         </tr>
       </table>
   </td>
@@ -863,7 +942,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af57a3852a171948382275c534ede7987"></a>
+<a class="anchor" id="adf9164a1a6940c4224d67b5c33424f10"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -871,7 +950,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="classtijolo.html">tijolo</a>&gt;&amp; view::t</td>
+          <td class="memname">std::vector&lt;std::vector&lt;<a class="el" href="classtijolo.html">tijolo</a>&gt; &gt;&amp; view::t</td>
         </tr>
       </table>
   </td>

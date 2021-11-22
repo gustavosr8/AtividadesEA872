@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['w',['w',['../classbarra.html#a31fd53ae11742f912eb9e0b20707cb82',1,'barra::w()'],['../classbolinha.html#a4136d7cb978a3190073e1544fb336876',1,'bolinha::w()'],['../classtijolo.html#a11e0c9ba0ab09baad2622ba49de44f8a',1,'tijolo::w()']]],
-  ['w_5fmult',['w_mult',['../classbarra.html#a7ca620e27ef6e75eb8dfcc05a738a97c',1,'barra::w_mult()'],['../classbolinha.html#a91dd1f60f5312cf476e02e5396c2f871',1,'bolinha::w_mult()'],['../classtijolo.html#a541d86c88882bb3be2199b10f840777c',1,'tijolo::w_mult()']]],
-  ['white',['White',['../view_8cpp.html#afd2fcdbc10ee4f7ed94f8f0d27ee44ed',1,'view.cpp']]],
-  ['window',['window',['../classview.html#ade09c2dbabd1bf59ffaf625156c514f0',1,'view']]]
+  ['next_5funget',['next_unget',['../classnlohmann_1_1detail_1_1lexer.html#a40b108a0e45a7253f6ad85fbdaa6a262',1,'nlohmann::detail::lexer']]],
+  ['num_5fchar',['num_char',['../view_8cpp.html#aba7b55804629711727b7b1176c7583aa',1,'view.cpp']]],
+  ['number_5fbuffer',['number_buffer',['../classnlohmann_1_1detail_1_1serializer.html#a1a9d8b344a6cb47728a3519693ec03d1',1,'nlohmann::detail::serializer']]],
+  ['number_5ffloat',['number_float',['../classnlohmann_1_1basic__json.html#abe229fa4c3b1f3536c7a85ab9cbff2e7',1,'nlohmann::basic_json']]],
+  ['number_5finteger',['number_integer',['../classnlohmann_1_1basic__json.html#ad88685d4cc24d7e86ddc5b0edb64192a',1,'nlohmann::basic_json']]],
+  ['number_5funsigned',['number_unsigned',['../classnlohmann_1_1basic__json.html#a077b1e7977afafb97a6a38a3a617ba66',1,'nlohmann::basic_json']]]
 ];

@@ -1,0 +1,4 @@
+<map id="nlohmann::detail::lexer&lt; BasicJsonType, InputAdapterType &gt;" name="nlohmann::detail::lexer&lt; BasicJsonType, InputAdapterType &gt;">
+<area shape="rect" id="node2" href="$classnlohmann_1_1detail_1_1lexer__base.html" title="{nlohmann::detail::lexer\l_base\&lt; BasicJsonType \&gt;\n||+ token_type_name()\l}" alt="" coords="5,13,176,105"/>
+<area shape="rect" id="node3" href="$structnlohmann_1_1detail_1_1position__t.html" title="struct to capture the start position of the current token " alt="" coords="200,5,381,112"/>
+</map>

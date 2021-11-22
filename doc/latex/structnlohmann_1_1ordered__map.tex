@@ -1,0 +1,206 @@
+\hypertarget{structnlohmann_1_1ordered__map}{}\section{nlohmann\+:\+:ordered\+\_\+map$<$ Key, T, Ignored\+Less, Allocator $>$ Struct Template Reference}
+\label{structnlohmann_1_1ordered__map}\index{nlohmann\+::ordered\+\_\+map$<$ Key, T, Ignored\+Less, Allocator $>$@{nlohmann\+::ordered\+\_\+map$<$ Key, T, Ignored\+Less, Allocator $>$}}
+
+
+{\ttfamily \#include $<$json.\+hpp$>$}
+
+
+
+Inheritance diagram for nlohmann\+:\+:ordered\+\_\+map$<$ Key, T, Ignored\+Less, Allocator $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{structnlohmann_1_1ordered__map__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for nlohmann\+:\+:ordered\+\_\+map$<$ Key, T, Ignored\+Less, Allocator $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{structnlohmann_1_1ordered__map__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{structnlohmann_1_1ordered__map_a57095c6ed403f02e1bc2c240a13c9ed8}{key\+\_\+type} = Key
+\item 
+using \hyperlink{structnlohmann_1_1ordered__map_a1c9c1509ee714a9814b45a8030c84ec7}{mapped\+\_\+type} = T
+\item 
+using \hyperlink{structnlohmann_1_1ordered__map_a0cabe346c38a4f1ab1b8a396fbd2bbe2}{Container} = std\+::vector$<$ std\+::pair$<$ const Key, T $>$, Allocator $>$
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structnlohmann_1_1ordered__map_a87938c10b76510dac00412d2cb5fd1e4}{ordered\+\_\+map} (const Allocator \&alloc=Allocator())
+\item 
+{\footnotesize template$<$class It $>$ }\\\hyperlink{structnlohmann_1_1ordered__map_a9d25efb51325cc1be027b8ea00c1f8b8}{ordered\+\_\+map} (It first, It last, const Allocator \&alloc=Allocator())
+\item 
+\hyperlink{structnlohmann_1_1ordered__map_a0482ea79e7786367a2d9b5c789c091ce}{ordered\+\_\+map} (std\+::initializer\+\_\+list$<$ T $>$ init, const Allocator \&alloc=Allocator())
+\item 
+std\+::pair$<$ iterator, bool $>$ \hyperlink{structnlohmann_1_1ordered__map_a38834c948b844033caa7d5c76fee5866}{emplace} (const \hyperlink{structnlohmann_1_1ordered__map_a57095c6ed403f02e1bc2c240a13c9ed8}{key\+\_\+type} \&key, T \&\&t)
+\item 
+T \& \hyperlink{structnlohmann_1_1ordered__map_ae7a1ca8c1e234837d137471f73ae6012}{operator\mbox{[}$\,$\mbox{]}} (const Key \&key)
+\item 
+const T \& \hyperlink{structnlohmann_1_1ordered__map_ab9142d04f88a7d909e41b16827b40476}{operator\mbox{[}$\,$\mbox{]}} (const Key \&key) const 
+\item 
+T \& \hyperlink{structnlohmann_1_1ordered__map_ab7b4bb185fe7ea84f8f5f32fd230ff91}{at} (const Key \&key)
+\item 
+const T \& \hyperlink{structnlohmann_1_1ordered__map_a0794a397538be6baf5278348436b8aa8}{at} (const Key \&key) const 
+\item 
+size\+\_\+type \hyperlink{structnlohmann_1_1ordered__map_a583c8976bbf0c137ff8e2439878f3058}{erase} (const Key \&key)
+\item 
+iterator \hyperlink{structnlohmann_1_1ordered__map_a26053569acb0a858d87482b2fa3d5dc5}{erase} (iterator pos)
+\item 
+size\+\_\+type \hyperlink{structnlohmann_1_1ordered__map_aaf916b4375dac60b8a11aa45c52a40d3}{count} (const Key \&key) const 
+\item 
+iterator \hyperlink{structnlohmann_1_1ordered__map_a2486527ac56e07d58946ae9a93a46bc8}{find} (const Key \&key)
+\item 
+const\+\_\+iterator \hyperlink{structnlohmann_1_1ordered__map_a80eb860fa67c96c1a3231079fa1a2188}{find} (const Key \&key) const 
+\item 
+std\+::pair$<$ iterator, bool $>$ \hyperlink{structnlohmann_1_1ordered__map_a48eceff729b80f3f4a023b737efccc5b}{insert} (value\+\_\+type \&\&value)
+\item 
+std\+::pair$<$ iterator, bool $>$ \hyperlink{structnlohmann_1_1ordered__map_a0241433138719e477a3cbb0c4cf0a243}{insert} (const value\+\_\+type \&value)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Key, class T, class Ignored\+Less = std\+::less$<$\+Key$>$, class Allocator = std\+::allocator$<$std\+::pair$<$const Key, T$>$$>$$>$\\*
+struct nlohmann\+::ordered\+\_\+map$<$ Key, T, Ignored\+Less, Allocator $>$}
+
+\hyperlink{structnlohmann_1_1ordered__map}{ordered\+\_\+map}\+: a minimal map-\/like container that preserves insertion order for use within nlohmann\+::basic\+\_\+json$<$ordered\+\_\+map$>$ 
+
+\subsection{Member Typedef Documentation}
+\index{nlohmann\+::ordered\+\_\+map@{nlohmann\+::ordered\+\_\+map}!Container@{Container}}
+\index{Container@{Container}!nlohmann\+::ordered\+\_\+map@{nlohmann\+::ordered\+\_\+map}}
+\subsubsection[{\texorpdfstring{Container}{Container}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Key , class T , class Ignored\+Less  = std\+::less$<$\+Key$>$, class Allocator  = std\+::allocator$<$std\+::pair$<$const Key, T$>$$>$$>$ using {\bf nlohmann\+::ordered\+\_\+map}$<$ Key, T, Ignored\+Less, Allocator $>$\+::{\bf Container} =  std\+::vector$<$std\+::pair$<$const Key, T$>$, Allocator$>$}\hypertarget{structnlohmann_1_1ordered__map_a0cabe346c38a4f1ab1b8a396fbd2bbe2}{}\label{structnlohmann_1_1ordered__map_a0cabe346c38a4f1ab1b8a396fbd2bbe2}
+\index{nlohmann\+::ordered\+\_\+map@{nlohmann\+::ordered\+\_\+map}!key\+\_\+type@{key\+\_\+type}}
+\index{key\+\_\+type@{key\+\_\+type}!nlohmann\+::ordered\+\_\+map@{nlohmann\+::ordered\+\_\+map}}
+\subsubsection[{\texorpdfstring{key\+\_\+type}{key_type}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Key , class T , class Ignored\+Less  = std\+::less$<$\+Key$>$, class Allocator  = std\+::allocator$<$std\+::pair$<$const Key, T$>$$>$$>$ using {\bf nlohmann\+::ordered\+\_\+map}$<$ Key, T, Ignored\+Less, Allocator $>$\+::{\bf key\+\_\+type} =  Key}\hypertarget{structnlohmann_1_1ordered__map_a57095c6ed403f02e1bc2c240a13c9ed8}{}\label{structnlohmann_1_1ordered__map_a57095c6ed403f02e1bc2c240a13c9ed8}
+\index{nlohmann\+::ordered\+\_\+map@{nlohmann\+::ordered\+\_\+map}!mapped\+\_\+type@{mapped\+\_\+type}}
+\index{mapped\+\_\+type@{mapped\+\_\+type}!nlohmann\+::ordered\+\_\+map@{nlohmann\+::ordered\+\_\+map}}
+\subsubsection[{\texorpdfstring{mapped\+\_\+type}{mapped_type}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Key , class T , class Ignored\+Less  = std\+::less$<$\+Key$>$, class Allocator  = std\+::allocator$<$std\+::pair$<$const Key, T$>$$>$$>$ using {\bf nlohmann\+::ordered\+\_\+map}$<$ Key, T, Ignored\+Less, Allocator $>$\+::{\bf mapped\+\_\+type} =  T}\hypertarget{structnlohmann_1_1ordered__map_a1c9c1509ee714a9814b45a8030c84ec7}{}\label{structnlohmann_1_1ordered__map_a1c9c1509ee714a9814b45a8030c84ec7}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{nlohmann\+::ordered\+\_\+map@{nlohmann\+::ordered\+\_\+map}!ordered\+\_\+map@{ordered\+\_\+map}}
+\index{ordered\+\_\+map@{ordered\+\_\+map}!nlohmann\+::ordered\+\_\+map@{nlohmann\+::ordered\+\_\+map}}
+\subsubsection[{\texorpdfstring{ordered\+\_\+map(const Allocator \&alloc=\+Allocator())}{ordered_map(const Allocator &alloc=Allocator())}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Key , class T , class Ignored\+Less  = std\+::less$<$\+Key$>$, class Allocator  = std\+::allocator$<$std\+::pair$<$const Key, T$>$$>$$>$ {\bf nlohmann\+::ordered\+\_\+map}$<$ Key, T, Ignored\+Less, Allocator $>$\+::{\bf ordered\+\_\+map} (
+\begin{DoxyParamCaption}
+\item[{const Allocator \&}]{alloc = {\ttfamily Allocator()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structnlohmann_1_1ordered__map_a87938c10b76510dac00412d2cb5fd1e4}{}\label{structnlohmann_1_1ordered__map_a87938c10b76510dac00412d2cb5fd1e4}
+\index{nlohmann\+::ordered\+\_\+map@{nlohmann\+::ordered\+\_\+map}!ordered\+\_\+map@{ordered\+\_\+map}}
+\index{ordered\+\_\+map@{ordered\+\_\+map}!nlohmann\+::ordered\+\_\+map@{nlohmann\+::ordered\+\_\+map}}
+\subsubsection[{\texorpdfstring{ordered\+\_\+map(\+It first, It last, const Allocator \&alloc=\+Allocator())}{ordered_map(It first, It last, const Allocator &alloc=Allocator())}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Key , class T , class Ignored\+Less  = std\+::less$<$\+Key$>$, class Allocator  = std\+::allocator$<$std\+::pair$<$const Key, T$>$$>$$>$ template$<$class It $>$ {\bf nlohmann\+::ordered\+\_\+map}$<$ Key, T, Ignored\+Less, Allocator $>$\+::{\bf ordered\+\_\+map} (
+\begin{DoxyParamCaption}
+\item[{It}]{first, }
+\item[{It}]{last, }
+\item[{const Allocator \&}]{alloc = {\ttfamily Allocator()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structnlohmann_1_1ordered__map_a9d25efb51325cc1be027b8ea00c1f8b8}{}\label{structnlohmann_1_1ordered__map_a9d25efb51325cc1be027b8ea00c1f8b8}
+\index{nlohmann\+::ordered\+\_\+map@{nlohmann\+::ordered\+\_\+map}!ordered\+\_\+map@{ordered\+\_\+map}}
+\index{ordered\+\_\+map@{ordered\+\_\+map}!nlohmann\+::ordered\+\_\+map@{nlohmann\+::ordered\+\_\+map}}
+\subsubsection[{\texorpdfstring{ordered\+\_\+map(std\+::initializer\+\_\+list$<$ T $>$ init, const Allocator \&alloc=\+Allocator())}{ordered_map(std::initializer_list< T > init, const Allocator &alloc=Allocator())}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Key , class T , class Ignored\+Less  = std\+::less$<$\+Key$>$, class Allocator  = std\+::allocator$<$std\+::pair$<$const Key, T$>$$>$$>$ {\bf nlohmann\+::ordered\+\_\+map}$<$ Key, T, Ignored\+Less, Allocator $>$\+::{\bf ordered\+\_\+map} (
+\begin{DoxyParamCaption}
+\item[{std\+::initializer\+\_\+list$<$ T $>$}]{init, }
+\item[{const Allocator \&}]{alloc = {\ttfamily Allocator()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structnlohmann_1_1ordered__map_a0482ea79e7786367a2d9b5c789c091ce}{}\label{structnlohmann_1_1ordered__map_a0482ea79e7786367a2d9b5c789c091ce}
+
+
+\subsection{Member Function Documentation}
+\index{nlohmann\+::ordered\+\_\+map@{nlohmann\+::ordered\+\_\+map}!at@{at}}
+\index{at@{at}!nlohmann\+::ordered\+\_\+map@{nlohmann\+::ordered\+\_\+map}}
+\subsubsection[{\texorpdfstring{at(const Key \&key)}{at(const Key &key)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Key , class T , class Ignored\+Less  = std\+::less$<$\+Key$>$, class Allocator  = std\+::allocator$<$std\+::pair$<$const Key, T$>$$>$$>$ T\& {\bf nlohmann\+::ordered\+\_\+map}$<$ Key, T, Ignored\+Less, Allocator $>$\+::at (
+\begin{DoxyParamCaption}
+\item[{const Key \&}]{key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structnlohmann_1_1ordered__map_ab7b4bb185fe7ea84f8f5f32fd230ff91}{}\label{structnlohmann_1_1ordered__map_ab7b4bb185fe7ea84f8f5f32fd230ff91}
+\index{nlohmann\+::ordered\+\_\+map@{nlohmann\+::ordered\+\_\+map}!at@{at}}
+\index{at@{at}!nlohmann\+::ordered\+\_\+map@{nlohmann\+::ordered\+\_\+map}}
+\subsubsection[{\texorpdfstring{at(const Key \&key) const }{at(const Key &key) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Key , class T , class Ignored\+Less  = std\+::less$<$\+Key$>$, class Allocator  = std\+::allocator$<$std\+::pair$<$const Key, T$>$$>$$>$ const T\& {\bf nlohmann\+::ordered\+\_\+map}$<$ Key, T, Ignored\+Less, Allocator $>$\+::at (
+\begin{DoxyParamCaption}
+\item[{const Key \&}]{key}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structnlohmann_1_1ordered__map_a0794a397538be6baf5278348436b8aa8}{}\label{structnlohmann_1_1ordered__map_a0794a397538be6baf5278348436b8aa8}
+\index{nlohmann\+::ordered\+\_\+map@{nlohmann\+::ordered\+\_\+map}!count@{count}}
+\index{count@{count}!nlohmann\+::ordered\+\_\+map@{nlohmann\+::ordered\+\_\+map}}
+\subsubsection[{\texorpdfstring{count(const Key \&key) const }{count(const Key &key) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Key , class T , class Ignored\+Less  = std\+::less$<$\+Key$>$, class Allocator  = std\+::allocator$<$std\+::pair$<$const Key, T$>$$>$$>$ size\+\_\+type {\bf nlohmann\+::ordered\+\_\+map}$<$ Key, T, Ignored\+Less, Allocator $>$\+::count (
+\begin{DoxyParamCaption}
+\item[{const Key \&}]{key}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structnlohmann_1_1ordered__map_aaf916b4375dac60b8a11aa45c52a40d3}{}\label{structnlohmann_1_1ordered__map_aaf916b4375dac60b8a11aa45c52a40d3}
+\index{nlohmann\+::ordered\+\_\+map@{nlohmann\+::ordered\+\_\+map}!emplace@{emplace}}
+\index{emplace@{emplace}!nlohmann\+::ordered\+\_\+map@{nlohmann\+::ordered\+\_\+map}}
+\subsubsection[{\texorpdfstring{emplace(const key\+\_\+type \&key, T \&\&t)}{emplace(const key_type &key, T &&t)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Key , class T , class Ignored\+Less  = std\+::less$<$\+Key$>$, class Allocator  = std\+::allocator$<$std\+::pair$<$const Key, T$>$$>$$>$ std\+::pair$<$iterator, bool$>$ {\bf nlohmann\+::ordered\+\_\+map}$<$ Key, T, Ignored\+Less, Allocator $>$\+::emplace (
+\begin{DoxyParamCaption}
+\item[{const {\bf key\+\_\+type} \&}]{key, }
+\item[{T \&\&}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structnlohmann_1_1ordered__map_a38834c948b844033caa7d5c76fee5866}{}\label{structnlohmann_1_1ordered__map_a38834c948b844033caa7d5c76fee5866}
+\index{nlohmann\+::ordered\+\_\+map@{nlohmann\+::ordered\+\_\+map}!erase@{erase}}
+\index{erase@{erase}!nlohmann\+::ordered\+\_\+map@{nlohmann\+::ordered\+\_\+map}}
+\subsubsection[{\texorpdfstring{erase(const Key \&key)}{erase(const Key &key)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Key , class T , class Ignored\+Less  = std\+::less$<$\+Key$>$, class Allocator  = std\+::allocator$<$std\+::pair$<$const Key, T$>$$>$$>$ size\+\_\+type {\bf nlohmann\+::ordered\+\_\+map}$<$ Key, T, Ignored\+Less, Allocator $>$\+::erase (
+\begin{DoxyParamCaption}
+\item[{const Key \&}]{key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structnlohmann_1_1ordered__map_a583c8976bbf0c137ff8e2439878f3058}{}\label{structnlohmann_1_1ordered__map_a583c8976bbf0c137ff8e2439878f3058}
+\index{nlohmann\+::ordered\+\_\+map@{nlohmann\+::ordered\+\_\+map}!erase@{erase}}
+\index{erase@{erase}!nlohmann\+::ordered\+\_\+map@{nlohmann\+::ordered\+\_\+map}}
+\subsubsection[{\texorpdfstring{erase(iterator pos)}{erase(iterator pos)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Key , class T , class Ignored\+Less  = std\+::less$<$\+Key$>$, class Allocator  = std\+::allocator$<$std\+::pair$<$const Key, T$>$$>$$>$ iterator {\bf nlohmann\+::ordered\+\_\+map}$<$ Key, T, Ignored\+Less, Allocator $>$\+::erase (
+\begin{DoxyParamCaption}
+\item[{iterator}]{pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structnlohmann_1_1ordered__map_a26053569acb0a858d87482b2fa3d5dc5}{}\label{structnlohmann_1_1ordered__map_a26053569acb0a858d87482b2fa3d5dc5}
+\index{nlohmann\+::ordered\+\_\+map@{nlohmann\+::ordered\+\_\+map}!find@{find}}
+\index{find@{find}!nlohmann\+::ordered\+\_\+map@{nlohmann\+::ordered\+\_\+map}}
+\subsubsection[{\texorpdfstring{find(const Key \&key)}{find(const Key &key)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Key , class T , class Ignored\+Less  = std\+::less$<$\+Key$>$, class Allocator  = std\+::allocator$<$std\+::pair$<$const Key, T$>$$>$$>$ iterator {\bf nlohmann\+::ordered\+\_\+map}$<$ Key, T, Ignored\+Less, Allocator $>$\+::find (
+\begin{DoxyParamCaption}
+\item[{const Key \&}]{key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structnlohmann_1_1ordered__map_a2486527ac56e07d58946ae9a93a46bc8}{}\label{structnlohmann_1_1ordered__map_a2486527ac56e07d58946ae9a93a46bc8}
+\index{nlohmann\+::ordered\+\_\+map@{nlohmann\+::ordered\+\_\+map}!find@{find}}
+\index{find@{find}!nlohmann\+::ordered\+\_\+map@{nlohmann\+::ordered\+\_\+map}}
+\subsubsection[{\texorpdfstring{find(const Key \&key) const }{find(const Key &key) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Key , class T , class Ignored\+Less  = std\+::less$<$\+Key$>$, class Allocator  = std\+::allocator$<$std\+::pair$<$const Key, T$>$$>$$>$ const\+\_\+iterator {\bf nlohmann\+::ordered\+\_\+map}$<$ Key, T, Ignored\+Less, Allocator $>$\+::find (
+\begin{DoxyParamCaption}
+\item[{const Key \&}]{key}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structnlohmann_1_1ordered__map_a80eb860fa67c96c1a3231079fa1a2188}{}\label{structnlohmann_1_1ordered__map_a80eb860fa67c96c1a3231079fa1a2188}
+\index{nlohmann\+::ordered\+\_\+map@{nlohmann\+::ordered\+\_\+map}!insert@{insert}}
+\index{insert@{insert}!nlohmann\+::ordered\+\_\+map@{nlohmann\+::ordered\+\_\+map}}
+\subsubsection[{\texorpdfstring{insert(value\+\_\+type \&\&value)}{insert(value_type &&value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Key , class T , class Ignored\+Less  = std\+::less$<$\+Key$>$, class Allocator  = std\+::allocator$<$std\+::pair$<$const Key, T$>$$>$$>$ std\+::pair$<$iterator, bool$>$ {\bf nlohmann\+::ordered\+\_\+map}$<$ Key, T, Ignored\+Less, Allocator $>$\+::insert (
+\begin{DoxyParamCaption}
+\item[{value\+\_\+type \&\&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structnlohmann_1_1ordered__map_a48eceff729b80f3f4a023b737efccc5b}{}\label{structnlohmann_1_1ordered__map_a48eceff729b80f3f4a023b737efccc5b}
+\index{nlohmann\+::ordered\+\_\+map@{nlohmann\+::ordered\+\_\+map}!insert@{insert}}
+\index{insert@{insert}!nlohmann\+::ordered\+\_\+map@{nlohmann\+::ordered\+\_\+map}}
+\subsubsection[{\texorpdfstring{insert(const value\+\_\+type \&value)}{insert(const value_type &value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Key , class T , class Ignored\+Less  = std\+::less$<$\+Key$>$, class Allocator  = std\+::allocator$<$std\+::pair$<$const Key, T$>$$>$$>$ std\+::pair$<$iterator, bool$>$ {\bf nlohmann\+::ordered\+\_\+map}$<$ Key, T, Ignored\+Less, Allocator $>$\+::insert (
+\begin{DoxyParamCaption}
+\item[{const value\+\_\+type \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structnlohmann_1_1ordered__map_a0241433138719e477a3cbb0c4cf0a243}{}\label{structnlohmann_1_1ordered__map_a0241433138719e477a3cbb0c4cf0a243}
+\index{nlohmann\+::ordered\+\_\+map@{nlohmann\+::ordered\+\_\+map}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!nlohmann\+::ordered\+\_\+map@{nlohmann\+::ordered\+\_\+map}}
+\subsubsection[{\texorpdfstring{operator[](const Key \&key)}{operator[](const Key &key)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Key , class T , class Ignored\+Less  = std\+::less$<$\+Key$>$, class Allocator  = std\+::allocator$<$std\+::pair$<$const Key, T$>$$>$$>$ T\& {\bf nlohmann\+::ordered\+\_\+map}$<$ Key, T, Ignored\+Less, Allocator $>$\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{const Key \&}]{key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structnlohmann_1_1ordered__map_ae7a1ca8c1e234837d137471f73ae6012}{}\label{structnlohmann_1_1ordered__map_ae7a1ca8c1e234837d137471f73ae6012}
+\index{nlohmann\+::ordered\+\_\+map@{nlohmann\+::ordered\+\_\+map}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!nlohmann\+::ordered\+\_\+map@{nlohmann\+::ordered\+\_\+map}}
+\subsubsection[{\texorpdfstring{operator[](const Key \&key) const }{operator[](const Key &key) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Key , class T , class Ignored\+Less  = std\+::less$<$\+Key$>$, class Allocator  = std\+::allocator$<$std\+::pair$<$const Key, T$>$$>$$>$ const T\& {\bf nlohmann\+::ordered\+\_\+map}$<$ Key, T, Ignored\+Less, Allocator $>$\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{const Key \&}]{key}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structnlohmann_1_1ordered__map_ab9142d04f88a7d909e41b16827b40476}{}\label{structnlohmann_1_1ordered__map_ab9142d04f88a7d909e41b16827b40476}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{json_8hpp}{json.\+hpp}\end{DoxyCompactItemize}

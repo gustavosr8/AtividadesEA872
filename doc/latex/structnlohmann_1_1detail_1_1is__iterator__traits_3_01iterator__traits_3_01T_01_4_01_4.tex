@@ -1,0 +1,52 @@
+\hypertarget{structnlohmann_1_1detail_1_1is__iterator__traits_3_01iterator__traits_3_01T_01_4_01_4}{}\section{nlohmann\+:\+:detail\+:\+:is\+\_\+iterator\+\_\+traits$<$ iterator\+\_\+traits$<$ T $>$ $>$ Struct Template Reference}
+\label{structnlohmann_1_1detail_1_1is__iterator__traits_3_01iterator__traits_3_01T_01_4_01_4}\index{nlohmann\+::detail\+::is\+\_\+iterator\+\_\+traits$<$ iterator\+\_\+traits$<$ T $>$ $>$@{nlohmann\+::detail\+::is\+\_\+iterator\+\_\+traits$<$ iterator\+\_\+traits$<$ T $>$ $>$}}
+
+
+{\ttfamily \#include $<$json.\+hpp$>$}
+
+
+
+Collaboration diagram for nlohmann\+:\+:detail\+:\+:is\+\_\+iterator\+\_\+traits$<$ iterator\+\_\+traits$<$ T $>$ $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{structnlohmann_1_1detail_1_1is__iterator__traits_3_01iterator__traits_3_01T_01_4_01_4__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr auto \hyperlink{structnlohmann_1_1detail_1_1is__iterator__traits_3_01iterator__traits_3_01T_01_4_01_4_ac2711760b352b8921accc6609957dc90}{value}
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{structnlohmann_1_1detail_1_1is__iterator__traits_3_01iterator__traits_3_01T_01_4_01_4_a1cbceaaa83a3ad294c3cb66b9df48e78}{traits} = \hyperlink{structnlohmann_1_1detail_1_1iterator__traits}{iterator\+\_\+traits}$<$ T $>$
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\index{nlohmann\+::detail\+::is\+\_\+iterator\+\_\+traits$<$ iterator\+\_\+traits$<$ T $>$ $>$@{nlohmann\+::detail\+::is\+\_\+iterator\+\_\+traits$<$ iterator\+\_\+traits$<$ T $>$ $>$}!traits@{traits}}
+\index{traits@{traits}!nlohmann\+::detail\+::is\+\_\+iterator\+\_\+traits$<$ iterator\+\_\+traits$<$ T $>$ $>$@{nlohmann\+::detail\+::is\+\_\+iterator\+\_\+traits$<$ iterator\+\_\+traits$<$ T $>$ $>$}}
+\subsubsection[{\texorpdfstring{traits}{traits}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ using {\bf nlohmann\+::detail\+::is\+\_\+iterator\+\_\+traits}$<$ {\bf iterator\+\_\+traits}$<$ T $>$ $>$\+::{\bf traits} =  {\bf iterator\+\_\+traits}$<$T$>$\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{structnlohmann_1_1detail_1_1is__iterator__traits_3_01iterator__traits_3_01T_01_4_01_4_a1cbceaaa83a3ad294c3cb66b9df48e78}{}\label{structnlohmann_1_1detail_1_1is__iterator__traits_3_01iterator__traits_3_01T_01_4_01_4_a1cbceaaa83a3ad294c3cb66b9df48e78}
+
+
+\subsection{Member Data Documentation}
+\index{nlohmann\+::detail\+::is\+\_\+iterator\+\_\+traits$<$ iterator\+\_\+traits$<$ T $>$ $>$@{nlohmann\+::detail\+::is\+\_\+iterator\+\_\+traits$<$ iterator\+\_\+traits$<$ T $>$ $>$}!value@{value}}
+\index{value@{value}!nlohmann\+::detail\+::is\+\_\+iterator\+\_\+traits$<$ iterator\+\_\+traits$<$ T $>$ $>$@{nlohmann\+::detail\+::is\+\_\+iterator\+\_\+traits$<$ iterator\+\_\+traits$<$ T $>$ $>$}}
+\subsubsection[{\texorpdfstring{value}{value}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ constexpr auto {\bf nlohmann\+::detail\+::is\+\_\+iterator\+\_\+traits}$<$ {\bf iterator\+\_\+traits}$<$ T $>$ $>$\+::value\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{structnlohmann_1_1detail_1_1is__iterator__traits_3_01iterator__traits_3_01T_01_4_01_4_ac2711760b352b8921accc6609957dc90}{}\label{structnlohmann_1_1detail_1_1is__iterator__traits_3_01iterator__traits_3_01T_01_4_01_4_ac2711760b352b8921accc6609957dc90}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+        \hyperlink{namespacenlohmann_1_1detail_a2fb6dae6578e06ae73ca0d7cc8512b1aa2063c1608d6e0baf80249c42e2be5804}{is\_detected<value\_type\_t, traits>::value} &&
+        \hyperlink{namespacenlohmann_1_1detail_a2fb6dae6578e06ae73ca0d7cc8512b1aa2063c1608d6e0baf80249c42e2be5804}{is\_detected<difference\_type\_t, traits>::value} &&
+        \hyperlink{namespacenlohmann_1_1detail_a2fb6dae6578e06ae73ca0d7cc8512b1aa2063c1608d6e0baf80249c42e2be5804}{is\_detected<pointer\_t, traits>::value} &&
+        \hyperlink{namespacenlohmann_1_1detail_a2fb6dae6578e06ae73ca0d7cc8512b1aa2063c1608d6e0baf80249c42e2be5804}{is\_detected<iterator\_category\_t, traits>::value} &&
+        \hyperlink{namespacenlohmann_1_1detail_a2fb6dae6578e06ae73ca0d7cc8512b1aa2063c1608d6e0baf80249c42e2be5804}{is\_detected<reference\_t, traits>::value}
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{json_8hpp}{json.\+hpp}\end{DoxyCompactItemize}

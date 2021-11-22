@@ -1,0 +1,109 @@
+\hypertarget{breakoutServer_8cpp}{}\section{src/breakout\+Server.cpp File Reference}
+\label{breakoutServer_8cpp}\index{src/breakout\+Server.\+cpp@{src/breakout\+Server.\+cpp}}
+{\ttfamily \#include \char`\"{}../include/view.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../include/controller.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../include/tijolo.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../include/bolinha.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../include/barra.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../include/pontos.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../include/vida.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../include/container.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../include/json.\+hpp\char`\"{}}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$boost/asio.\+hpp$>$}\\*
+{\ttfamily \#include $<$boost/bind.\+hpp$>$}\\*
+{\ttfamily \#include $<$thread$>$}\\*
+Include dependency graph for breakout\+Server.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{breakoutServer_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+udp\+::endpoint \hyperlink{breakoutServer_8cpp_a2bb5bc96a8c8ebdae75397c79ffeff71}{local\+\_\+endpoint} (udp\+::v4(), 9001)
+\item 
+udp\+::socket \hyperlink{breakoutServer_8cpp_afd1bec86d8bf474b14afc3a9a456956a}{my\+\_\+socket} (\hyperlink{breakoutServer_8cpp_ac96937bcfdd7a73912f958ca4794bb85}{my\+\_\+io\+\_\+service}, \hyperlink{breakoutServer_8cpp_a2bb5bc96a8c8ebdae75397c79ffeff71}{local\+\_\+endpoint})
+\item 
+\hyperlink{classteclado}{teclado} \hyperlink{breakoutServer_8cpp_a38a0505f9139ae0232331d1fdf1787d1}{get\+Teclado} (\hyperlink{classview}{view} \&v)
+\item 
+void \hyperlink{breakoutServer_8cpp_a815cc316754eed11120036e04cd321d2}{receive} ()
+\item 
+int \hyperlink{breakoutServer_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{breakoutServer_8cpp_af35d6df23503d14eee7ef8d8600c1a14}{players} =0
+\item 
+boost\+::asio\+::io\+\_\+service \hyperlink{breakoutServer_8cpp_ac96937bcfdd7a73912f958ca4794bb85}{my\+\_\+io\+\_\+service}
+\item 
+std\+::vector$<$ udp\+::endpoint $>$ \hyperlink{breakoutServer_8cpp_a7fb046949939e391373fc83d624a12ef}{remote\+\_\+endpoints}
+\item 
+json \hyperlink{breakoutServer_8cpp_a59f5432a3931ee4b65a55b3791d74a72}{jc}
+\item 
+std\+::vector$<$ \hyperlink{classteclado}{teclado} $>$ \hyperlink{breakoutServer_8cpp_af0eea0ccbb93313acde64924c6ed970f}{keyboard}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{breakout\+Server.\+cpp@{breakout\+Server.\+cpp}!get\+Teclado@{get\+Teclado}}
+\index{get\+Teclado@{get\+Teclado}!breakout\+Server.\+cpp@{breakout\+Server.\+cpp}}
+\subsubsection[{\texorpdfstring{get\+Teclado(view \&v)}{getTeclado(view &v)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf teclado} get\+Teclado (
+\begin{DoxyParamCaption}
+\item[{{\bf view} \&}]{v}
+\end{DoxyParamCaption}
+)}\hypertarget{breakoutServer_8cpp_a38a0505f9139ae0232331d1fdf1787d1}{}\label{breakoutServer_8cpp_a38a0505f9139ae0232331d1fdf1787d1}
+\index{breakout\+Server.\+cpp@{breakout\+Server.\+cpp}!local\+\_\+endpoint@{local\+\_\+endpoint}}
+\index{local\+\_\+endpoint@{local\+\_\+endpoint}!breakout\+Server.\+cpp@{breakout\+Server.\+cpp}}
+\subsubsection[{\texorpdfstring{local\+\_\+endpoint(udp\+::v4(), 9001)}{local_endpoint(udp::v4(), 9001)}}]{\setlength{\rightskip}{0pt plus 5cm}udp\+::endpoint local\+\_\+endpoint (
+\begin{DoxyParamCaption}
+\item[{udp\+::v4()}]{, }
+\item[{9001}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{breakoutServer_8cpp_a2bb5bc96a8c8ebdae75397c79ffeff71}{}\label{breakoutServer_8cpp_a2bb5bc96a8c8ebdae75397c79ffeff71}
+\index{breakout\+Server.\+cpp@{breakout\+Server.\+cpp}!main@{main}}
+\index{main@{main}!breakout\+Server.\+cpp@{breakout\+Server.\+cpp}}
+\subsubsection[{\texorpdfstring{main()}{main()}}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{breakoutServer_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{}\label{breakoutServer_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}
+\index{breakout\+Server.\+cpp@{breakout\+Server.\+cpp}!my\+\_\+socket@{my\+\_\+socket}}
+\index{my\+\_\+socket@{my\+\_\+socket}!breakout\+Server.\+cpp@{breakout\+Server.\+cpp}}
+\subsubsection[{\texorpdfstring{my\+\_\+socket(my\+\_\+io\+\_\+service, local\+\_\+endpoint)}{my_socket(my_io_service, local_endpoint)}}]{\setlength{\rightskip}{0pt plus 5cm}udp\+::socket my\+\_\+socket (
+\begin{DoxyParamCaption}
+\item[{{\bf my\+\_\+io\+\_\+service}}]{, }
+\item[{{\bf local\+\_\+endpoint}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{breakoutServer_8cpp_afd1bec86d8bf474b14afc3a9a456956a}{}\label{breakoutServer_8cpp_afd1bec86d8bf474b14afc3a9a456956a}
+\index{breakout\+Server.\+cpp@{breakout\+Server.\+cpp}!receive@{receive}}
+\index{receive@{receive}!breakout\+Server.\+cpp@{breakout\+Server.\+cpp}}
+\subsubsection[{\texorpdfstring{receive()}{receive()}}]{\setlength{\rightskip}{0pt plus 5cm}void receive (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{breakoutServer_8cpp_a815cc316754eed11120036e04cd321d2}{}\label{breakoutServer_8cpp_a815cc316754eed11120036e04cd321d2}
+
+
+\subsection{Variable Documentation}
+\index{breakout\+Server.\+cpp@{breakout\+Server.\+cpp}!jc@{jc}}
+\index{jc@{jc}!breakout\+Server.\+cpp@{breakout\+Server.\+cpp}}
+\subsubsection[{\texorpdfstring{jc}{jc}}]{\setlength{\rightskip}{0pt plus 5cm}json jc}\hypertarget{breakoutServer_8cpp_a59f5432a3931ee4b65a55b3791d74a72}{}\label{breakoutServer_8cpp_a59f5432a3931ee4b65a55b3791d74a72}
+\index{breakout\+Server.\+cpp@{breakout\+Server.\+cpp}!keyboard@{keyboard}}
+\index{keyboard@{keyboard}!breakout\+Server.\+cpp@{breakout\+Server.\+cpp}}
+\subsubsection[{\texorpdfstring{keyboard}{keyboard}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf teclado}$>$ keyboard}\hypertarget{breakoutServer_8cpp_af0eea0ccbb93313acde64924c6ed970f}{}\label{breakoutServer_8cpp_af0eea0ccbb93313acde64924c6ed970f}
+\index{breakout\+Server.\+cpp@{breakout\+Server.\+cpp}!my\+\_\+io\+\_\+service@{my\+\_\+io\+\_\+service}}
+\index{my\+\_\+io\+\_\+service@{my\+\_\+io\+\_\+service}!breakout\+Server.\+cpp@{breakout\+Server.\+cpp}}
+\subsubsection[{\texorpdfstring{my\+\_\+io\+\_\+service}{my_io_service}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::asio\+::io\+\_\+service my\+\_\+io\+\_\+service}\hypertarget{breakoutServer_8cpp_ac96937bcfdd7a73912f958ca4794bb85}{}\label{breakoutServer_8cpp_ac96937bcfdd7a73912f958ca4794bb85}
+\index{breakout\+Server.\+cpp@{breakout\+Server.\+cpp}!players@{players}}
+\index{players@{players}!breakout\+Server.\+cpp@{breakout\+Server.\+cpp}}
+\subsubsection[{\texorpdfstring{players}{players}}]{\setlength{\rightskip}{0pt plus 5cm}int players =0}\hypertarget{breakoutServer_8cpp_af35d6df23503d14eee7ef8d8600c1a14}{}\label{breakoutServer_8cpp_af35d6df23503d14eee7ef8d8600c1a14}
+\index{breakout\+Server.\+cpp@{breakout\+Server.\+cpp}!remote\+\_\+endpoints@{remote\+\_\+endpoints}}
+\index{remote\+\_\+endpoints@{remote\+\_\+endpoints}!breakout\+Server.\+cpp@{breakout\+Server.\+cpp}}
+\subsubsection[{\texorpdfstring{remote\+\_\+endpoints}{remote_endpoints}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$udp\+::endpoint$>$ remote\+\_\+endpoints}\hypertarget{breakoutServer_8cpp_a7fb046949939e391373fc83d624a12ef}{}\label{breakoutServer_8cpp_a7fb046949939e391373fc83d624a12ef}
